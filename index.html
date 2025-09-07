@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper's Profile</title>
+    <style>
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --header-color: #2c3e50;
+            --border-color: #ddd;
+            --footer-color: #777;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 10px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
+        h1, h2 { color: var(--header-color); }
+        h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.8em; margin-top: 2em; margin-bottom: 0.5em; }
+        p { margin-bottom: 1em; }
+        ul { margin-bottom: 2em; }
+        footer { margin-top: 3em; border-top: 1px solid var(--border-color); padding-top: 1em; color: var(--footer-color); }
+        .dark-mode {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --header-color: #ffffff;
+            --border-color: #333;
+            --footer-color: #cccccc;
+        }
+        #night-mode-toggle { background: none; border: 1px solid var(--border-color); color: var(--text-color); padding: 5px 10px; cursor: pointer; margin-left: 20px; }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .card {
+            background: var(--bg-color);
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        h3 { color: var(--header-color); margin-top: 0; }
+        h1 { font-size: 1.5em; font-weight: 300; margin-bottom: 0.2em; }
+        h3 { font-size: 1em; font-weight: 400; margin-bottom: 0.5em; }
+        p { font-size: 0.8em; margin-bottom: 0.3em; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 0.3em; font-size: 0.8em; }
+        .app-grid { gap: 10px; margin: 15px 0; max-width: 1200px; margin: 15px auto; }
+        footer p { font-size: 0.7em; }
+         a { color: var(--text-color); text-decoration: none; }
+         a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+        <img src="https://avatars.githubusercontent.com/u/203538727?s=400&u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
+        <h1>Harper</h1>
+        <button id="night-mode-toggle" style="margin-left: auto;">Night Mode</button>
+    </header>
+
+    <div class="app-grid">
+        <div class="card">
+            <h3>About</h3>
+            <p>Develops software and AI tools.</p>
+            <p>Mission: Scale AI globally.</p>
+        </div>
+        <div class="card">
+            <h3>Team</h3>
+            <div>
+                <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&u=c9689feb3e1fea49b01a34f9c0f4168668110c57&v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
+                <a href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%;"></a>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Repositories</h3>
+            <ul>
+                <li><a href="https://github.com/harpertoken/harpertoken.github.io">harpertoken.github.io</a></li>
+                <li><a href="https://github.com/harpertoken/Harper">Harper</a></li>
+                <li><a href="https://github.com/harpertoken/.github">.github</a></li>
+                <li><a href="https://github.com/harpertoken/Llamaware">Llamaware</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Releases</h3>
+            <ul>
+                <li>v0.1.3</li>
+                <li>v0.1.2</li>
+                <li>v0.1.1</li>
+                <li>v0.1.0</li>
+            </ul>
+        </div>
+    </div>
+    <footer style="margin-top: 10px; text-align: center;">
+        <p>Contact: harpertoken@icloud.com</p>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('night-mode-toggle');
+        function isDay() {
+            const hour = new Date().getHours();
+            return hour >= 6 && hour < 18;
+        }
+        function updateTheme() {
+            const body = document.body;
+            if (isDay()) {
+                body.classList.remove('dark-mode');
+                toggleButton.textContent = 'Night Mode';
+            } else {
+                body.classList.add('dark-mode');
+                toggleButton.textContent = 'Day Mode';
+            }
+        }
+        // Initial update
+        updateTheme();
+        // Update every hour
+        setInterval(updateTheme, 3600000);
+        // Toggle button
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            this.textContent = document.body.classList.contains('dark-mode') ? 'Day Mode' : 'Night Mode';
+        });
+    </script>
+</body>
+</html>
