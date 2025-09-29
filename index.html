@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harper's profile</title>
+    <style>
+        /* CSS Variables for theming */
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --header-color: #2c3e50;
+            --border-color: #ddd;
+            --footer-color: #777;
+        }
+        /* Dark mode overrides */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000;
+                --text-color: #fff;
+                --header-color: #fff;
+                --border-color: #333;
+                --footer-color: #ccc;
+            }
+        }
+        /* Body and general styles */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 10px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
+        h1 { color: var(--header-color); }
+
+        /* Heading styles */
+        h2 { font-size: 1.8em; margin-top: 2em; margin-bottom: 0.5em; }
+        p { margin-bottom: 0.3em; font-size: 0.8em; }
+        ul { margin-bottom: 2em; list-style: none; padding: 0; }
+        footer { margin-top: 3em; border-top: 1px solid var(--border-color); padding-top: 1em; color: var(--footer-color); }
+        /* Grid layout for cards */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            margin: 15px auto;
+            max-width: 1200px;
+        }
+        /* Card styles */
+        .card {
+            background: var(--bg-color);
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        /* Specific heading styles */
+        h1 { font-size: 1em; font-weight: 300; margin-bottom: 0.5em; }
+        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.5em; }
+        li { margin-bottom: 0.3em; font-size: 0.8em; }
+        footer p { font-size: 0.7em; }
+        /* Link styles */
+          a { color: var(--text-color); text-decoration: none; }
+          a:hover { text-decoration: underline; }
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --header-color: #2c3e50;
+            --border-color: #ddd;
+            --footer-color: #777;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000;
+                --text-color: #fff;
+                --header-color: #fff;
+                --border-color: #333;
+                --footer-color: #ccc;
+            }
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 10px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
+        h1 { color: var(--header-color); }
+        p { margin-bottom: 0.3em; font-size: 0.8em; }
+        ul { margin-bottom: 2em; list-style: none; padding: 0; }
+        footer { margin-top: 3em; border-top: 1px solid var(--border-color); padding-top: 1em; color: var(--footer-color); }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            margin: 15px auto;
+            max-width: 1200px;
+        }
+        .card {
+            background: var(--bg-color);
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        h1 { font-size: 1em; font-weight: 300; margin-bottom: 0.5em; }
+        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.5em; }
+        li { margin-bottom: 0.3em; font-size: 0.8em; }
+        footer p { font-size: 0.7em; }
+          a { color: var(--text-color); text-decoration: none; }
+          a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <!-- Header section with avatar and title -->
+    <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px; transition: opacity 0.5s ease;" id="main-header">
+        <img src="https://avatars.githubusercontent.com/u/203538727?s=400&u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
+        <h1>harper</h1>
+    </header>
+
+    <!-- Main content grid with cards -->
+    <div class="app-grid">
+        <!-- About card -->
+        <div class="card">
+            <h3>About</h3>
+            <p>Develops software and AI tools with a mission to scale AI globally.</p>
+        </div>
+        <!-- Installation card -->
+        <div class="card">
+            <h3>Installation</h3>
+             <p>cargo install --git https://github.com/harpertoken/harper.git --tag v0.1.5</p>
+        </div>
+        <!-- Team card -->
+        <div class="card">
+            <h3>Team</h3>
+            <div>
+                <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&u=c9689feb3e1fea49b01a34f9c0f4168668110c57&v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
+                <a href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%;"></a>
+                <a href="https://github.com/harper-bot-glitch"><img src="https://avatars.githubusercontent.com/u/236089746?v=4" alt="Harper Bot Glitch" style="width: 60px; height: 60px; border-radius: 50%;"></a>
+            </div>
+        </div>
+        <!-- Repositories card -->
+        <div class="card">
+            <h3>Repositories</h3>
+            <ul>
+                <li><a href="https://github.com/harpertoken/.github">.github</a></li>
+                <li><a href="https://github.com/harpertoken/autofix">autofix</a></li>
+                <li><a href="https://github.com/harpertoken/harper">harper</a></li>
+                <li><a href="https://github.com/harpertoken/harpertoken.github.io">harpertoken.github.io</a></li>
+                <li><a href="https://github.com/harpertoken/hub">hub</a></li>
+                <li><a href="https://github.com/harpertoken/kernel-go">kernel-go</a></li>
+                <li><a href="https://github.com/harpertoken/kernel-js">kernel-js</a></li>
+                <li><a href="https://github.com/harpertoken/kernel-swift">kernel-swift</a></li>
+                <li><a href="https://github.com/harpertoken/llamaware">llamaware</a></li>
+                <li><a href="https://github.com/harpertoken/macOS-kernel">macOS-kernel</a></li>
+                <li><a href="https://github.com/harpertoken/omnitype">omnitype</a></li>
+                <li><a href="https://github.com/harpertoken/path">path</a></li>
+                <li><a href="https://github.com/harpertoken/xgboost-api">xgboost-api</a></li>
+             </ul>
+        </div>
+        <!-- Community card -->
+        <div class="card">
+            <h3>Community</h3>
+            <ul>
+                <li><a href="https://autofix-harper.vercel.app">Autofix</a></li>
+                <li><a href="https://github.com/harpertoken/harper/actions">CI/CD</a></li>
+                <li><a href="https://github.com/harpertoken/harper?tab=coc-ov-file#readme">Code of Conduct</a></li>
+                <li><a href="https://github.com/orgs/harpertoken/discussions">Discussions</a></li>
+                <li><a href="https://github.com/harpertoken">GitHub</a></li>
+                <li><a href="https://gitlab.com/harpertoken">GitLab</a></li>
+                <li><a href="https://github.com/harpertoken/harper/issues">Issues</a></li>
+                <li><a href="https://github.com/harpertoken/harper/issues/new">New Issue</a></li>
+                <li><a href="https://github.com/harpertoken/harper/pulls?q=is%3Apr+is%3Aclosed">Pull Requests</a></li>
+                <li><a href="https://path-harper.vercel.app/verify">Verification</a></li>
+                <li><a href="https://github.com/harpertoken/harper/wiki">Wiki</a></li>
+            </ul>
+        </div>
+        <!-- Social card -->
+        <div class="card">
+              <h3>Social</h3>
+                <ul>
+                    <li><a href="https://bsky.app/profile/harpertoken.bsky.social">Bluesky</a></li>
+                    <li><a href="https://hub.docker.com/u/bniladridas">Docker Hub</a></li>
+                    <li><a href="https://huggingface.co/harpertoken">Hugging Face</a></li>
+                    <li><a href="https://www.npmjs.com/~harpertoken">npm</a></li>
+                    <li><a href="https://github.com/orgs/harpertoken/actions/metrics/usage">Usage Metrics</a></li>
+                    <li><a href="https://x.com/harper56889360">X</a></li>
+                </ul>
+        </div>
+        <!-- Releases card -->
+        <div class="card">
+            <h3>Releases</h3>
+             <ul>
+                 <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.5">v0.1.5</a></li>
+                 <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.4">v0.1.4</a></li>
+                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.3">v0.1.3</a></li>
+                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.2">v0.1.2</a></li>
+                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.1">v0.1.1</a></li>
+                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.0">v0.1.0</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer style="margin-top: 10px; text-align: center;">
+        <p>Contact: harpertoken@icloud.com | <a href="https://github.com/apps/harperbot">→ GitHub App</a></p>
+    </footer>
+
+</body>
+</html>
