@@ -57,48 +57,7 @@
         /* Link styles */
           a { color: var(--text-color); text-decoration: none; }
           a:hover { text-decoration: underline; }
-        :root {
-            --bg-color: #fff;
-            --text-color: #333;
-            --header-color: #2c3e50;
-            --border-color: #ddd;
-            --footer-color: #777;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #000;
-                --text-color: #fff;
-                --header-color: #fff;
-                --border-color: #333;
-                --footer-color: #ccc;
-            }
-        }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 10px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
-        h1 { color: var(--header-color); }
-        p { margin-bottom: 0.3em; font-size: 0.8em; }
-        ul { margin-bottom: 2em; list-style: none; padding: 0; }
-        footer { margin-top: 3em; border-top: 1px solid var(--border-color); padding-top: 1em; color: var(--footer-color); }
-        .app-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            margin: 15px auto;
-            max-width: 1200px;
-        }
-        .card {
-            background: var(--bg-color);
-            border-radius: 8px;
-            padding: 10px;
-        }
-        .card:hover {
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-        }
-        h1 { font-size: 1em; font-weight: 300; margin-bottom: 0.5em; }
-        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.5em; }
-        li { margin-bottom: 0.3em; font-size: 0.8em; }
-        footer p { font-size: 0.7em; }
-          a { color: var(--text-color); text-decoration: none; }
-          a:hover { text-decoration: underline; }
+
     </style>
 </head>
 <body>
