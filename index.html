@@ -65,7 +65,7 @@
     <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px; transition: opacity 0.5s ease;" id="main-header">
         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
         <h1>harper</h1>
-        <button id="toggle-btn" style="margin-left: auto; background: none; border: none; font-size: 1.5em; cursor: pointer;">⋯</button>
+        <button id="toggle-btn" style="margin-left: auto; background: none; border: none; font-size: 1.5em; cursor: pointer; color: var(--text-color);">⋯</button>
     </header>
 
     <!-- Main content grid with cards -->
@@ -170,7 +170,8 @@
     <script>
         document.getElementById('toggle-btn').addEventListener('click', function() {
             var grid = document.querySelector('.app-grid');
-            grid.style.display = grid.style.display === 'none' ? 'grid' : 'none';
+            var currentDisplay = window.getComputedStyle(grid).display;
+            grid.style.display = currentDisplay === 'none' ? 'grid' : 'none';
         });
     </script>
 
