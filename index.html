@@ -23,49 +23,104 @@
                 --footer-color: #ccc;
             }
         }
+        /* Monokai theme */
+        body.monokai {
+            --bg-color: #272822;
+            --text-color: #f8f8f2;
+            --header-color: #A6E22E;
+            --border-color: #49483e;
+            --footer-color: #75715e;
+        }
+        body.monokai a {
+            color: #66d9ef;
+        }
         /* Body and general styles */
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 10px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; margin: 5px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
 
 
         /* Heading styles */
-        h2 { font-size: 1.8em; margin-top: 2em; margin-bottom: 0.5em; }
-        p { margin-bottom: 0.3em; font-size: 0.8em; }
-        ul { margin-bottom: 2em; list-style: none; padding: 0; }
-        footer { margin-top: 3em; border-top: 1px solid var(--border-color); padding-top: 1em; color: var(--footer-color); }
+        h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; }
+        p { margin-bottom: 0.2em; font-size: 1em; }
+        ul { margin-bottom: 1.5em; list-style: none; padding: 0; }
+        footer { margin-top: 2em; border-top: 1px solid var(--border-color); padding-top: 0.5em; color: var(--footer-color); }
         /* Grid layout for cards */
         .app-grid {
             display: none;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            margin: 15px auto;
+            gap: 8px;
+            margin: 10px auto;
             max-width: 1200px;
         }
         /* Card styles */
         .card {
             background: var(--bg-color);
-            border-radius: 8px;
-            padding: 10px;
+            border-radius: 6px;
+            padding: 8px;
         }
         .card:hover {
             box-shadow: 0 8px 12px rgba(0,0,0,0.15);
         }
         /* Specific heading styles */
-        h1 { color: var(--header-color); font-size: 1em; font-weight: 300; margin-bottom: 0.5em; }
-        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.5em; }
-        li { margin-bottom: 0.3em; font-size: 0.8em; }
-        footer p { font-size: 0.7em; }
+        h1 { color: var(--header-color); font-size: 1.2em; font-weight: 300; margin-bottom: 0.3em; }
+        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.3em; }
+        li { margin-bottom: 0.2em; font-size: 1em; }
+        footer p { font-size: 0.8em; }
         /* Link styles */
           a { color: var(--text-color); text-decoration: none; }
           a:hover { text-decoration: underline; }
+        /* Custom toggle switch */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 10px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--border-color);
+            transition: .4s;
+            border-radius: 10px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            left: 1px;
+            bottom: 1px;
+            background-color: var(--text-color);
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: var(--header-color);
+        }
+        input:checked + .slider:before {
+            transform: translateX(10px);
+        }
 
     </style>
 </head>
 <body>
     <!-- Header section with avatar and title -->
-    <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px; transition: opacity 0.5s ease;" id="main-header">
+    <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px; transition: opacity 0.5s ease;" id="main-header">
         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
         <h1>harper</h1>
-        <button id="toggle-btn" style="margin-left: auto; background: none; border: none; font-size: 1.5em; cursor: pointer; color: var(--text-color);">⋯</button>
+        <label class="toggle-switch" style="margin-left: 5px;">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <button id="toggle-btn" style="margin-left: auto; background: none; border: none; font-size: 1em; cursor: pointer; color: var(--text-color); opacity: 0.7;">⋯</button>
     </header>
 
     <!-- Main content grid with cards -->
@@ -163,8 +218,9 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer style="margin-top: 10px; padding-bottom: 10px; text-align: center;">
+    <footer style="margin-top: 5px; padding-bottom: 5px; text-align: center;">
         <p>Contact: harpertoken@icloud.com | <a href="https://github.com/apps/harperbot">→ GitHub App</a></p>
+
     </footer>
 
     <script>
@@ -172,6 +228,9 @@
             var grid = document.querySelector('.app-grid');
             var currentDisplay = window.getComputedStyle(grid).display;
             grid.style.display = currentDisplay === 'none' ? 'grid' : 'none';
+        });
+        document.getElementById('theme-toggle').addEventListener('change', function() {
+            document.body.classList.toggle('monokai', this.checked);
         });
     </script>
 
