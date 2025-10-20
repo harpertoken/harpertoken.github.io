@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.0.0...v1.1.0) (2025-10-20)
+
+
+### Features
+
+* add gitignore ([db38a19](https://github.com/harpertoken/harpertoken.github.io/commit/db38a196cf923d79adaf22d1ad44f42662415257))
+
 ## 1.0.0 (2025-10-19)
 
 
