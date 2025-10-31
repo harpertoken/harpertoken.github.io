@@ -13,41 +13,22 @@
             --border-color: #ddd;
             --footer-color: #777;
         }
-        /* Dark mode overrides */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #000;
-                --text-color: #fff;
-                --header-color: #fff;
-                --border-color: #333;
-                --footer-color: #ccc;
-            }
-        }
-        /* Monokai theme */
-        body.monokai {
-            --bg-color: #272822;
-            --text-color: #f8f8f2;
-            --header-color: #A6E22E;
-            --border-color: #49483e;
-            --footer-color: #75715e;
-        }
-        body.monokai a {
-            color: #66d9ef;
-        }
+
+
         /* Body and general styles */
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; margin: 5px; color: var(--text-color); background-color: var(--bg-color); transition: background-color 0.3s, color 0.3s; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; margin: 5px; color: var(--text-color); background-color: var(--bg-color); }
 
 
         /* Heading styles */
         h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; }
-        p { margin-bottom: 0.2em; font-size: 1em; }
-        ul { margin-bottom: 1.5em; list-style: none; padding: 0; }
-        footer { margin-top: 2em; border-top: 1px solid var(--border-color); padding-top: 0.5em; color: var(--footer-color); }
+        p { margin-bottom: 0.1em; font-size: 0.9em; }
+        ul { margin-bottom: 1em; list-style: none; padding: 0; }
+        footer { margin-top: 1em; padding-top: 0.5em; color: var(--footer-color); }
         /* Grid layout for cards */
         .app-grid {
-            display: none;
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 8px;
+            gap: 4px;
             margin: 10px auto;
             max-width: 1200px;
         }
@@ -55,59 +36,47 @@
         .card {
             background: var(--bg-color);
             border-radius: 6px;
-            padding: 8px;
+            padding: 4px;
         }
-        .card:hover {
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-        }
+
+
         /* Specific heading styles */
-        h1 { color: var(--header-color); font-size: 1.2em; font-weight: 300; margin-bottom: 0.3em; }
-        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.3em; }
-        li { margin-bottom: 0.2em; font-size: 1em; }
+        h1 { color: var(--header-color); font-size: 1em; font-weight: 300; margin-bottom: 0.3em; }
+        h3 { color: var(--header-color); margin-top: 0; font-size: 0.9em; font-weight: 400; margin-bottom: 0.3em; }
+        li { margin-bottom: 0.1em; font-size: 0.9em; }
         footer p { font-size: 0.8em; }
         /* Link styles */
           a { color: var(--text-color); text-decoration: none; }
           a:hover { text-decoration: underline; }
-        /* Custom toggle switch */
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 20px;
-            height: 10px;
+        /* Code styles */
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 1em; }
+        /* Blockquote styles */
+        blockquote { font-style: italic; font-size: 0.8em; margin: 0.5em 0; color: var(--text-color); }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .app-grid {
+                gap: 2px;
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 2px;
+            }
+            h1 { font-size: 0.9em; }
+            h3 { font-size: 0.8em; }
+            p, li { font-size: 0.8em; }
+            img { width: 60px; height: 60px; }
+            body { margin: 2px; }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--border-color);
-            transition: .4s;
-            border-radius: 10px;
-        }
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 8px;
-            width: 8px;
-            left: 1px;
-            bottom: 1px;
-            background-color: var(--text-color);
-            transition: .4s;
-            border-radius: 50%;
-        }
-        input:checked + .slider {
-            background-color: var(--header-color);
-        }
-        input:checked + .slider:before {
-            transform: translateX(10px);
-        }
+
 
     </style>
 </head>
@@ -116,11 +85,6 @@
     <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px; transition: opacity 0.5s ease;" id="main-header">
         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
         <h1>harper</h1>
-        <label class="toggle-switch" style="margin-left: 5px;">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label>
-        <button id="toggle-btn" style="margin-left: auto; background: none; border: none; font-size: 1em; cursor: pointer; color: var(--text-color); opacity: 0.7;">⋯</button>
     </header>
 
     <!-- Main content grid with cards -->
@@ -129,11 +93,12 @@
         <div class="card">
             <h3>About</h3>
             <p>Develops software and AI tools with a mission to scale AI globally.</p>
+            <br><blockquote>"The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility." — Edsger Dijkstra</blockquote>
         </div>
         <!-- Installation card -->
         <div class="card">
             <h3>Installation</h3>
-             <p>cargo install --git https://github.com/harpertoken/harper.git --tag v0.1.5</p>
+             <p><code>cargo install --git https://github.com/harpertoken/harper.git --tag v0.1.5</code></p>
         </div>
         <!-- Team card -->
         <div class="card">
@@ -141,8 +106,6 @@
             <div>
                 <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&u=c9689feb3e1fea49b01a34f9c0f4168668110c57&v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
                 <a href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%;"></a>
-                <a href="https://github.com/harper-bot-glitch"><img src="https://avatars.githubusercontent.com/u/236089746?v=4" alt="Harper Bot Glitch" style="width: 60px; height: 60px; border-radius: 50%;"></a>
-                <a href="https://github.com/harper-release-bot"><img src="https://avatars.githubusercontent.com/u/237646224?v=4" alt="Harper Release Bot" style="width: 60px; height: 60px; border-radius: 50%;"></a>
             </div>
         </div>
         <!-- Repositories card -->
@@ -157,10 +120,6 @@
                  <li><a href="https://github.com/harpertoken/hello">hello</a></li>
                  <li><a href="https://github.com/harpertoken/hub">hub</a></li>
                  <li><a href="https://github.com/harpertoken/kernel-go">kernel-go</a></li>
-                 <li><a href="https://github.com/harpertoken/kernel-js">kernel-js</a></li>
-                 <li><a href="https://github.com/harpertoken/kernel-swift">kernel-swift</a></li>
-                 <li><a href="https://github.com/harpertoken/llamaware">llamaware</a></li>
-                  <li><a href="https://github.com/orgs/harpertoken/repositories">See more</a></li>
               </ul>
          </div>
          <!-- Packages card -->
@@ -170,8 +129,6 @@
                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
                  <li><a href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
-                 <li><a href="https://github.com/users/bniladridas/packages/rubygems/package/friday_gemini_ai">friday_gemini_ai</a></li>
-                 <li><a href="https://github.com/bniladridas?tab=packages">See more</a></li>
              </ul>
          </div>
          <!-- Community card -->
@@ -183,11 +140,7 @@
                  <li><a href="https://github.com/harpertoken/harper?tab=coc-ov-file#readme">Code of Conduct</a></li>
                  <li><a href="https://github.com/orgs/harpertoken/discussions">Discussions</a></li>
                  <li><a href="https://github.com/harpertoken">GitHub</a></li>
-                 <li><a href="https://gitlab.com/harpertoken">GitLab</a></li>
                  <li><a href="https://github.com/harpertoken/harper/issues">Issues</a></li>
-                 <li><a href="https://github.com/harpertoken/harper/issues/new">New Issue</a></li>
-                 <li><a href="policy.md">Policy</a></li>
-                 <li><a href="https://github.com/harpertoken/harper/pulls?q=is%3Apr+is%3Aclosed">Pull Requests</a></li>
                  <li><a href="https://path-harper.vercel.app/verify">Verification</a></li>
                  <li><a href="https://github.com/harpertoken/harper/wiki">Wiki</a></li>
              </ul>
@@ -211,28 +164,17 @@
                   <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.5">v0.1.5</a></li>
                  <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.4">v0.1.4</a></li>
                 <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.3">v0.1.3</a></li>
-                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.2">v0.1.2</a></li>
-                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.1">v0.1.1</a></li>
-                <li><a href="https://github.com/harpertoken/harper/releases/tag/v0.1.0">v0.1.0</a></li>
             </ul>
         </div>
     </div>
-    <!-- Footer -->
+
+     <!-- Footer -->
     <footer style="margin-top: 5px; padding-bottom: 5px; text-align: center;">
-        <p>Contact: harpertoken@icloud.com | <a href="https://github.com/apps/harperbot">→ GitHub App</a></p>
+        <p>Contact: harpertoken@icloud.com | <a href="https://github.com/apps/harperbot">GitHub App</a></p>
 
     </footer>
 
-    <script>
-        document.getElementById('toggle-btn').addEventListener('click', function() {
-            var grid = document.querySelector('.app-grid');
-            var currentDisplay = window.getComputedStyle(grid).display;
-            grid.style.display = currentDisplay === 'none' ? 'grid' : 'none';
-        });
-        document.getElementById('theme-toggle').addEventListener('change', function() {
-            document.body.classList.toggle('monokai', this.checked);
-        });
-    </script>
+
 
 </body>
 </html>
