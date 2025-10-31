@@ -13,6 +13,16 @@
             --border-color: #ddd;
             --footer-color: #777;
         }
+        /* Dark mode overrides */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000;
+                --text-color: #fff;
+                --header-color: #fff;
+                --border-color: #333;
+                --footer-color: #ccc;
+            }
+        }
 
 
         /* Body and general styles */
