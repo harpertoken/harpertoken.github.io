@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.1.0...v1.2.0) (2025-10-31)
+
+
+### Features
+
+* add back automatic dark mode ([0652e24](https://github.com/harpertoken/harpertoken.github.io/commit/0652e24cf3b037661844a05829e84ccb98bff50d))
+* add contact card with email ([eaae4a7](https://github.com/harpertoken/harpertoken.github.io/commit/eaae4a7a74823d667085cd2cfd235d33de7e353b))
+* add full installation instructions ([2a9883c](https://github.com/harpertoken/harpertoken.github.io/commit/2a9883c205af889f96d461be27e44f0e580526e5))
+* add harperbot link ([b0cc9e3](https://github.com/harpertoken/harpertoken.github.io/commit/b0cc9e3ccab3126da97ac7e47375398e8b9d3e3f))
+* update about description ([b058e9b](https://github.com/harpertoken/harpertoken.github.io/commit/b058e9b00702ddbaea3e50408c4e995ee3a7d1bd))
+
 ## [1.1.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.0.0...v1.1.0) (2025-10-20)
 
 
