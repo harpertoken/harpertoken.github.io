@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.3.0...v1.4.0) (2025-11-08)
+
+
+### Features
+
+* update profile page layout and content ([38a00c9](https://github.com/harpertoken/harpertoken.github.io/commit/38a00c96857575f02fe075142282c044a7bfc8f6))
+
 ## [1.3.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.2.0...v1.3.0) (2025-11-01)
 
 
