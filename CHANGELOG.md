@@ -9,14 +9,12 @@
 
 ## [1.3.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.2.0...v1.3.0) (2025-11-01)
 
-
 ### Features
 
 * add contrast theme ([106aab6](https://github.com/harpertoken/harpertoken.github.io/commit/106aab6d589b8197f6bafa885508bf508b0e7495))
 * add linter and fix HTML ([f7e373f](https://github.com/harpertoken/harpertoken.github.io/commit/f7e373f703715fa2727d81799b77e9d1ed1c34fb))
 
 ## [1.2.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.1.0...v1.2.0) (2025-10-31)
-
 
 ### Features
 
@@ -28,13 +26,11 @@
 
 ## [1.1.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.0.0...v1.1.0) (2025-10-20)
 
-
 ### Features
 
 * add gitignore ([db38a19](https://github.com/harpertoken/harpertoken.github.io/commit/db38a196cf923d79adaf22d1ad44f42662415257))
 
 ## 1.0.0 (2025-10-19)
-
 
 ### Features
 
@@ -46,7 +42,6 @@
 * remove v0.1.6 from releases list ([4f7296e](https://github.com/harpertoken/harpertoken.github.io/commit/4f7296e4d473f6fcdf37808a2ebce48d80d6ad8b))
 * update releases list with v0.1.6 ([a60c48e](https://github.com/harpertoken/harpertoken.github.io/commit/a60c48ed3767f72d51f0b45e64bb8c1a1c47da8b))
 * update team, footer, and repositories ([3eaa1f4](https://github.com/harpertoken/harpertoken.github.io/commit/3eaa1f429253f23793273c262712728b809c6d9d))
-
 
 ### Bug Fixes
 
