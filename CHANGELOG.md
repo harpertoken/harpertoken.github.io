@@ -5,7 +5,7 @@
 
 ### Features
 
-* update ([39973f9](https://github.com/harpertoken/harpertoken.github.io/commit/39973f915b84f7e34be0074357e938bb914c7ac9))
+* [Please describe the update here] ([39973f9](https://github.com/harpertoken/harpertoken.github.io/commit/39973f915b84f7e34be0074357e938bb914c7ac9))
 
 ## [1.4.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.3.0...v1.4.0) (2025-11-08)
 
