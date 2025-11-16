@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="note" content="com.apple.provenance is an extended attribute on macOS that tracks the file's origin.">
     <title>harper's profile</title>
     <style>
         /* CSS Variables for theming */
@@ -44,12 +45,12 @@
         h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; }
         p { margin-bottom: 0.1em; font-size: 0.9em; }
         ul { margin-bottom: 1em; list-style: none; padding: 0; }
-        footer { margin-top: 1em; padding-top: 0.5em; color: var(--footer-color); }
+        footer { margin-top: 5em; padding-top: 0.5em; color: var(--footer-color); }
         /* Grid layout for cards */
         .app-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 0;
+            gap: 40px;
             margin: 10px auto;
             max-width: 1200px;
         }
@@ -115,38 +116,37 @@
         <!-- About card -->
         <div class="card">
             <h3>About</h3>
-            <p>macOS/Apple policy - open source model for container software, kernel, and pipelines.</p>
+             <p>Open source tools for container software, kernel development, and CI/CD pipelines on macOS/Apple platforms.</p>
         </div>
         <!-- Team card -->
         <div class="card">
             <h3>Team</h3>
-            <div>
-                <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
-                <a href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%;"></a>
-            </div>
+             <div>
+                 <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
+                 <a href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
+                 <a href="https://github.com/harper-bot-glitch"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&v=4" alt="Harper Bot Glitch" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
+                 <a href="https://github.com/harper-release-bot"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&v=4" alt="Harper Release Bot" style="width: 60px; height: 60px; border-radius: 50%;"></a>
+             </div>
         </div>
 
          <!-- Packages card -->
          <div class="card">
              <h3>Packages</h3>
-             <ul>
-                 <li><a href="https://hub.docker.com/r/harpertoken/harper">harper</a></li>
-                 <li><a href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
-                 <li><a href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
-                 <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
-             </ul>
+              <ul>
+                  <li><a href="https://github.com/harpertoken/harper/pkgs/container/harper%2Fharper">harper</a></li>
+                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
+                  <li><a href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
+                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
+              </ul>
          </div>
          <!-- Community card -->
         <div class="card">
             <h3>Links</h3>
-             <ul>
-                 <li><a href="https://github.com/harpertoken/harper/actions">CI/CD</a></li>
-                 <li><a href="https://github.com/harpertoken/harper?tab=coc-ov-file#readme">Code of Conduct</a></li>
-                 <li><a href="https://github.com/orgs/harpertoken/discussions">Discussions</a></li>
-                 <li><a href="https://github.com/harpertoken">GitHub</a></li>
-                 <li><a href="https://github.com/harpertoken/harper/issues">Issues</a></li>
-                 <li><a href="https://github.com/apps/harperbot">harperbot[bot]</a></li>
-             </ul>
+              <ul>
+                  <li><a href="https://github.com/harpertoken">GitHub</a></li>
+                  <li><a href="https://github.com/apps/harperbot">HarperBot</a></li>
+                  <li><a href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines/2161463640">SDK Pipeline Status</a></li>
+              </ul>
         </div>
         <!-- Contact card -->
         <div class="card">
@@ -156,14 +156,12 @@
          <!-- Social card -->
          <div class="card">
                <h3>Social</h3>
-                 <ul>
-                     <li><a href="https://bsky.app/profile/harpertoken.bsky.social">Bluesky</a></li>
-                     <li><a href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
-                     <li><a href="https://huggingface.co/harpertoken">Hugging Face</a></li>
-                     <li><a href="https://www.npmjs.com/~harpertoken">npm</a></li>
-                     <li><a href="https://github.com/orgs/harpertoken/actions/metrics/usage">Usage Metrics</a></li>
-                     <li><a href="https://x.com/harper56889360">X</a></li>
-                 </ul>
+                  <ul>
+                      <li><a href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
+                      <li><a href="https://gitlab.com/harpertoken">GitLab</a></li>
+                      <li><a href="https://huggingface.co/harpertoken">Hugging Face</a></li>
+                      <li><a href="https://www.npmjs.com/~harpertoken">npm</a></li>
+                  </ul>
          </div>
         <!-- Releases card -->
         <div class="card">
