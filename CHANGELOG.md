@@ -2,7 +2,6 @@
 
 ## [1.5.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.5.0...v1.5.1) (2025-11-17)
 
-
 ### Bug Fixes
 
 * update pipeline link ([e1ae4fe](https://github.com/harpertoken/harpertoken.github.io/commit/e1ae4fe9fbf48468e44682339d6f2fdeb1ee1f81))
