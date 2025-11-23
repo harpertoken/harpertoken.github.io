@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.6.0...v1.7.0) (2025-11-23)
+
+
+### Features
+
+* improve readme ([94acb06](https://github.com/harpertoken/harpertoken.github.io/commit/94acb06e267f3f1a980b4190cf19dc49d203f978))
+
 ## [1.6.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.5.1...v1.6.0) (2025-11-23)
 
 ### Features
