@@ -37,34 +37,34 @@
         }
 
 
-        /* Body and general styles */
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; margin: 5px; color: var(--text-color); background-color: var(--bg-color); }
+        /* Body and general styles with refined typography */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6; margin: 5px; color: var(--text-color); background-color: var(--bg-color); }
 
 
-        /* Heading styles */
+        /* Refined heading styles */
         h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; }
-        p { margin-bottom: 0.1em; font-size: 0.9em; }
+        p { margin-bottom: 0.1em; font-size: 1em; }
         ul { margin-bottom: 1em; list-style: none; padding: 0; }
         footer { margin-top: 5em; padding-top: 0.5em; color: var(--footer-color); }
-        /* Grid layout for cards */
+        /* Refined grid layout for cards */
         .app-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 30px;
             margin: 10px auto;
             max-width: 1200px;
         }
-        /* Card styles */
+        /* Refined card styles */
         .card {
             background: var(--bg-color);
-            padding: 4px;
+            padding: 10px;
         }
 
 
-        /* Specific heading styles */
-        h1 { color: var(--header-color); font-size: 1em; font-weight: 300; margin-bottom: 0.3em; }
-        h3 { color: var(--header-color); margin-top: 0; font-size: 0.8em; font-weight: 400; margin-bottom: 0.3em; }
-        li { margin-bottom: 0; font-size: 0.9em; }
+        /* Refined specific heading styles */
+        h1 { color: var(--header-color); font-size: 1.5em; font-weight: 300; margin-bottom: 0.3em; }
+        h3 { color: var(--header-color); margin-top: 0; font-size: 1em; font-weight: 400; margin-bottom: 0.3em; }
+        li { margin-bottom: 0; font-size: 1em; }
         footer p { font-size: 0.8em; }
         /* Link styles */
           a { color: var(--text-color); text-decoration: none; }
@@ -109,7 +109,7 @@
         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
         <h1>harper</h1>
     </header>
-    <button id="contrast-btn" style="position: absolute; top: 10px; right: 10px; padding: 2px 5px; background: transparent; color: var(--text-color); border: none; cursor: pointer; font-size: 0.8em;">Contrast</button>
+    <button id="contrast-btn" style="position: absolute; top: 10px; right: 10px; padding: 0; background: transparent; color: var(--text-color); border: none; cursor: pointer; font-size: 1em; text-decoration: underline;">Contrast</button>
 
     <!-- Main content grid with cards -->
     <div class="app-grid">
@@ -129,25 +129,30 @@
              </div>
         </div>
 
-         <!-- Packages card -->
-         <div class="card">
-             <h3>Packages</h3>
-              <ul>
-                  <li><a href="https://github.com/harpertoken/harper/pkgs/container/harper%2Fharper">harper</a></li>
-                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
-                  <li><a href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
-                  <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
-              </ul>
-         </div>
-         <!-- Community card -->
+          <!-- Packages card -->
+          <div class="card">
+              <h3>Packages</h3>
+               <ul>
+                   <li><a href="https://github.com/harpertoken/harper/pkgs/container/harper%2Fharper">harper</a></li>
+                   <li><a href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
+                   <li><a href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
+                   <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
+               </ul>
+          </div>
+        <!-- Kernel card -->
         <div class="card">
-            <h3>Links</h3>
-              <ul>
-                  <li><a href="https://github.com/harpertoken">GitHub</a></li>
-                  <li><a href="https://github.com/apps/harperbot">HarperBot</a></li>
-                  <li><a href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines">General Pipeline</a></li>
-              </ul>
+            <h3>Kernel</h3>
+            <p><a href="https://github.com/harpertoken/kernel.metal">harpertoken/kernel.metal</a></p>
         </div>
+          <!-- Community card -->
+         <div class="card">
+             <h3>Links</h3>
+               <ul>
+                   <li><a href="https://github.com/harpertoken">GitHub</a></li>
+                   <li><a href="https://github.com/apps/harperbot">HarperBot</a></li>
+                   <li><a href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines">General Pipeline</a></li>
+               </ul>
+         </div>
         <!-- Contact card -->
         <div class="card">
             <h3>Contact</h3>
@@ -173,9 +178,10 @@
         <!-- Installation card -->
         <div class="card">
             <h3>Installation</h3>
-             <p>Requires Docker:</p>
-             <pre><code>docker pull harpertoken/harper:latest</code></pre>
+              <p>Requires Docker:</p>
+              <pre><code>docker pull harpertoken/harper:latest</code></pre>
         </div>
+      </div>
      </div>
 
     <script>
@@ -183,6 +189,10 @@
             document.body.classList.toggle('dark-grey-theme');
         });
     </script>
+
+    <footer style="text-align: center; margin-top: 2em; font-size: 0.8em; color: var(--footer-color);">
+        <p><a href="https://github.com/harpertoken/harpertoken.github.io">View source</a></p>
+    </footer>
 
 </body>
 </html>
