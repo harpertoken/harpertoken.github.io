@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.5.1...v1.6.0) (2025-11-23)
+
+
+### Features
+
+* refine typography and add footer ([7ceb2e7](https://github.com/harpertoken/harpertoken.github.io/commit/7ceb2e7cf32d03a18274296320631d4e1accfa8c))
+
 ## [1.5.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.5.0...v1.5.1) (2025-11-17)
 
 ### Bug Fixes
