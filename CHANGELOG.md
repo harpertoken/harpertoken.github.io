@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.7.0...v1.8.0) (2025-11-23)
+
+
+### Features
+
+* allow backticks in hooks ([9c3ccbe](https://github.com/harpertoken/harpertoken.github.io/commit/9c3ccbe1875cc9e0e2d4d46549ea0825b0294e85))
+
 ## [1.7.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.6.0...v1.7.0) (2025-11-23)
 
 ### Features
