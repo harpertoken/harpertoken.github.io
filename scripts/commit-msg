@@ -19,9 +19,9 @@ if [[ ${#first_line} -gt 60 ]]; then
     exit 1
 fi
 
-# Check if it starts with a conventional type
-if ! echo "$first_line" | grep -qE '^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert):'; then
-    echo "Error: Commit message must start with a conventional type (feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert)."
+# Check if it starts with a conventional type (with optional backticks)
+if ! echo "$first_line" | grep -qE '^`?(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert):'; then
+    echo "Error: Commit message must start with a conventional type (feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert): description (lowercase, ≤60 chars)"
     exit 1
 fi
 
