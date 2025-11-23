@@ -1,4 +1,20 @@
-# Project
+# harpertoken.github.io
+
+This is the GitHub Pages site for [harpertoken](https://github.com/harpertoken), featuring a profile page for Harper with information on open source tools, kernel development, and CI/CD pipelines.
+
+## View the Site
+
+Visit the live site at: https://harpertoken.github.io
+
+## Local Development
+
+To run locally:
+1. Clone the repository.
+2. Open `index.html` in your web browser.
+
+No build process is required as it's a static HTML site.
+
+## Contributing
 
 This project uses conventional commit standards.
 
