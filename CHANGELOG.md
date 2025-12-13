@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.8.0...v1.9.0) (2025-12-13)
+
+
+### Features
+
+* update releases list with 0.2.0 ([3641480](https://github.com/harpertoken/harpertoken.github.io/commit/36414802138be545814f9ca832de14c0447c7984))
+
 ## [1.8.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.7.0...v1.8.0) (2025-11-23)
 
 ### Features
