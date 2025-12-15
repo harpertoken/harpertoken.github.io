@@ -2,13 +2,11 @@
 
 ## [1.10.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.9.0...v1.10.0) (2025-12-15)
 
-
 ### Features
 
 * update release to 0.3.0 ([e54d4e6](https://github.com/harpertoken/harpertoken.github.io/commit/e54d4e61f9feca2b483c911e17b829b06d1bfffc))
 
 ## [1.9.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.8.0...v1.9.0) (2025-12-13)
-
 ### Features
 
 * update releases list with 0.2.0 ([3641480](https://github.com/harpertoken/harpertoken.github.io/commit/36414802138be545814f9ca832de14c0447c7984))
