@@ -239,16 +239,8 @@
             document.getElementById('modal').style.display = 'block';
         }
 
-        const modal = document.getElementById('modal');
-        document.querySelector('#modal .close').addEventListener('click', closeModal);
-
-        function showModal(text) {
-            document.getElementById('modal-text').innerText = text;
-            modal.style.display = 'block';
-        }
-
         function closeModal() {
-            modal.style.display = 'none';
+            document.getElementById('modal').style.display = 'none';
         }
 
         window.addEventListener('click', function(event) {
@@ -265,7 +257,7 @@
     <!-- Modal for team details -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeModal()">&times;</span>
             <p id="modal-text"></p>
         </div>
     </div>
