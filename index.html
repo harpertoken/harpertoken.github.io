@@ -131,7 +131,7 @@
         .close:hover {
             color: #aaa;
         }
-        .team-member {
+        .team-member, .kernel-link {
             cursor: pointer;
         }
 
@@ -177,8 +177,8 @@
         <div class="card">
             <h3>Kernel</h3>
             <ul>
-                <li><a href="https://github.com/harpertoken/kernel.metal">harpertoken/kernel.metal</a></li>
-                <li><a href="https://github.com/bniladridas/hybrid-compute">hybrid-compute</a></li>
+                <li><a class="kernel-link" data-modal-text="kernel.metal: GPU compute project for vector addition on Apple Silicon using Metal." href="https://github.com/harpertoken/kernel.metal">harpertoken/kernel.metal</a></li>
+                <li><a class="kernel-link" data-modal-text="hybrid-compute: C++/CUDA image processing library with Python bindings for cross-platform GPU acceleration." href="https://github.com/bniladridas/hybrid-compute">hybrid-compute</a></li>
             </ul>
         </div>
           <!-- Community card -->
@@ -236,6 +236,14 @@
 
         document.querySelectorAll('.team-member').forEach(member => {
             member.addEventListener('click', function(event) {
+                event.preventDefault();
+                const text = this.dataset.modalText;
+                showModal(text);
+            });
+        });
+
+        document.querySelectorAll('.kernel-link').forEach(link => {
+            link.addEventListener('click', function(event) {
                 event.preventDefault();
                 const text = this.dataset.modalText;
                 showModal(text);
