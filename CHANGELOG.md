@@ -6,7 +6,6 @@
 
 * improve ui and legal ([270f526](https://github.com/harpertoken/harpertoken.github.io/commit/270f5261fd34a472e8cd0528d306a5cab76bd48f))
 
-## [1.11.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.10.0...v1.11.0) (2025-12-17)
 ### Features
 
 * update release to 0.3.2 ([ed1676c](https://github.com/harpertoken/harpertoken.github.io/commit/ed1676c1f71782521b942d1d3680ffa194b1568a))
