@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.11.0...v1.12.0) (2025-12-30)
+
+
+### Features
+
+* improve ui and legal ([270f526](https://github.com/harpertoken/harpertoken.github.io/commit/270f5261fd34a472e8cd0528d306a5cab76bd48f))
+
 ## [1.11.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.10.0...v1.11.0) (2025-12-17)
 
 ### Features
