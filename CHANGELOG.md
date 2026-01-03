@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.12.0...v1.12.1) (2026-01-03)
+
+
+### Bug Fixes
+
+* consolidate modal js ([ccc0885](https://github.com/harpertoken/harpertoken.github.io/commit/ccc0885cd33e3fc08ad28d64ef5166509a67f5d0))
+* consolidate modal styles for pages ([4990c86](https://github.com/harpertoken/harpertoken.github.io/commit/4990c86e67516914649fc4c73834f3b4f4b47e9c))
+
 ## [1.12.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.11.0...v1.12.0) (2025-12-30)
 ### Features
 
