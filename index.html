@@ -4,69 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>harper's profile</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <style>
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.4);
-        }
-        .modal-content {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            width: 80%;
-            max-width: 500px;
-            border-radius: 8px;
-        }
-        .close {
-            color: var(--text-color);
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover {
-            color: #aaa;
-        }
-        .team-member, .kernel-link {
-            cursor: pointer;
-        }
-        #legal-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 0;
-            background: transparent;
-            color: var(--text-color);
-            border: none;
-            cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 300;
-            text-decoration: none;
-        }
-        #modal-contrast-btn {
-            padding: 0;
-            background: transparent;
-            color: var(--text-color);
-            border: none;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-    </style>
+     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/modal.css">
 </head>
 <body>
     <!-- Header section with avatar and title -->
-     <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px; transition: opacity 0.5s ease; position: relative;" id="main-header">
-         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 15px;">
+     <header id="main-header">
+         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar">
          <h1>harper</h1>
           <button id="legal-btn">Legal</button>
      </header>
@@ -74,20 +18,18 @@
 
     <!-- Main content grid with cards -->
     <div class="app-grid">
-        <!-- About card -->
         <div class="card">
             <h3>About</h3>
-             <p>Open source tools for container software, kernel development, and CI/CD pipelines on macOS/Apple platforms.</p>
+            <p>An assemblage of open-source utilities meticulously crafted for macOS and Apple platform ecosystems.</p>
         </div>
-        <!-- Team card -->
         <div class="card">
             <h3>Team</h3>
-             <div>
-                 <a class="team-member" data-modal-text="Harper Code: Leads development of the Harper toolkit, focusing on containerization and CI/CD integrations for macOS platforms." href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Harper Code" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
-                 <a class="team-member" data-modal-text="Harper Maintenance: Automates repository maintenance tasks, ensuring code quality and dependency updates." href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Harper Maintenance" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
-                 <a class="team-member" data-modal-text="Harper Bot Glitch: Handles bug reporting and glitch detection in the development pipeline." href="https://github.com/harper-bot-glitch"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&amp;v=4" alt="Harper Bot Glitch" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 10px;"></a>
-                 <a class="team-member" data-modal-text="Harper Release Bot: Manages automated releases and version control for Harper projects." href="https://github.com/harper-release-bot"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&amp;v=4" alt="Harper Release Bot" style="width: 60px; height: 60px; border-radius: 50%;"></a>
-             </div>
+            <div>
+                <a class="team-member" data-modal-text="Orchestrates the development endeavors of the Harper toolkit." href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Lead Developer"></a>
+                <a class="team-member" data-modal-text="Facilitates automated maintenance protocols." href="https://github.com/harper-maintainer"><img src="https://avatars.githubusercontent.com/u/194906971?v=4" alt="Maintenance Bot"></a>
+                <a class="team-member" data-modal-text="Administers the processing of bug reports." href="https://github.com/harper-bot-glitch"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&amp;v=4" alt="Bug Reporter"></a>
+                <a class="team-member" data-modal-text="Oversees the dissemination of software releases." href="https://github.com/harper-release-bot"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&amp;v=4" alt="Release Manager"></a>
+            </div>
         </div>
 
           <!-- Packages card -->
@@ -100,53 +42,47 @@
                     <li><a href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
                </ul>
           </div>
-        <!-- Kernel card -->
         <div class="card">
-            <h3>Kernel</h3>
+            <h3>Compute</h3>
             <ul>
-                <li><a class="kernel-link" data-modal-text="kernel.metal: GPU compute project for vector addition on Apple Silicon using Metal." href="https://github.com/harpertoken/kernel.metal">harpertoken/kernel.metal</a></li>
+                <li><a class="kernel-link" data-modal-text="Facilitates GPU computation on Apple Silicon architectures." href="https://github.com/harpertoken/kernel.metal">kernel.metal</a></li>
                 <li><a href="https://github.com/bniladridas/hybrid-compute">hybrid-compute</a></li>
             </ul>
         </div>
-          <!-- Community card -->
          <div class="card">
-             <h3>Links</h3>
-               <ul>
-                   <li><a href="https://github.com/harpertoken">GitHub</a></li>
-                   <li><a href="https://github.com/apps/harperbot">HarperBot</a></li>
-                   <li><a href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines">General Pipeline</a></li>
-               </ul>
+             <h3>Repositories</h3>
+             <ul>
+                 <li><a href="https://github.com/harpertoken">GitHub</a></li>
+                 <li><a href="https://github.com/apps/harperbot">HarperBot</a></li>
+                 <li><a href="https://gitlab.com/harpertoken">GitLab</a></li>
+             </ul>
          </div>
         <!-- Contact card -->
         <div class="card">
             <h3>Contact</h3>
             <p><a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a></p>
         </div>
-         <!-- Social card -->
          <div class="card">
-               <h3>Social</h3>
-                  <ul>
-                      <li><a href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
-                      <li><a href="https://gitlab.com/harpertoken">GitLab</a></li>
-                      <li><a href="https://huggingface.co/harpertoken">Hugging Face</a></li>
-                      <li><a href="https://www.npmjs.com/~harpertoken">npm</a></li>
-                  </ul>
+             <h3>Packages</h3>
+             <ul>
+                 <li><a href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
+                 <li><a href="https://huggingface.co/harpertoken">Hugging Face</a></li>
+                 <li><a href="https://www.npmjs.com/~harpertoken">npm</a></li>
+                 <li><a href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines">CI Pipeline</a></li>
+             </ul>
          </div>
-         <!-- Releases card -->
          <div class="card">
-               <h3>Releases</h3>
-                <ul>
-                      <li><a href="https://github.com/harpertoken/harper/releases/tag/0.3.3">0.3.3</a></li>
-              </ul>
+             <h3>Latest Release</h3>
+             <ul>
+                 <li><a href="https://github.com/harpertoken/harper/releases/tag/0.3.3">v0.3.3</a></li>
+             </ul>
          </div>
-         <!-- Installation card -->
          <div class="card">
              <h3>Installation</h3>
-               <p>Requires Docker:</p>
-               <pre><code>docker pull harpertoken/harper:latest</code></pre>
+             <p>Prerequisite: Docker environment.</p>
+             <pre><code>docker pull harpertoken/harper:latest</code></pre>
          </div>
-       </div>
-       </div>
+        </div>
 
      <!-- Hidden legal content -->
      <div id="legal-content" style="display: none;">
@@ -164,63 +100,9 @@
     </div>
 
     <script src="assets/script.js"></script>
-    <script>
-        document.querySelectorAll('.team-member').forEach(member => {
-            member.addEventListener('click', function(event) {
-                event.preventDefault();
-                const text = this.dataset.modalText;
-                showModal(text);
-            });
-        });
+    <script src="assets/modal.js"></script>
 
-        document.querySelectorAll('.kernel-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const text = this.dataset.modalText;
-                showModal(text);
-            });
-        });
-
-        document.getElementById('legal-btn').addEventListener('click', function() {
-            document.getElementById('modal-text').innerHTML = document.getElementById('legal-content').innerHTML;
-            modal.style.display = 'block';
-        });
-
-        const modal = document.getElementById('modal');
-        document.querySelector('#modal .close').addEventListener('click', closeModal);
-        // Event delegation for modal contrast button
-        modal.addEventListener('click', function(e) {
-            if (e.target.id === 'modal-contrast-btn') {
-                toggleTheme();
-            }
-        });
-        // Keyboard shortcuts for modal and theme
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                e.preventDefault();
-                closeModal();
-            } else if (e.key === 'c' || e.key === 'C') {
-                toggleTheme();
-            }
-        });
-
-        function showModal(text) {
-            document.getElementById('modal-text').textContent = text;
-            modal.style.display = 'block';
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        window.addEventListener('click', function(event) {
-            if (event.target == modal) {
-                closeModal();
-            }
-        });
-    </script>
-
-     <footer style="text-align: center; margin-top: 2em; font-size: 0.8em; color: var(--footer-color);">
+     <footer>
           <p><a href="https://github.com/harpertoken/harpertoken.github.io">View source</a></p>
       </footer>
 
