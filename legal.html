@@ -5,40 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal - harper</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/modal.css">
 </head>
 <body>
-    <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px;">
+    <header>
         <h1>Legal</h1>
     </header>
 
     <div class="app-grid">
         <div class="card">
-            <h3>Privacy Policy</h3>
-            <p>We do not collect, store, or use any personal information from visitors. The site is anonymous, with no cookies, tracking, or data collection. Links to external sites are provided for convenience; review their own privacy policies.</p>
+            <h3 id="privacy">Privacy Policy</h3>
+            <p>This website does not engage in the collection, storage, or utilization of personal information pertaining to visitors. The site maintains anonymity, devoid of cookies, tracking mechanisms, or any form of data aggregation.</p>
         </div>
 
         <div class="card">
-            <h3>Terms of Service</h3>
-            <p>By using this site, you agree to these terms. Content is for informational purposes only, provided 'as is' with no warranties. Use at your own risk; we are not liable for damages. Links to external sites are not endorsed.</p>
+            <h3 id="terms">Terms of Service</h3>
+            <p>By accessing and utilizing this website, you hereby consent to abide by these stipulated terms. The content herein is furnished solely for informational purposes, provided in its present state without any express or implied warranties. Utilization of this site is undertaken at the user's own peril; the proprietors shall not be held liable for any resultant damages or losses.</p>
         </div>
 
         <div class="card">
-            <h3>Contact</h3>
-            <p>For questions, contact <a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a>.</p>
+            <h3>Contact Information</h3>
+            <p>Should you have any inquiries or require further elucidation, kindly direct correspondence to <a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a>.</p>
         </div>
     </div>
 
     <script src="assets/script.js"></script>
-    <script>
-        // Keyboard shortcut to toggle theme
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'c' || e.key === 'C') {
-                toggleTheme();
-            }
-        });
-    </script>
+    <script src="assets/modal.js"></script>
 
-    <footer style="text-align: center; margin-top: 5em; font-size: 0.8em; color: var(--footer-color);">
+    <footer>
         <p><a href="index.html">Home</a></p>
     </footer>
 </body>
