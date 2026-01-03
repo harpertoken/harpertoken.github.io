@@ -1,109 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal - harper</title>
-    <style>
-        :root {
-            --bg-color: #fff;
-            --text-color: #333;
-            --header-color: #2c3e50;
-            --border-color: #ddd;
-            --footer-color: #777;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #000;
-                --text-color: #fff;
-                --header-color: #fff;
-                --border-color: #333;
-                --footer-color: #ccc;
-            }
-        }
-        /* Dark grey theme */
-        .dark-grey-theme {
-            --bg-color: #333;
-            --text-color: #ccc;
-            --header-color: #ccc;
-            --border-color: #555;
-            --footer-color: #aaa;
-        }
-        .dark-grey-theme code {
-            background: #555;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 5px;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-        h1 {
-            color: var(--header-color);
-            font-size: 1.5em;
-            font-weight: 300;
-            margin-bottom: 0.3em;
-        }
-        h3 {
-            color: var(--header-color);
-            margin-top: 0;
-            font-size: 1em;
-            font-weight: 400;
-            margin-bottom: 0.3em;
-        }
-        p {
-            margin-bottom: 0.1em;
-            font-size: 1em;
-        }
-        footer p {
-            font-size: 1em;
-        }
-        footer {
-            margin-top: 5em;
-            padding-top: 0.5em;
-            color: var(--footer-color);
-            text-align: center;
-            font-size: 0.8em;
-        }
-        .app-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 10px auto;
-            max-width: 1200px;
-        }
-        .card {
-            background: var(--bg-color);
-            padding: 10px;
-        }
-        a {
-            color: var(--text-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .app-grid {
-                gap: 2px;
-                grid-template-columns: 1fr;
-            }
-            .card {
-                padding: 2px;
-            }
-            h1 {
-                font-size: 0.9em;
-            }
-            h3 {
-                font-size: 0.8em;
-            }
-            p, li {
-                font-size: 0.8em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <header style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px;">
@@ -127,31 +28,17 @@
         </div>
     </div>
 
+    <script src="assets/script.js"></script>
     <script>
-        // Load saved theme on page load
-        if (localStorage.getItem('theme') === 'dark-grey') {
-            document.body.classList.add('dark-grey-theme');
-        }
-
         // Keyboard shortcut to toggle theme
         document.addEventListener('keydown', function(e) {
             if (e.key === 'c' || e.key === 'C') {
                 toggleTheme();
             }
         });
-
-        function toggleTheme() {
-            document.body.classList.toggle('dark-grey-theme');
-            // Sync theme across pages
-            if (document.body.classList.contains('dark-grey-theme')) {
-                localStorage.setItem('theme', 'dark-grey');
-            } else {
-                localStorage.removeItem('theme');
-            }
-        }
     </script>
 
-    <footer>
+    <footer style="text-align: center; margin-top: 5em; font-size: 0.8em; color: var(--footer-color);">
         <p><a href="index.html">Home</a></p>
     </footer>
 </body>
