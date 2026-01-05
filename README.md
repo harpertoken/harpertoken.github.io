@@ -18,6 +18,13 @@ No build process is required as it's a static HTML site.
 
 This project uses conventional commit standards.
 
+## GitHub Discussions
+
+For GitHub Discussions, the category should match the purpose of the discussion. Based on what we’re doing — talking about doc tone, style, and guidance — these make sense:
+- Ideas ✅ (best fit: exploratory, design-focused)
+- Documentation (if the repo has this category; signals doc-specific topic)
+- General (catch-all if no better category exists)
+
 ## Setup
 
 To enable the commit-msg hook, copy it to your .git/hooks/ directory:

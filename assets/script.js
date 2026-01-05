@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         member.addEventListener('click', function(event) {
             event.preventDefault();
             const text = this.dataset.modalText;
-            modalText.textContent = text;
+            const href = this.href;
+            modalText.innerHTML = text + '<br><br><button onclick="window.open(\'' + href + '\')">Visit</button>';
             modal.style.display = 'block';
         });
     });
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             const text = this.dataset.modalText;
-            modalText.textContent = text;
+            const href = this.href;
+            modalText.innerHTML = text + '<br><br><button onclick="window.open(\'' + href + '\')">Visit</button>';
             modal.style.display = 'block';
         });
     });
