@@ -2,13 +2,11 @@
 
 ## [1.13.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.12.1...v1.13.0) (2026-01-05)
 
-
 ### Features
 
 * add modals and discussions guide ([eb264de](https://github.com/harpertoken/harpertoken.github.io/commit/eb264de45047e82309f1bc6effcf49ac0d2a5f0c))
 
 ## [1.12.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.12.0...v1.12.1) (2026-01-03)
-
 ### Bug Fixes
 
 * consolidate modal js ([ccc0885](https://github.com/harpertoken/harpertoken.github.io/commit/ccc0885cd33e3fc08ad28d64ef5166509a67f5d0))
