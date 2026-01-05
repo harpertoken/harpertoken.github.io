@@ -2,13 +2,11 @@
 
 ## [1.14.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.13.0...v1.14.0) (2026-01-05)
 
-
 ### Features
 
 * add testapp-sdk to repositories ([351b295](https://github.com/harpertoken/harpertoken.github.io/commit/351b295a301d36d735583a24ee1fddd169d25107))
 
 ## [1.13.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.12.1...v1.13.0) (2026-01-05)
-
 ### Features
 
 * add modals and discussions guide ([eb264de](https://github.com/harpertoken/harpertoken.github.io/commit/eb264de45047e82309f1bc6effcf49ac0d2a5f0c))
