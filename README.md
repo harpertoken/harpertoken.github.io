@@ -20,10 +20,10 @@ This project uses conventional commit standards.
 
 ## GitHub Discussions
 
-For GitHub Discussions, the category should match the purpose of the discussion. Based on what we’re doing — talking about doc tone, style, and guidance — these make sense:
-- Ideas ✅ (best fit: exploratory, design-focused)
-- Documentation (if the repo has this category; signals doc-specific topic)
-- General (catch-all if no better category exists)
+When creating a GitHub Discussion, choose a category that best matches the topic. For discussions about documentation tone, style, and guidance, we recommend one of the following categories:
+- **Ideas**: For exploratory or design-focused topics. This is often the best fit.
+- **Documentation**: For topics specific to this repository's documentation (use if this category exists).
+- **General**: As a catch-all if no other category is a good fit.
 
 ## Setup
 
