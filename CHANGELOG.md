@@ -2,13 +2,11 @@
 
 ## [1.15.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.14.0...v1.15.0) (2026-01-09)
 
-
 ### Features
 
 * add legal defence and liability sections ([#23](https://github.com/harpertoken/harpertoken.github.io/issues/23)) ([7156080](https://github.com/harpertoken/harpertoken.github.io/commit/715608069f817afc826c07820d3c373394844634))
 
 ## [1.14.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.13.0...v1.14.0) (2026-01-05)
-
 ### Features
 
 * add testapp-sdk to repositories ([351b295](https://github.com/harpertoken/harpertoken.github.io/commit/351b295a301d36d735583a24ee1fddd169d25107))
