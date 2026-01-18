@@ -1,7 +1,13 @@
 # Changelog
 
-## [1.14.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.13.0...v1.14.0) (2026-01-05)
+## [1.15.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.14.0...v1.15.0) (2026-01-18)
 
+### Features
+
+* add legal defence and liability sections ([#23](https://github.com/harpertoken/harpertoken.github.io/issues/23)) ([7156080](https://github.com/harpertoken/harpertoken.github.io/commit/715608069f817afc826c07820d3c373394844634))
+* bump version and add bot ([a809bad](https://github.com/harpertoken/harpertoken.github.io/commit/a809bad5a1f7dbfa252dd6977fa354d3b1dab5d1))
+
+## [1.14.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.13.0...v1.14.0) (2026-01-05)
 ### Features
 
 * add testapp-sdk to repositories ([351b295](https://github.com/harpertoken/harpertoken.github.io/commit/351b295a301d36d735583a24ee1fddd169d25107))
