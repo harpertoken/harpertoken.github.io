@@ -74,6 +74,7 @@ header img {
     height: 80px;
     border-radius: 50%;
     margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 #legal-btn {
     position: absolute;
@@ -138,13 +139,6 @@ a:hover { text-decoration: underline; }
 .team-member img:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-header img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 15px;
-    transition: transform 0.3s ease;
 }
 header img:hover {
     transform: rotate(5deg) scale(1.05);
