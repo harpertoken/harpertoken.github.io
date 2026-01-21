@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.15.0...v1.16.0) (2026-01-21)
+
+
+### Features
+
+* add subtle hover animations to avatar images ([#25](https://github.com/harpertoken/harpertoken.github.io/issues/25)) ([5918ba6](https://github.com/harpertoken/harpertoken.github.io/commit/5918ba6abeecf05edf812c8272f422f221897c50))
+
 ## [1.15.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.14.0...v1.15.0) (2026-01-18)
 
 ### Features
