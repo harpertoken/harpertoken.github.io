@@ -74,6 +74,7 @@ header img {
     height: 80px;
     border-radius: 50%;
     margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 #legal-btn {
     position: absolute;
@@ -133,6 +134,14 @@ a:hover { text-decoration: underline; }
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-member img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+header img:hover {
+    transform: rotate(5deg) scale(1.05);
 }
 #modal-contrast-btn {
     padding: 0;
