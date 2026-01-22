@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.16.0...v1.17.0) (2026-01-22)
+
+
+### Features
+
+* improve profile layout and add interactive features ([#27](https://github.com/harpertoken/harpertoken.github.io/issues/27)) ([2836759](https://github.com/harpertoken/harpertoken.github.io/commit/2836759c118a05557adf462a4c7b96b1d01fe572))
+
 ## [1.16.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.15.0...v1.16.0) (2026-01-21)
 
 ### Features
