@@ -6,6 +6,7 @@ if (localStorage.getItem('theme') === 'dark-grey') {
 // Load saved grid setting
 if (localStorage.getItem('grid-mode') === '4-col') {
     document.documentElement.style.setProperty('--grid-min-width', '280px');
+    document.documentElement.style.setProperty('--view-source-margin', '80px');
 }
 
 function toggleTheme() {
@@ -22,9 +23,11 @@ function toggleGrid() {
     const currentMode = localStorage.getItem('grid-mode');
     if (currentMode === '4-col') {
         document.documentElement.style.setProperty('--grid-min-width', '320px');
+        document.documentElement.style.setProperty('--view-source-margin', '60px');
         localStorage.removeItem('grid-mode');
     } else {
         document.documentElement.style.setProperty('--grid-min-width', '280px');
+        document.documentElement.style.setProperty('--view-source-margin', '80px');
         localStorage.setItem('grid-mode', '4-col');
     }
 }

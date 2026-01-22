@@ -6,6 +6,7 @@
     --border-color: #ddd;
     --footer-color: #777;
     --grid-min-width: 320px;
+    --view-source-margin: 60px;
 }
 
 /* Dark mode overrides */
@@ -151,6 +152,15 @@ header img:hover {
     display: block;
     margin-top: 5px;
     font-size: 0.9em;
+}
+
+/* View source container */
+.view-source-container {
+    text-align: center;
+    margin-top: var(--view-source-margin, 60px);
+    margin-bottom: 20px;
+    position: relative;
+    clear: both;
 }
 
 /* Link styles */
