@@ -3,6 +3,11 @@ if (localStorage.getItem('theme') === 'dark-grey') {
     document.body.classList.add('dark-grey-theme');
 }
 
+// Load saved grid setting
+if (localStorage.getItem('grid-mode') === '4-col') {
+    document.documentElement.style.setProperty('--grid-min-width', '280px');
+}
+
 function toggleTheme() {
     document.body.classList.toggle('dark-grey-theme');
     // Sync theme across pages
@@ -10,6 +15,17 @@ function toggleTheme() {
         localStorage.setItem('theme', 'dark-grey');
     } else {
         localStorage.removeItem('theme');
+    }
+}
+
+function toggleGrid() {
+    const currentMode = localStorage.getItem('grid-mode');
+    if (currentMode === '4-col') {
+        document.documentElement.style.setProperty('--grid-min-width', '320px');
+        localStorage.removeItem('grid-mode');
+    } else {
+        document.documentElement.style.setProperty('--grid-min-width', '280px');
+        localStorage.setItem('grid-mode', '4-col');
     }
 }
 
@@ -43,10 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = 'block';
     });
 
-    // Event delegation for modal contrast button
+    // Event delegation for modal buttons
     modal.addEventListener('click', function(e) {
         if (e.target.id === 'modal-contrast-btn') {
             toggleTheme();
+        } else if (e.target.id === 'grid-toggle-btn') {
+            toggleGrid();
         }
     });
 

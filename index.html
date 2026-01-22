@@ -36,17 +36,18 @@
           <div class="card">
               <h3>Packages</h3>
                 <ul>
-                     <li><a class="kernel-link" data-modal-text="Core toolkit providing essential utilities for macOS and Apple platforms." href="https://github.com/harpertoken/harper/pkgs/container/harper%2Fharper">harper</a></li>
-                     <li><a class="kernel-link" data-modal-text="AI-powered tool for awareness and intelligent monitoring." href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
-                     <li><a class="kernel-link" data-modal-text="Cross-platform utilities for handling file paths and directories." href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
-                     <li><a class="kernel-link" data-modal-text="Retrieval-Augmented Generation library for enhanced AI interactions." href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
+                     <li><a class="kernel-link" data-modal-text="Core toolkit for macOS and Apple platforms." href="https://github.com/harpertoken/harper/pkgs/container/harper%2Fharper">harper</a></li>
+                     <li><a class="kernel-link" data-modal-text="AI-powered awareness and monitoring tool." href="https://github.com/orgs/harpertoken/packages/container/package/llamaware">llamaware</a></li>
+                     <li><a class="kernel-link" data-modal-text="Cross-platform path and directory utilities." href="https://github.com/orgs/harpertoken/packages/npm/package/cross-platform-path-utils">cross-platform-path-utils</a></li>
+                     <li><a class="kernel-link" data-modal-text="Retrieval-Augmented Generation for AI interactions." href="https://github.com/orgs/harpertoken/packages/container/package/rag">rag</a></li>
                 </ul>
           </div>
         <div class="card">
             <h3>Compute</h3>
             <ul>
-                <li><a class="kernel-link" data-modal-text="Facilitates GPU computation on Apple Silicon architectures." href="https://github.com/harpertoken/kernel.metal">kernel.metal</a></li>
-                <li><a class="kernel-link" data-modal-text="Provides hybrid computing capabilities for optimized performance across CPU and GPU." href="https://github.com/bniladridas/hybrid-compute">hybrid-compute</a></li>
+                <li><a class="kernel-link" data-modal-text="GPU computation on Apple Silicon architectures." href="https://github.com/harpertoken/kernel.metal">kernel.metal</a></li>
+                <li><a class="kernel-link" data-modal-text="Hybrid CPU and GPU computing for optimized performance." href="https://github.com/bniladridas/hybrid-compute">hybrid-compute</a></li>
+                <li><a class="kernel-link" data-modal-text="Swift Metal compute kernels with CUDA-to-Metal translations." href="https://github.com/bniladridas/metal-kernels">metal-kernels</a></li>
             </ul>
         </div>
          <div class="card">
@@ -55,7 +56,6 @@
                   <li><a class="kernel-link" data-modal-text="Main repository hosting all Harper projects and source code." href="https://github.com/harpertoken">GitHub</a></li>
                   <li><a class="kernel-link" data-modal-text="GitHub App for automated code reviews and maintenance." href="https://github.com/apps/harperbot">HarperBot</a></li>
                   <li><a class="kernel-link" data-modal-text="Mirror repository for backup and alternative access." href="https://gitlab.com/harpertoken">GitLab</a></li>
-                  <li><a class="kernel-link" data-modal-text="Test application SDK for development and testing." href="https://github.com/bniladridas/testapp-sdk">testapp-sdk</a></li>
               </ul>
          </div>
         <!-- Contact card -->
@@ -74,13 +74,7 @@
           <div class="card">
               <h3>Latest Release</h3>
               <ul>
-                   <li><a class="kernel-link" data-modal-text="Latest stable release of the Harper toolkit with new features and improvements." href="https://github.com/harpertoken/harper/releases/tag/0.4.0">0.4.0</a></li>
-              </ul>
-          </div>
-          <div class="card">
-              <h3>CI/CD</h3>
-              <ul>
-                  <li><a class="kernel-link" data-modal-text="Continuous integration pipeline for automated testing and builds." href="https://gitlab.com/harpertoken/testapp-sdk/-/pipelines/2183812114">CI Pipeline</a></li>
+                   <li><a class="kernel-link" data-modal-text="Latest stable Harper toolkit release." href="https://github.com/harpertoken/harper/releases/tag/0.4.0">0.4.0</a></li>
               </ul>
           </div>
 
@@ -88,9 +82,13 @@
 
      <!-- Hidden legal content -->
      <div id="legal-content" style="display: none;">
-         <p><strong>Privacy:</strong> No personal data collected. For details, visit <a href="legal.html#privacy">full policy</a>.</p>
-         <p><strong>Terms:</strong> Use at your own risk. For details, visit <a href="legal.html#terms">full terms</a>.</p>
-          <p><button id="modal-contrast-btn">Toggle Contrast</button></p>
+         <div class="legal-grid">
+             <div class="legal-item">🔒 <a href="legal.html#privacy">Privacy</a></div>
+             <div class="legal-item">⚖️ <a href="legal.html#terms">Terms</a></div>
+             <div class="legal-item">🎨 <button id="modal-contrast-btn">Theme</button></div>
+             <div class="legal-item">⚡ <button id="grid-toggle-btn">Grid</button></div>
+             <div class="legal-item">📁 <a href="https://github.com/bniladridas/github-dotfiles">Dotfiles</a></div>
+         </div>
      </div>
 
      <!-- Modal for team details -->
