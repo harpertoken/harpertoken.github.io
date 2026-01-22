@@ -111,15 +111,7 @@ header img:hover {
     text-decoration: none;
 }
 
-#modal-contrast-btn {
-    padding: 0;
-    background: transparent;
-    color: var(--text-color);
-    border: none;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
+#modal-contrast-btn,
 #grid-toggle-btn {
     padding: 0;
     background: transparent;
