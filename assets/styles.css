@@ -112,7 +112,8 @@ header img:hover {
 }
 
 #modal-contrast-btn,
-#grid-toggle-btn {
+#grid-toggle-btn,
+#headings-toggle-btn {
     padding: 0;
     background: transparent;
     color: var(--text-color);
@@ -207,7 +208,10 @@ a:hover { text-decoration: underline; }
     color: #aaa;
 }
 
-/* Code styles */
+/* Hide headings when headings are disabled */
+.hide-headings h3 {
+    display: none;
+}
 code { 
     background: #f4f4f4; 
     padding: 2px 4px; 
