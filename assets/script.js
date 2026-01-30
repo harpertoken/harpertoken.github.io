@@ -9,6 +9,11 @@ if (localStorage.getItem('grid-mode') === '4-col') {
     document.documentElement.style.setProperty('--view-source-margin', '80px');
 }
 
+// Load saved headings setting (default: hidden)
+if (localStorage.getItem('headings-hidden') !== 'false') {
+    document.body.classList.add('hide-headings');
+}
+
 function toggleTheme() {
     document.body.classList.toggle('dark-grey-theme');
     // Sync theme across pages
@@ -16,6 +21,15 @@ function toggleTheme() {
         localStorage.setItem('theme', 'dark-grey');
     } else {
         localStorage.removeItem('theme');
+    }
+}
+
+function toggleHeadings() {
+    document.body.classList.toggle('hide-headings');
+    if (document.body.classList.contains('hide-headings')) {
+        localStorage.removeItem('headings-hidden');
+    } else {
+        localStorage.setItem('headings-hidden', 'false');
     }
 }
 
@@ -68,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleTheme();
         } else if (e.target.id === 'grid-toggle-btn') {
             toggleGrid();
+        } else if (e.target.id === 'headings-toggle-btn') {
+            toggleHeadings();
         }
     });
 
