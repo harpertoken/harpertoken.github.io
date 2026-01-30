@@ -10,7 +10,7 @@ if (localStorage.getItem('grid-mode') === '4-col') {
 }
 
 // Load saved headings setting (default: hidden)
-if (localStorage.getItem('headings-hidden') !== 'false') {
+if (localStorage.getItem('headings-visible') !== 'true') {
     document.body.classList.add('hide-headings');
 }
 
