@@ -27,9 +27,9 @@ function toggleTheme() {
 function toggleHeadings() {
     document.body.classList.toggle('hide-headings');
     if (document.body.classList.contains('hide-headings')) {
-        localStorage.removeItem('headings-hidden');
+        localStorage.removeItem('headings-visible');
     } else {
-        localStorage.setItem('headings-hidden', 'false');
+        localStorage.setItem('headings-visible', 'true');
     }
 }
 
