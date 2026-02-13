@@ -54,7 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch latest release from GitHub API
     const releaseLink = document.getElementById('latest-release-link');
     if (releaseLink) {
-        fetch('https://api.github.com/repos/harpertoken/harper/releases/latest')
+        const releaseOptions = GITHUB_TOKEN ? {
+            headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
+        } : {};
+        fetch('https://api.github.com/repos/harpertoken/harper/releases/latest', releaseOptions)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -71,6 +74,50 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(err => {
                 console.error('Error fetching latest release:', err);
                 releaseLink.textContent = 'Error loading';
+            });
+    }
+
+    // Fetch repos from GitHub API
+    const repoList = document.getElementById('repo-list');
+    if (repoList) {
+        const fetchOptions = GITHUB_TOKEN ? {
+            headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
+        } : {};
+        fetch('https://api.github.com/orgs/harpertoken/repos?sort=updated&per_page=20', fetchOptions)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!Array.isArray(data) || data.length === 0) {
+                    throw new Error('No repos found');
+                }
+                repoList.innerHTML = '';
+                data.forEach(repo => {
+                    const li = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = repo.html_url;
+                    link.textContent = repo.name;
+                    link.className = 'kernel-link';
+                    li.appendChild(link);
+                    
+                    const meta = document.createElement('span');
+                    meta.className = 'repo-meta';
+                    const metaParts = [];
+                    if (repo.language) metaParts.push(repo.language);
+                    if (repo.stargazers_count > 0) metaParts.push('★' + repo.stargazers_count);
+                    if (repo.forks_count > 0) metaParts.push('⑂' + repo.forks_count);
+                    meta.textContent = ' ' + metaParts.join(' · ');
+                    li.appendChild(meta);
+                    
+                    repoList.appendChild(li);
+                });
+            })
+            .catch(err => {
+                console.error('Error fetching repos:', err);
+                repoList.innerHTML = '<li><a href="https://github.com/harpertoken">harpertoken</a> <span class="repo-meta">(API unavailable)</span></li>';
             });
     }
 
@@ -101,6 +148,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event delegation for modal buttons
     modal.addEventListener('click', function(e) {
+        if (e.target.classList.contains('dotfiles-btn')) {
+            document.getElementById('modal-text').textContent = e.target.dataset.modalText;
+            modal.style.display = 'block';
+            return;
+        }
         if (e.target.id === 'modal-contrast-btn') {
             toggleTheme();
         } else if (e.target.id === 'grid-toggle-btn') {

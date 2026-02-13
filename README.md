@@ -10,7 +10,11 @@ Visit the live site at: https://harpertoken.github.io
 
 To run locally:
 1. Clone the repository.
-2. Open `index.html` in your web browser.
+2. Create `assets/config.js` with the following content:
+   ```javascript
+   const GITHUB_TOKEN = 'YOUR_TOKEN_HERE';
+   ```
+3. Open `index.html` in your web browser.
 
 No build process is required as it's a static HTML site.
 

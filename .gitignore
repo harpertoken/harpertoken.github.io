@@ -42,5 +42,8 @@ Thumbs.db
 *.tmp
 *.temp
 
+# Config (contains secrets)
+assets/config.js
+
 # Release artifacts
 opencodetmp/
