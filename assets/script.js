@@ -51,6 +51,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const modalText = document.getElementById('modal-text');
 
+    // Fetch latest release from GitHub API
+    const releaseLink = document.getElementById('latest-release-link');
+    if (releaseLink) {
+        fetch('https://api.github.com/repos/harpertoken/harper/releases/latest')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.tag_name) {
+                    releaseLink.href = data.html_url;
+                    releaseLink.textContent = data.tag_name.replace('v', '');
+                    releaseLink.classList.add('kernel-link');
+                }
+            })
+            .catch(err => {
+                console.error('Error fetching latest release:', err);
+                releaseLink.textContent = 'Error loading';
+            });
+    }
+
     document.querySelectorAll('.team-member').forEach(member => {
         member.addEventListener('click', function(event) {
             event.preventDefault();
@@ -61,14 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    document.querySelectorAll('.kernel-link').forEach(link => {
-        link.addEventListener('click', function(event) {
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('kernel-link')) {
             event.preventDefault();
-            const text = this.dataset.modalText;
-            const href = this.href;
+            const text = event.target.dataset.modalText;
+            const href = event.target.href;
             modalText.innerHTML = text + '<br><a href="' + href + '">Go</a>';
             modal.style.display = 'block';
-        });
+        }
     });
 
     document.getElementById('legal-btn')?.addEventListener('click', function() {
