@@ -1,9 +1,10 @@
+---
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,6 +15,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Create config.js with token
+        run: |
+          if [ -n "${{ secrets.YOUR_TOKEN_HERE }}" ]; then
+            echo "const GITHUB_TOKEN = '${{ secrets.YOUR_TOKEN_HERE }}';" > assets/config.js
+          else
+            echo "const GITHUB_TOKEN = '';" > assets/config.js
+          fi
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

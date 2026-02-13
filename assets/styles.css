@@ -145,6 +145,11 @@ header img:hover {
     display: block;
     margin-top: 5px;
     font-size: 0.9em;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* View source container */
@@ -211,6 +216,12 @@ a:hover { text-decoration: underline; }
 /* Hide headings when headings are disabled */
 .hide-headings h3 {
     display: none;
+}
+
+/* Repo metadata */
+.repo-meta {
+    font-size: 0.85em;
+    color: var(--footer-color);
 }
 code { 
     background: #f4f4f4; 

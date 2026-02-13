@@ -39,21 +39,13 @@
                      <li><a class="kernel-link" data-modal-text="Reinforcement learning toolkit for macOS and Apple platforms." href="https://github.com/harpertoken/rl/pkgs/container/rl">rl</a></li>
                      <li><a class="kernel-link" data-modal-text="Bare-metal firmware for IoT coffee makers." href="https://github.com/harpertoken/brew/pkgs/container/brew">brew</a></li>
                 </ul>
-          </div>
-        <div class="card">
-            <h3>Compute</h3>
-            <ul>
-                <li><a class="kernel-link" data-modal-text="GPU computation on Apple Silicon architectures." href="https://github.com/harpertoken/kernel.metal">kernel.metal</a></li>
-            </ul>
-        </div>
-         <div class="card">
-             <h3>Repositories</h3>
-              <ul>
-                  <li><a class="kernel-link" data-modal-text="Main repository hosting all Harper projects and source code." href="https://github.com/harpertoken">GitHub</a></li>
-                  <li><a class="kernel-link" data-modal-text="GitHub App for automated code reviews and maintenance." href="https://github.com/apps/harperbot">HarperBot</a></li>
-                  <li><a class="kernel-link" data-modal-text="Mirror repository for backup and alternative access." href="https://gitlab.com/harpertoken">GitLab</a></li>
-              </ul>
-         </div>
+           </div>
+           <div class="card">
+               <h3>GitHub Repos</h3>
+               <ul id="repo-list">
+                   <li><a class="kernel-link" data-modal-text="Main repository hosting all Harper projects and source code." href="https://github.com/harpertoken">harpertoken</a></li>
+               </ul>
+           </div>
         <!-- Contact card -->
         <div class="card">
             <h3>Contact</h3>
@@ -84,7 +76,7 @@
              <div class="legal-item">🎨 <button id="modal-contrast-btn">Theme</button></div>
              <div class="legal-item">⚡ <button id="grid-toggle-btn">Grid</button></div>
              <div class="legal-item">👁️ <button id="headings-toggle-btn">Headings</button></div>
-             <div class="legal-item">📁 <a href="https://github.com/bniladridas/github-dotfiles">Dotfiles</a></div>
+              <div class="legal-item">📁 <button class="dotfiles-btn" data-modal-text="We are working on this feature.">Dotfiles</button></div>
          </div>
      </div>
 
@@ -100,7 +92,8 @@
          <a class="kernel-link" data-modal-text="Access the source code repository for this website." href="https://github.com/harpertoken/harpertoken.github.io">View source</a>
      </div>
 
-     <script src="assets/script.js"></script>
+      <script src="assets/config.js"></script>
+      <script src="assets/script.js"></script>
 
        <footer>
        </footer>
