@@ -225,10 +225,13 @@ pre { margin: 0; white-space: pre-wrap; }
 
 /* Mobile styles */
 @media (max-width: 600px) {
+    :root {
+        --grid-min-width: 150px;
+    }
     body { font-size: 14px; }
     .app-grid {
         gap: 15px;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(var(--grid-min-width), 1fr));
         padding: 0 10px;
     }
     h1 { font-size: 1.5em; }
