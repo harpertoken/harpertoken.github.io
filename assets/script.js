@@ -3,8 +3,8 @@ if (localStorage.getItem('theme') === 'dark-grey') {
     document.body.classList.add('dark-grey-theme');
 }
 
-// Load saved grid setting
-if (localStorage.getItem('grid-mode') === '4-col') {
+// Load saved grid setting (only on desktop)
+if (window.innerWidth > 600 && localStorage.getItem('grid-mode') === '4-col') {
     document.documentElement.style.setProperty('--grid-min-width', '280px');
     document.documentElement.style.setProperty('--view-source-margin', '80px');
 }
@@ -34,6 +34,7 @@ function toggleHeadings() {
 }
 
 function toggleGrid() {
+    if (window.innerWidth <= 600) return;
     const currentMode = localStorage.getItem('grid-mode');
     if (currentMode === '4-col') {
         document.documentElement.style.setProperty('--grid-min-width', '320px');
