@@ -2,7 +2,6 @@
 
 ## [1.19.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.18.0...v1.19.0) (2026-02-15)
 
-
 ### Features
 
 * add cla page and link from legal ([f44fb81](https://github.com/harpertoken/harpertoken.github.io/commit/f44fb81679d7937e06f8c3c52a3a1ce6e719956a))
@@ -17,7 +16,6 @@
 * remove duplicate footer.scrolled ([e1729dd](https://github.com/harpertoken/harpertoken.github.io/commit/e1729dd767f03863824f761b55ae2c0909a7fa6a))
 
 ## [1.18.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.17.0...v1.18.0) (2026-02-15)
-
 ### Features
 
 * add bluesky to legal menu ([e4bb8de](https://github.com/harpertoken/harpertoken.github.io/commit/e4bb8defaed31555e7dffa6b60a2ee4bfadf15f2))
