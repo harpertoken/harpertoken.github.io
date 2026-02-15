@@ -2,7 +2,6 @@
 
 ## [1.20.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.0...v1.20.0) (2026-02-15)
 
-
 ### Features
 
 * add bluesky to legal menu ([e4bb8de](https://github.com/harpertoken/harpertoken.github.io/commit/e4bb8defaed31555e7dffa6b60a2ee4bfadf15f2))
@@ -51,7 +50,6 @@
 * remove extra blank line in changelog ([29202b4](https://github.com/harpertoken/harpertoken.github.io/commit/29202b428760cd396bda192028fc3b8e91721fec))
 
 ## [1.19.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.18.0...v1.19.0) (2026-02-15)
-
 ### Features
 
 * add cla page and link from legal ([f44fb81](https://github.com/harpertoken/harpertoken.github.io/commit/f44fb81679d7937e06f8c3c52a3a1ce6e719956a))
