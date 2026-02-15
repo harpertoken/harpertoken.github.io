@@ -235,6 +235,40 @@ a:hover { text-decoration: underline; }
     font-size: 0.85em;
     color: var(--footer-color);
 }
+
+/* Skeleton loading animation */
+.repo-skeleton {
+    height: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.repo-skeleton span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--border-color) 25%, var(--bg-color) 50%, var(--border-color) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 3px;
+    width: 60%;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.repo-list-loaded .repo-skeleton {
+    display: none;
+}
+
+.repo-list-loaded li {
+    animation: fadeIn 0.4s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
 code { 
     background: #f4f4f4; 
     padding: 2px 4px; 
