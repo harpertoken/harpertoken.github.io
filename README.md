@@ -1,6 +1,6 @@
 # harpertoken.github.io
 
-![CLA](./assets/CLA.png)
+![Contributor License Agreement](./assets/CLA.png)
 
 This is the GitHub Pages site for [harpertoken](https://github.com/harpertoken), featuring a profile page for Harper with information on open source tools, kernel development, and CI/CD pipelines.
 
