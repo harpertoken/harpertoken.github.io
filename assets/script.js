@@ -96,8 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     throw new Error('No repos found');
                 }
                 repoList.innerHTML = '';
-                data.forEach(repo => {
+                repoList.classList.add('repo-list-loaded');
+                data.forEach((repo, index) => {
                     const li = document.createElement('li');
+                    li.style.animationDelay = `${index * 0.05}s`;
                     const link = document.createElement('a');
                     link.href = repo.html_url;
                     link.textContent = repo.name;
@@ -119,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(err => {
                 console.error('Error fetching repos:', err);
                 repoList.innerHTML = '<li><a href="https://github.com/harpertoken">harpertoken</a> <span class="repo-meta">(API unavailable)</span></li>';
+                repoList.classList.add('repo-list-loaded');
             });
     }
 
