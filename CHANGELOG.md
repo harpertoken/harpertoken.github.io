@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.19.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.18.0...v1.19.0) (2026-02-15)
+
+
+### Features
+
+* add cla page and link from legal ([f44fb81](https://github.com/harpertoken/harpertoken.github.io/commit/f44fb81679d7937e06f8c3c52a3a1ce6e719956a))
+* add harper-release-bot to signed ([e13fd8b](https://github.com/harpertoken/harpertoken.github.io/commit/e13fd8b11dbafacfc8a676066702f23925c771f6))
+* add how it works section to cla ([8f0ef6b](https://github.com/harpertoken/harpertoken.github.io/commit/8f0ef6b822bc125b1617d19d796da8f873ef2cc2))
+* add sticky blur to footer ([6cc4f6c](https://github.com/harpertoken/harpertoken.github.io/commit/6cc4f6c70d777a31d916c28eca6598dbc22205ea))
+
+
+### Bug Fixes
+
+* enable grid toggle on mobile ([9e0398b](https://github.com/harpertoken/harpertoken.github.io/commit/9e0398ba57a0b74fe284c584a3321bae49bfdbef))
+* remove duplicate footer.scrolled ([e1729dd](https://github.com/harpertoken/harpertoken.github.io/commit/e1729dd767f03863824f761b55ae2c0909a7fa6a))
+
 ## [1.18.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.17.0...v1.18.0) (2026-02-15)
 
 ### Features
