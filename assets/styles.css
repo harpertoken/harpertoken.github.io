@@ -111,12 +111,6 @@ header.scrolled {
     -webkit-backdrop-filter: blur(10px);
     transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
-footer.scrolled {
-    background: var(--scrolled-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: background 0.3s ease, backdrop-filter 0.3s ease;
-}
 header img {
     width: 80px;
     height: 80px;
