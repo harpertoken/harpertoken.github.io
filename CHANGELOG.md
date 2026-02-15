@@ -1,5 +1,55 @@
 # Changelog
 
+## [1.20.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.0...v1.20.0) (2026-02-15)
+
+
+### Features
+
+* add bluesky to legal menu ([e4bb8de](https://github.com/harpertoken/harpertoken.github.io/commit/e4bb8defaed31555e7dffa6b60a2ee4bfadf15f2))
+* add cla page and link from legal ([f44fb81](https://github.com/harpertoken/harpertoken.github.io/commit/f44fb81679d7937e06f8c3c52a3a1ce6e719956a))
+* add dotfiles, gitlab and npm ([8551c5b](https://github.com/harpertoken/harpertoken.github.io/commit/8551c5ba2e1620999f04b1a2095cc92ead576125))
+* add github api integration for repos and releases ([#32](https://github.com/harpertoken/harpertoken.github.io/issues/32)) ([820b78b](https://github.com/harpertoken/harpertoken.github.io/commit/820b78b48ae70271709036733227789ebf5d6cc8))
+* add harper-release-bot to signed ([e13fd8b](https://github.com/harpertoken/harpertoken.github.io/commit/e13fd8b11dbafacfc8a676066702f23925c771f6))
+* add how it works section to cla ([8f0ef6b](https://github.com/harpertoken/harpertoken.github.io/commit/8f0ef6b822bc125b1617d19d796da8f873ef2cc2))
+* add legal defence and liability sections ([#23](https://github.com/harpertoken/harpertoken.github.io/issues/23)) ([7156080](https://github.com/harpertoken/harpertoken.github.io/commit/715608069f817afc826c07820d3c373394844634))
+* add modals and discussions guide ([eb264de](https://github.com/harpertoken/harpertoken.github.io/commit/eb264de45047e82309f1bc6effcf49ac0d2a5f0c))
+* add patreon to legal menu ([7d31781](https://github.com/harpertoken/harpertoken.github.io/commit/7d31781a877b45d6b2b72924460f0fb67d454497))
+* add skeleton loading animation for repos ([#35](https://github.com/harpertoken/harpertoken.github.io/issues/35)) ([a9b7a0f](https://github.com/harpertoken/harpertoken.github.io/commit/a9b7a0ff3032635bc1151c695532773c1170ed69))
+* add sticky blur to footer ([6cc4f6c](https://github.com/harpertoken/harpertoken.github.io/commit/6cc4f6c70d777a31d916c28eca6598dbc22205ea))
+* add sticky header blur on scroll ([#34](https://github.com/harpertoken/harpertoken.github.io/issues/34)) ([c97dfb5](https://github.com/harpertoken/harpertoken.github.io/commit/c97dfb5830b97a0a145518973931b32afcc21352))
+* add subtle hover animations to avatar images ([#25](https://github.com/harpertoken/harpertoken.github.io/issues/25)) ([5918ba6](https://github.com/harpertoken/harpertoken.github.io/commit/5918ba6abeecf05edf812c8272f422f221897c50))
+* add testapp-sdk to repositories ([351b295](https://github.com/harpertoken/harpertoken.github.io/commit/351b295a301d36d735583a24ee1fddd169d25107))
+* allow backticks in hooks ([9c3ccbe](https://github.com/harpertoken/harpertoken.github.io/commit/9c3ccbe1875cc9e0e2d4d46549ea0825b0294e85))
+* bump version and add bot ([a809bad](https://github.com/harpertoken/harpertoken.github.io/commit/a809bad5a1f7dbfa252dd6977fa354d3b1dab5d1))
+* fetch latest release from github api ([#31](https://github.com/harpertoken/harpertoken.github.io/issues/31)) ([e663bb6](https://github.com/harpertoken/harpertoken.github.io/commit/e663bb66339d04f6c0c37eabae6a76340f8d9d9e))
+* headings ([#29](https://github.com/harpertoken/harpertoken.github.io/issues/29)) ([fb6f081](https://github.com/harpertoken/harpertoken.github.io/commit/fb6f081120e1504c487c2ec62111293429953c86))
+* improve profile layout and add interactive features ([#27](https://github.com/harpertoken/harpertoken.github.io/issues/27)) ([2836759](https://github.com/harpertoken/harpertoken.github.io/commit/2836759c118a05557adf462a4c7b96b1d01fe572))
+* improve ui and legal ([270f526](https://github.com/harpertoken/harpertoken.github.io/commit/270f5261fd34a472e8cd0528d306a5cab76bd48f))
+* update mobile grid and legal menu ([8d59552](https://github.com/harpertoken/harpertoken.github.io/commit/8d59552d9b0dc3aba8ac89ad97f3c36176858df5))
+* update npm link to testapp-sdk ([e6f2ac0](https://github.com/harpertoken/harpertoken.github.io/commit/e6f2ac0e7783f034d062ba09dbe30b0ce59c644c))
+* update release to 0.3.0 ([e54d4e6](https://github.com/harpertoken/harpertoken.github.io/commit/e54d4e61f9feca2b483c911e17b829b06d1bfffc))
+* update release to 0.3.2 ([ed1676c](https://github.com/harpertoken/harpertoken.github.io/commit/ed1676c1f71782521b942d1d3680ffa194b1568a))
+* update releases list with 0.2.0 ([3641480](https://github.com/harpertoken/harpertoken.github.io/commit/36414802138be545814f9ca832de14c0447c7984))
+
+
+### Bug Fixes
+
+* add cache busting to stylesheet ([3112366](https://github.com/harpertoken/harpertoken.github.io/commit/3112366c5f153f90fd7391b070122a429c9deea0))
+* consolidate modal js ([fd5f4a3](https://github.com/harpertoken/harpertoken.github.io/commit/fd5f4a37c5cd1d52a27d951a4c048c6e89e0afbd))
+* consolidate modal styles for pages ([2438238](https://github.com/harpertoken/harpertoken.github.io/commit/2438238f0b6d4044c70702bdccc4716747f536e1))
+* disable grid toggle on mobile ([c57aacb](https://github.com/harpertoken/harpertoken.github.io/commit/c57aacbd9fdad964d83f59d5dcc05f8b8d557c3b))
+* enable grid toggle on mobile ([9e0398b](https://github.com/harpertoken/harpertoken.github.io/commit/9e0398ba57a0b74fe284c584a3321bae49bfdbef))
+* remove duplicate footer.scrolled ([e1729dd](https://github.com/harpertoken/harpertoken.github.io/commit/e1729dd767f03863824f761b55ae2c0909a7fa6a))
+* remove extra blank line in changelog ([b7c392d](https://github.com/harpertoken/harpertoken.github.io/commit/b7c392d8f4e8041022ecccef4acc765852aed2d1))
+* remove extra blank line in changelog ([4f6f194](https://github.com/harpertoken/harpertoken.github.io/commit/4f6f194acb8c00a694f8a88c1a6d8ce18c61cf4a))
+* remove extra blank line in changelog ([49a5eae](https://github.com/harpertoken/harpertoken.github.io/commit/49a5eae88db58931201b3a624e57da8cf3036dfa))
+* remove extra blank line in changelog ([419f19b](https://github.com/harpertoken/harpertoken.github.io/commit/419f19b593d96a0960a4c2753fae35c98534e0cd))
+* remove extra blank line in changelog ([41b4d2a](https://github.com/harpertoken/harpertoken.github.io/commit/41b4d2a5dd98c459b4f6482ff9861201b59b30fe))
+* remove extra blank line in changelog ([0f0f1c3](https://github.com/harpertoken/harpertoken.github.io/commit/0f0f1c3b80446fd2c80c42fddd8cdac04e0b5846))
+* remove extra blank line in changelog ([c5012cf](https://github.com/harpertoken/harpertoken.github.io/commit/c5012cfad55fd705a1b36c645140664c854bee61))
+* remove extra blank line in changelog ([6edee15](https://github.com/harpertoken/harpertoken.github.io/commit/6edee15d9315b0533b1c6bbc5b53587c927a7aaf))
+* remove extra blank line in changelog ([29202b4](https://github.com/harpertoken/harpertoken.github.io/commit/29202b428760cd396bda192028fc3b8e91721fec))
+
 ## [1.19.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.18.0...v1.19.0) (2026-02-15)
 
 ### Features
