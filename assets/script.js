@@ -181,10 +181,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', function() {
         const header = document.getElementById('main-header');
+        const footer = document.querySelector('footer');
         if (window.scrollY > 10) {
             header.classList.add('scrolled');
+            footer.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+            footer.classList.remove('scrolled');
         }
     });
 
