@@ -177,6 +177,15 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = 'none';
     });
 
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
     window.addEventListener('click', function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
