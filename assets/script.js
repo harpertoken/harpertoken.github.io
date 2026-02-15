@@ -50,6 +50,8 @@ function toggleGrid() {
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const modalText = document.getElementById('modal-text');
+    const header = document.getElementById('main-header');
+    const footer = document.querySelector('footer');
 
     // Fetch latest release from GitHub API
     const releaseLink = document.getElementById('latest-release-link');
@@ -180,15 +182,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     window.addEventListener('scroll', function() {
-        const header = document.getElementById('main-header');
-        const footer = document.querySelector('footer');
-        if (window.scrollY > 10) {
-            header.classList.add('scrolled');
-            footer.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-            footer.classList.remove('scrolled');
-        }
+        header.classList.toggle('scrolled', window.scrollY > 10);
+        footer.classList.toggle('scrolled', window.scrollY > 10);
     });
 
     window.addEventListener('click', function(event) {
