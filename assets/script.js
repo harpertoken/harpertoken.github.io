@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch repos from GitHub API
     const repoList = document.getElementById('repo-list');
     if (repoList) {
+        const STAGGER_DELAY_SECONDS = 0.05;
         const fetchOptions = GITHUB_TOKEN ? {
             headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
         } : {};
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 repoList.classList.add('repo-list-loaded');
                 data.forEach((repo, index) => {
                     const li = document.createElement('li');
-                    li.style.animationDelay = `${index * 0.05}s`;
+                    li.style.animationDelay = `${index * STAGGER_DELAY_SECONDS}s`;
                     const link = document.createElement('a');
                     link.href = repo.html_url;
                     link.textContent = repo.name;
