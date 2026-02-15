@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.18.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.17.0...v1.18.0) (2026-02-15)
+
+
+### Features
+
+* add bluesky to legal menu ([e4bb8de](https://github.com/harpertoken/harpertoken.github.io/commit/e4bb8defaed31555e7dffa6b60a2ee4bfadf15f2))
+* add dotfiles, gitlab and npm ([8551c5b](https://github.com/harpertoken/harpertoken.github.io/commit/8551c5ba2e1620999f04b1a2095cc92ead576125))
+* add github api integration for repos and releases ([#32](https://github.com/harpertoken/harpertoken.github.io/issues/32)) ([820b78b](https://github.com/harpertoken/harpertoken.github.io/commit/820b78b48ae70271709036733227789ebf5d6cc8))
+* add patreon to legal menu ([7d31781](https://github.com/harpertoken/harpertoken.github.io/commit/7d31781a877b45d6b2b72924460f0fb67d454497))
+* add skeleton loading animation for repos ([#35](https://github.com/harpertoken/harpertoken.github.io/issues/35)) ([a9b7a0f](https://github.com/harpertoken/harpertoken.github.io/commit/a9b7a0ff3032635bc1151c695532773c1170ed69))
+* add sticky header blur on scroll ([#34](https://github.com/harpertoken/harpertoken.github.io/issues/34)) ([c97dfb5](https://github.com/harpertoken/harpertoken.github.io/commit/c97dfb5830b97a0a145518973931b32afcc21352))
+* fetch latest release from github api ([#31](https://github.com/harpertoken/harpertoken.github.io/issues/31)) ([e663bb6](https://github.com/harpertoken/harpertoken.github.io/commit/e663bb66339d04f6c0c37eabae6a76340f8d9d9e))
+* headings ([#29](https://github.com/harpertoken/harpertoken.github.io/issues/29)) ([fb6f081](https://github.com/harpertoken/harpertoken.github.io/commit/fb6f081120e1504c487c2ec62111293429953c86))
+* update mobile grid and legal menu ([8d59552](https://github.com/harpertoken/harpertoken.github.io/commit/8d59552d9b0dc3aba8ac89ad97f3c36176858df5))
+* update npm link to testapp-sdk ([e6f2ac0](https://github.com/harpertoken/harpertoken.github.io/commit/e6f2ac0e7783f034d062ba09dbe30b0ce59c644c))
+
+
+### Bug Fixes
+
+* add cache busting to stylesheet ([3112366](https://github.com/harpertoken/harpertoken.github.io/commit/3112366c5f153f90fd7391b070122a429c9deea0))
+* disable grid toggle on mobile ([c57aacb](https://github.com/harpertoken/harpertoken.github.io/commit/c57aacbd9fdad964d83f59d5dcc05f8b8d557c3b))
+
 ## [1.17.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.16.0...v1.17.0) (2026-01-22)
 
 ### Features
