@@ -2,7 +2,6 @@
 
 ## [1.18.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.17.0...v1.18.0) (2026-02-15)
 
-
 ### Features
 
 * add bluesky to legal menu ([e4bb8de](https://github.com/harpertoken/harpertoken.github.io/commit/e4bb8defaed31555e7dffa6b60a2ee4bfadf15f2))
@@ -23,7 +22,6 @@
 * disable grid toggle on mobile ([c57aacb](https://github.com/harpertoken/harpertoken.github.io/commit/c57aacbd9fdad964d83f59d5dcc05f8b8d557c3b))
 
 ## [1.17.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.16.0...v1.17.0) (2026-01-22)
-
 ### Features
 
 * improve profile layout and add interactive features ([#27](https://github.com/harpertoken/harpertoken.github.io/issues/27)) ([2836759](https://github.com/harpertoken/harpertoken.github.io/commit/2836759c118a05557adf462a4c7b96b1d01fe572))
