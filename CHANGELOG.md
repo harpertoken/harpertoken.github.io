@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.0...v1.19.1) (2026-03-10)
+
+
+### Bug Fixes
+
+* sort github repos by pushed date instead of updated ([#40](https://github.com/harpertoken/harpertoken.github.io/issues/40)) ([d3c552d](https://github.com/harpertoken/harpertoken.github.io/commit/d3c552d0b2aff9b82044ed710c3bbc6f2ac927a6))
+
 ## [1.19.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.18.0...v1.19.0) (2026-02-15)
 
 ### Features
