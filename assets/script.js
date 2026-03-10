@@ -16,12 +16,7 @@ function safeUrl(url) {
     }
 }
 
-// Escape HTML to prevent XSS in innerHTML
-function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-}
+// Build modal content programmatically to avoid innerHTML XSS
 
 // Load saved grid setting
 if (localStorage.getItem('grid-mode') === '4-col') {
@@ -139,9 +134,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.team-member').forEach(member => {
         member.addEventListener('click', function(event) {
             event.preventDefault();
-            const text = escapeHtml(this.dataset.modalText);
             const href = safeUrl(this.href) || '#';
-            modalText.innerHTML = text + '<br><a href="' + href + '">Go</a>';
+            modalText.textContent = this.dataset.modalText || '';
+            const br = document.createElement('br');
+            const goLink = document.createElement('a');
+            goLink.href = href;
+            goLink.textContent = 'Go';
+            modalText.appendChild(br);
+            modalText.appendChild(goLink);
             modal.style.display = 'block';
         });
     });
@@ -149,9 +149,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (event.target.classList.contains('kernel-link')) {
             event.preventDefault();
-            const text = escapeHtml(event.target.dataset.modalText);
             const href = safeUrl(event.target.href) || '#';
-            modalText.innerHTML = text + '<br><a href="' + href + '">Go</a>';
+            modalText.textContent = event.target.dataset.modalText || '';
+            const br = document.createElement('br');
+            const goLink = document.createElement('a');
+            goLink.href = href;
+            goLink.textContent = 'Go';
+            modalText.appendChild(br);
+            modalText.appendChild(goLink);
             modal.style.display = 'block';
         }
     });
