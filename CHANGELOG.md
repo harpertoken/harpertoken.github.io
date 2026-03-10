@@ -2,7 +2,6 @@
 
 ## [1.20.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.1...v1.20.0) (2026-03-10)
 
-
 ### Features
 
 * add github link to legal modal ([e95e30a](https://github.com/harpertoken/harpertoken.github.io/commit/e95e30a9f958092c54e8d506fe20afa87282e383))
@@ -16,7 +15,6 @@
 * use GitHub Action to fetch data, remove token from client ([#41](https://github.com/harpertoken/harpertoken.github.io/issues/41)) ([7c17b1a](https://github.com/harpertoken/harpertoken.github.io/commit/7c17b1af30a266c121e9a3f41c690837a82fbc27))
 
 ## [1.19.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.0...v1.19.1) (2026-03-10)
-
 ### Bug Fixes
 
 * sort github repos by pushed date instead of updated ([#40](https://github.com/harpertoken/harpertoken.github.io/issues/40)) ([d3c552d](https://github.com/harpertoken/harpertoken.github.io/commit/d3c552d0b2aff9b82044ed710c3bbc6f2ac927a6))
