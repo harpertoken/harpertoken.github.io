@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.20.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.1...v1.20.0) (2026-03-10)
+
+
+### Features
+
+* add github link to legal modal ([e95e30a](https://github.com/harpertoken/harpertoken.github.io/commit/e95e30a9f958092c54e8d506fe20afa87282e383))
+
+
+### Bug Fixes
+
+* add xss protection ([826880c](https://github.com/harpertoken/harpertoken.github.io/commit/826880c4894cbf6689a2954cc87153dae3ec8372))
+* add XSS protection and URL validation ([0185aa6](https://github.com/harpertoken/harpertoken.github.io/commit/0185aa6d4cb94aa5b77a3814147fb4ca76d55a43))
+* default modal link text to go ([82862c3](https://github.com/harpertoken/harpertoken.github.io/commit/82862c3e835c125ea3a6c2277d09837ceb9fcb54))
+* use GitHub Action to fetch data, remove token from client ([#41](https://github.com/harpertoken/harpertoken.github.io/issues/41)) ([7c17b1a](https://github.com/harpertoken/harpertoken.github.io/commit/7c17b1af30a266c121e9a3f41c690837a82fbc27))
+
 ## [1.19.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.0...v1.19.1) (2026-03-10)
 
 ### Bug Fixes
