@@ -17,6 +17,14 @@ function safeUrl(url) {
 }
 
 // Build modal content programmatically to avoid innerHTML XSS
+function buildModalLink(container, href, text = 'GitHub') {
+    const br = document.createElement('br');
+    const link = document.createElement('a');
+    link.href = href;
+    link.textContent = text;
+    container.appendChild(br);
+    container.appendChild(link);
+}
 
 // Load saved grid setting
 if (localStorage.getItem('grid-mode') === '4-col') {
@@ -136,12 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const href = safeUrl(this.href) || '#';
             modalText.textContent = this.dataset.modalText || '';
-            const br = document.createElement('br');
-            const goLink = document.createElement('a');
-            goLink.href = href;
-            goLink.textContent = 'Go';
-            modalText.appendChild(br);
-            modalText.appendChild(goLink);
+            buildModalLink(modalText, href, 'Go');
             modal.style.display = 'block';
         });
     });
@@ -151,12 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const href = safeUrl(event.target.href) || '#';
             modalText.textContent = event.target.dataset.modalText || '';
-            const br = document.createElement('br');
-            const goLink = document.createElement('a');
-            goLink.href = href;
-            goLink.textContent = 'Go';
-            modalText.appendChild(br);
-            modalText.appendChild(goLink);
+            buildModalLink(modalText, href);
             modal.style.display = 'block';
         }
     });
