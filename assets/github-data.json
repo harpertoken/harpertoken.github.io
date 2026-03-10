@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "welcome-bot",
     "html_url": "https://github.com/harpertoken/welcome-bot",
     "language": "JavaScript",
@@ -52,13 +59,6 @@
     "name": "llamaware",
     "html_url": "https://github.com/harpertoken/llamaware",
     "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
