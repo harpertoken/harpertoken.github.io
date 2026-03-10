@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const fetchOptions = GITHUB_TOKEN ? {
             headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
         } : {};
-        fetch('https://api.github.com/orgs/harpertoken/repos?sort=updated&per_page=20', fetchOptions)
+        fetch('https://api.github.com/orgs/harpertoken/repos?sort=pushed&per_page=20', fetchOptions)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
