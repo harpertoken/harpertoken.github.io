@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'harpertoken'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           sparse-checkout: |
             signed.json
 
       - name: Checkout private cla-bot
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: bniladridas/cla-bot
           token: ${{ secrets.YOUR_TOKEN_HERE }}
