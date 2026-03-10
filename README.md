@@ -59,6 +59,5 @@ Then force-push:
 
 ```bash
 git push --force origin main
-```
 
-<sup>GitHub repos and latest release are auto-fetched hourly via GitHub Action.</sup>
+ <sup>GitHub repos and latest release are auto-fetched hourly via GitHub Action.</sup>
