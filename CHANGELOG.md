@@ -2,14 +2,12 @@
 
 ## [1.21.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.20.0...v1.21.0) (2026-03-10)
 
-
 ### Features
 
 * add workflow_dispatch to deploy ([3f7c1a8](https://github.com/harpertoken/harpertoken.github.io/commit/3f7c1a8dd55c8a820691364308166825ec8bf276))
 * auto trigger deploy after fetch ([e388693](https://github.com/harpertoken/harpertoken.github.io/commit/e388693837e120c52f8471f52d488f69308398ad))
 
 ## [1.20.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.19.1...v1.20.0) (2026-03-10)
-
 ### Features
 
 * add github link to legal modal ([e95e30a](https://github.com/harpertoken/harpertoken.github.io/commit/e95e30a9f958092c54e8d506fe20afa87282e383))
