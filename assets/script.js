@@ -17,7 +17,7 @@ function safeUrl(url) {
 }
 
 // Build modal content programmatically to avoid innerHTML XSS
-function buildModalLink(container, href, text = 'GitHub') {
+function buildModalLink(container, href, text = 'Go') {
     const br = document.createElement('br');
     const link = document.createElement('a');
     link.href = href;
