@@ -43,7 +43,10 @@ jobs:
           else
             git commit -m "chore: update github data"
             git push
-            # Trigger deploy workflow
-            sleep 2
-            gh api repos/harpertoken/harpertoken.github.io/actions/workflows/deploy.yml/dispatches -X POST -f ref='main'
+            # Trigger deploy workflow using repository dispatch
+            curl -L -X POST https://api.github.com/repos/harpertoken/harpertoken.github.io/dispatches \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              -d '{"event_type":"update-data"}'
           fi
