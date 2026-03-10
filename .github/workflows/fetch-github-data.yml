@@ -43,4 +43,7 @@ jobs:
           else
             git commit -m "chore: update github data"
             git push
+            # Trigger deploy workflow
+            sleep 2
+            gh api repos/harpertoken/harpertoken.github.io/actions/workflows/deploy.yml/dispatches -X POST -f ref='main'
           fi
