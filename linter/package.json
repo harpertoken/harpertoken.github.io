@@ -1,0 +1,12 @@
+{
+  "name": "custom-linter",
+  "version": "1.0.0",
+  "description": "Custom HTML linter",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node index.js"
+  },
+  "bin": {
+    "custom-lint": "index.js"
+  }
+}
