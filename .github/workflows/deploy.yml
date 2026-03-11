@@ -22,11 +22,12 @@ jobs:
     steps:
       - name: Deploy to gh-pages branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
+          echo "Deploying ${REPO}@${SHA} to gh-pages"
 
           rm -rf repo
           git clone --depth 1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git" repo
@@ -80,3 +81,5 @@ jobs:
             echo "Check repo Settings → Actions → General → Workflow permissions is set to 'Read and write permissions'."
             exit 1
           fi
+
+          echo "Pushed gh-pages successfully."
