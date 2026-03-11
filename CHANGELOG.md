@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.22.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.21.0...v1.22.0) (2026-03-11)
+
+
+### Features
+
+* add welcome issue flow ([0bb3d44](https://github.com/harpertoken/harpertoken.github.io/commit/0bb3d449a9eadfd78de9d5c7ac6c86f83157d578))
+
+
+### Bug Fixes
+
+* trigger deploy via repo dispatch ([9988cf2](https://github.com/harpertoken/harpertoken.github.io/commit/9988cf28306c40b295acf478e6f205f1e0212d18))
+
 ## [1.21.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.20.0...v1.21.0) (2026-03-10)
 
 ### Features
