@@ -1,45 +1,78 @@
 ---
 name: Deploy to GitHub Pages
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
   workflow_dispatch:
   repository_dispatch:
     types: [update-data]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: './'
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          rm -rf repo
+          git clone --depth 1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git" repo
+          cd repo
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage site contents (everything except git internals and workflow config).
+          rm -rf _site
+          mkdir _site
+          rsync -a --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "_site" \
+            --exclude "_gh_pages" \
+            ./ _site/
+
+          # Prepare a separate checkout for the gh-pages branch.
+          rm -rf _gh_pages
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git clone --depth 1 --branch gh-pages --single-branch \
+              "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git" _gh_pages
+          else
+            mkdir _gh_pages
+            cd _gh_pages
+            git init
+            git checkout -b gh-pages
+            git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
+            cd ..
+          fi
+
+          rsync -a --delete _site/ _gh_pages/
+          cd _gh_pages
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Avoid Jekyll processing.
+          touch .nojekyll
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+
+          git commit -m "chore: deploy ${SHA}"
+          git push origin gh-pages
