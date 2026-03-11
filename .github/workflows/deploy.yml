@@ -60,7 +60,8 @@ jobs:
             cd ..
           fi
 
-          rsync -a --delete _site/ _gh_pages/
+          # Keep the gh-pages repo metadata when syncing content.
+          rsync -a --delete --exclude ".git" _site/ _gh_pages/
           cd _gh_pages
 
           git config user.name "github-actions[bot]"
@@ -76,7 +77,7 @@ jobs:
           fi
 
           git commit -m "chore: deploy ${SHA}"
-          if ! git push origin gh-pages; then
+          if ! git push origin HEAD:gh-pages; then
             echo "Failed to push to gh-pages."
             echo "Check repo Settings → Actions → General → Workflow permissions is set to 'Read and write permissions'."
             exit 1
