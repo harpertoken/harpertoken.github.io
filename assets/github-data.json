@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 0
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -25,13 +32,6 @@
     "html_url": "https://github.com/harpertoken/welcome-issues",
     "language": null,
     "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
     "forks_count": 0
   },
   {
