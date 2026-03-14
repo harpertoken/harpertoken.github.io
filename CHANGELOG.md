@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.22.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.22.0...v1.22.1) (2026-03-14)
+
+
+### Bug Fixes
+
+* allow manual deploy from any branch ([4c5f03b](https://github.com/harpertoken/harpertoken.github.io/commit/4c5f03bdb239b6b910f2fe4b369749715c3632cb))
+* deploy after fetch completes ([bd2b117](https://github.com/harpertoken/harpertoken.github.io/commit/bd2b11725affb994d0b392af95195c652c9d0d09))
+* preserve gh-pages repo when syncing ([a82cdd1](https://github.com/harpertoken/harpertoken.github.io/commit/a82cdd1b08c728a55437a04873d042e39316cf90))
+* use github token for gh-pages push ([6309506](https://github.com/harpertoken/harpertoken.github.io/commit/630950604a7f8c9b195920cdb8d67929c3a3e36b))
+
 ## [1.22.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.21.0...v1.22.0) (2026-03-11)
 
 ### Features
