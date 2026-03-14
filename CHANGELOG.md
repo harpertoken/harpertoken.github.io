@@ -2,7 +2,6 @@
 
 ## [1.22.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.22.0...v1.22.1) (2026-03-14)
 
-
 ### Bug Fixes
 
 * allow manual deploy from any branch ([4c5f03b](https://github.com/harpertoken/harpertoken.github.io/commit/4c5f03bdb239b6b910f2fe4b369749715c3632cb))
@@ -11,7 +10,6 @@
 * use github token for gh-pages push ([6309506](https://github.com/harpertoken/harpertoken.github.io/commit/630950604a7f8c9b195920cdb8d67929c3a3e36b))
 
 ## [1.22.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.21.0...v1.22.0) (2026-03-11)
-
 ### Features
 
 * add welcome issue flow ([0bb3d44](https://github.com/harpertoken/harpertoken.github.io/commit/0bb3d449a9eadfd78de9d5c7ac6c86f83157d578))
