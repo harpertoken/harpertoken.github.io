@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "autofix",
+    "html_url": "https://github.com/harpertoken/autofix",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
@@ -129,13 +136,6 @@
     "name": "theme",
     "html_url": "https://github.com/harpertoken/theme",
     "language": "Shell",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "manager",
-    "html_url": "https://github.com/harpertoken/manager",
-    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   }
