@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "HTML",
@@ -66,13 +73,6 @@
     "name": "homebrew-tap",
     "html_url": "https://github.com/harpertoken/homebrew-tap",
     "language": "Ruby",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
     "stargazers_count": 0,
     "forks_count": 0
   },
