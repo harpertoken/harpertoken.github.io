@@ -6,7 +6,7 @@
     <title>harper's profile</title>
      <link rel="stylesheet" href="assets/styles.css?v=2">
 </head>
-<body>
+<body class="home">
     <!-- Header section with avatar and title -->
      <header id="main-header">
          <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar">
@@ -14,12 +14,14 @@
           <button id="legal-btn">Legal</button>
      </header>
 
-
     <!-- Main content grid with cards -->
     <div class="app-grid">
         <div class="card">
             <h3>About</h3>
             <p>An assemblage of open-source utilities meticulously crafted for macOS and Apple platform ecosystems.</p>
+        </div>
+        <div class="card hero-card">
+            <img src="assets/harper-hero.png" alt="Harper artwork" loading="lazy" decoding="async">
         </div>
         <div class="card">
             <h3>Team</h3>
@@ -70,6 +72,10 @@
           </div>
 
         </div>
+
+     <div class="hero-image-fixed" aria-hidden="true">
+         <img src="assets/harper-hero.png" alt="">
+     </div>
 
      <!-- Hidden legal content -->
      <div id="legal-content" style="display: none;">
