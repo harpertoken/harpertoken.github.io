@@ -46,6 +46,60 @@ body {
     background-color: var(--bg-color); 
 }
 
+/* Hero image */
+.hero-card {
+    padding: 0;
+}
+.hero-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.hero-image-fixed {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .home header,
+    .home .app-grid {
+        max-width: 620px;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    .hero-image-fixed {
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 110px;
+        width: min(820px, 50vw);
+        height: calc(100vh - 150px);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .hero-image-fixed img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    header,
+    .app-grid,
+    .view-source-container,
+    footer {
+        position: relative;
+        z-index: 1;
+    }
+}
+
 /* Heading styles */
 h1 { font-size: 2em; font-weight: 300; margin: 0; color: var(--header-color); }
 h3 { font-size: 1em; font-weight: 500; margin: 0 0 0.5em; color: var(--header-color); }
