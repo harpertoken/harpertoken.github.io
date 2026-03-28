@@ -10,6 +10,16 @@
     --scrolled-bg: rgba(255,255,255,0.7);
 }
 
+/* Smooth scroll for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -47,18 +57,40 @@ body {
 }
 
 /* Hero image */
-.hero-card {
-    padding: 0;
+.hero-panel {
+    margin: 0 auto 15px;
+    max-width: 1200px;
+    padding: 0 15px;
 }
-.hero-card img {
+.hero-figure {
+    margin: 0;
+}
+.hero-panel img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 12px;
 }
+.hero-caption {
+    margin-top: 10px;
+    padding: 0 12px 0;
+    font-size: 0.85em;
+    line-height: 1.35;
+    opacity: 0.85;
+    text-align: center;
+}
 
-.hero-image-fixed {
-    display: none;
+/* Match repo-list fade-in animation style (JS-enabled only) */
+html.js .hero-panel .hero-figure {
+    opacity: 0;
+}
+html.js body.hero-animate .hero-panel .hero-figure {
+    animation: fadeIn 0.4s ease forwards;
+    animation-delay: 0.12s;
+}
+@media (prefers-reduced-motion: reduce) {
+    html.js .hero-panel .hero-figure { opacity: 1; }
+    html.js body.hero-animate .hero-panel .hero-figure { animation: none; }
 }
 
 @media (min-width: 1000px) {
@@ -69,12 +101,7 @@ body {
         margin-right: auto;
     }
 
-    .hero-card {
-        display: none;
-    }
-
-    .hero-image-fixed {
-        display: block;
+    .hero-panel {
         position: fixed;
         right: 30px;
         top: 110px;
@@ -82,13 +109,27 @@ body {
         height: calc(100vh - 150px);
         pointer-events: none;
         z-index: 0;
+        max-width: none;
+        padding: 0;
+        margin: 0;
     }
 
-    .hero-image-fixed img {
+    .hero-panel .hero-figure {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-panel img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        border-radius: 12px;
+    }
+
+    .hero-panel .hero-caption {
+        margin-top: 8px;
+        padding: 0;
+        opacity: 0.8;
     }
 
     header,
@@ -102,6 +143,14 @@ body {
 
 /* Heading styles */
 h1 { font-size: 2em; font-weight: 300; margin: 0; color: var(--header-color); }
+.site-subtitle {
+    font-size: 0.55em;
+    font-weight: 300;
+    opacity: 0.75;
+    margin-left: 8px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
 h3 { font-size: 1em; font-weight: 500; margin: 0 0 0.5em; color: var(--header-color); }
 p { margin: 0; }
 ul { margin: 0; list-style: none; padding: 0; }

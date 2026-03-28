@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>harper's profile</title>
      <link rel="stylesheet" href="assets/styles.css?v=2">
+     <script>
+        document.documentElement.classList.add('js');
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('hero-animate');
+        });
+     </script>
 </head>
 <body class="home">
     <!-- Header section with avatar and title -->
      <header id="main-header">
          <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar">
-         <h1>harper</h1>
+         <h1>harper <span class="site-subtitle">dashboard</span></h1>
           <button id="legal-btn">Legal</button>
      </header>
+
+     <aside class="hero-panel">
+        <figure class="hero-figure">
+            <img src="assets/harper-hero.png" alt="Jésus versant l'intelligence divine" loading="lazy" decoding="async">
+            <figcaption class="hero-caption">Jésus versant l'intelligence divine</figcaption>
+        </figure>
+     </aside>
 
     <!-- Main content grid with cards -->
     <div class="app-grid">
         <div class="card">
             <h3>About</h3>
             <p>An assemblage of open-source utilities meticulously crafted for macOS and Apple platform ecosystems.</p>
-        </div>
-        <div class="card hero-card">
-            <img src="assets/harper-hero.png" alt="Harper artwork" loading="lazy" decoding="async">
         </div>
         <div class="card">
             <h3>Team</h3>
@@ -72,10 +82,6 @@
           </div>
 
         </div>
-
-     <div class="hero-image-fixed" aria-hidden="true">
-         <img src="assets/harper-hero.png" alt="">
-     </div>
 
      <!-- Hidden legal content -->
      <div id="legal-content" style="display: none;">
