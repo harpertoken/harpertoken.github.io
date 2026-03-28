@@ -44,3 +44,6 @@ Thumbs.db
 
 # Release artifacts
 opencodetmp/
+
+# Cache
+.cache/
