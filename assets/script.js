@@ -75,6 +75,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalText = document.getElementById('modal-text');
     const header = document.getElementById('main-header');
     const footer = document.querySelector('footer');
+    const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+
+    // Hero image animation: match repo list fade-in timing/style
+    if (!prefersReducedMotion) {
+        requestAnimationFrame(() => {
+            document.body.classList.add('hero-animate');
+        });
+    }
 
     // Fetch latest release from GitHub data
     const releaseLink = document.getElementById('latest-release-link');
@@ -195,9 +203,83 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     window.addEventListener('scroll', function() {
-        header.classList.toggle('scrolled', window.scrollY > 10);
+        header?.classList.toggle('scrolled', window.scrollY > 10);
         footer.classList.toggle('scrolled', window.scrollY > 10);
     });
+
+    // Slow/smooth wheel scrolling (desktop only). Keeps touch scrolling native.
+    // This is intentionally disabled when the user prefers reduced motion.
+    const allowSlowWheelScroll =
+        !prefersReducedMotion &&
+        window.matchMedia?.('(pointer: fine)')?.matches &&
+        window.matchMedia?.('(hover: hover)')?.matches;
+
+    if (allowSlowWheelScroll) {
+        let isAnimating = false;
+        let currentY = window.scrollY;
+        let targetY = currentY;
+
+        function clampTarget() {
+            const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+            if (targetY < 0) targetY = 0;
+            if (targetY > maxY) targetY = maxY;
+        }
+
+        function animate() {
+            const diff = targetY - currentY;
+            currentY += diff * 0.12;
+            if (Math.abs(diff) < 0.5) {
+                currentY = targetY;
+                window.scrollTo(0, Math.round(currentY));
+                isAnimating = false;
+                return;
+            }
+            window.scrollTo(0, Math.round(currentY));
+            requestAnimationFrame(animate);
+        }
+
+        function isScrollable(el) {
+            if (!el || el === document.body || el === document.documentElement) return false;
+            const style = window.getComputedStyle(el);
+            const overflowY = style.overflowY;
+            if (overflowY === 'hidden' || overflowY === 'visible') return false;
+            return el.scrollHeight > el.clientHeight + 1;
+        }
+
+        window.addEventListener(
+            'wheel',
+            (e) => {
+                if (e.defaultPrevented) return;
+                if (e.ctrlKey || e.metaKey) return; // zoom / gestures
+                if (modal && modal.style.display === 'block' && e.target.closest?.('.modal-content')) {
+                    return; // allow native scrolling inside modal content
+                }
+
+                // If the wheel event occurred inside any scrollable container, don't hijack it.
+                for (let node = e.target; node && node !== document.body; node = node.parentElement) {
+                    if (isScrollable(node)) return;
+                }
+
+                e.preventDefault();
+
+                // Sync to actual scroll position to avoid jumps after non-wheel scrolling.
+                const actualY = window.scrollY;
+                if (!isAnimating || Math.abs(targetY - actualY) > 2) {
+                    currentY = actualY;
+                    targetY = actualY;
+                }
+
+                targetY += e.deltaY;
+                clampTarget();
+
+                if (!isAnimating) {
+                    isAnimating = true;
+                    requestAnimationFrame(animate);
+                }
+            },
+            { passive: false }
+        );
+    }
 
     window.addEventListener('click', function(event) {
         if (event.target == modal) {
