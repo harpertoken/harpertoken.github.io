@@ -2,7 +2,6 @@
 
 ## [1.23.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.22.1...v1.23.0) (2026-03-28)
 
-
 ### Features
 
 * include homepage hero image ([2cd4ca6](https://github.com/harpertoken/harpertoken.github.io/commit/2cd4ca67244c7fbc381f32b34f997c7065f7cbab))
@@ -13,7 +12,6 @@
 * prevent scroll jump and dedupe hero ([49edd87](https://github.com/harpertoken/harpertoken.github.io/commit/49edd873ff5b7a1539e18c03c4a478bd9ee0745c))
 
 ## [1.22.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.22.0...v1.22.1) (2026-03-14)
-
 ### Bug Fixes
 
 * allow manual deploy from any branch ([4c5f03b](https://github.com/harpertoken/harpertoken.github.io/commit/4c5f03bdb239b6b910f2fe4b369749715c3632cb))
