@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "ml-api",
+    "html_url": "https://github.com/harpertoken/ml-api",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "HTML",
@@ -31,20 +38,13 @@
     "name": "llamaware",
     "html_url": "https://github.com/harpertoken/llamaware",
     "language": "C++",
-    "stargazers_count": 0,
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
     "name": "hwh-core",
     "html_url": "https://github.com/harpertoken/hwh-core",
     "language": "Lean",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "ml-api",
-    "html_url": "https://github.com/harpertoken/ml-api",
-    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
