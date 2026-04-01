@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "benchmark",
+    "html_url": "https://github.com/harpertoken/benchmark",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "HTML",
@@ -45,13 +52,6 @@
     "name": "hwh-core",
     "html_url": "https://github.com/harpertoken/hwh-core",
     "language": "Lean",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "benchmark",
-    "html_url": "https://github.com/harpertoken/benchmark",
-    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
