@@ -75,14 +75,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalText = document.getElementById('modal-text');
     const header = document.getElementById('main-header');
     const footer = document.querySelector('footer');
-    const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
 
     // Hero image animation: match repo list fade-in timing/style
-    if (!prefersReducedMotion) {
-        requestAnimationFrame(() => {
-            document.body.classList.add('hero-animate');
-        });
-    }
+    requestAnimationFrame(() => {
+        document.body.classList.add('hero-animate');
+    });
 
     // Fetch latest release from GitHub data
     const releaseLink = document.getElementById('latest-release-link');
@@ -115,24 +112,41 @@ document.addEventListener('DOMContentLoaded', function() {
                     data.repos.forEach((repo, index) => {
                         const li = document.createElement('li');
                         li.style.animationDelay = `${index * STAGGER_DELAY_SECONDS}s`;
+
+                        const rank = document.createElement('span');
+                        rank.className = 'repo-rank';
+                        rank.textContent = String(index + 1);
+
+                        const nameWrap = document.createElement('div');
+                        nameWrap.className = 'repo-name-wrap';
+
                         const link = document.createElement('a');
                         link.href = safeUrl(repo.html_url) || 'https://github.com/harpertoken';
                         link.textContent = repo.name;
-                        link.className = 'kernel-link';
-                        li.appendChild(link);
-                        
-                        const metaParts = [];
-                        if (repo.language) metaParts.push(repo.language);
-                        if (repo.stargazers_count > 0) metaParts.push('★' + repo.stargazers_count);
-                        if (repo.forks_count > 0) metaParts.push('⑂' + repo.forks_count);
-                        
-                        if (metaParts.length > 0) {
-                            const meta = document.createElement('span');
-                            meta.className = 'repo-meta';
-                            meta.textContent = ' ' + metaParts.join(' · ');
-                            li.appendChild(meta);
-                        }
-                        
+                        link.className = 'kernel-link repo-name';
+                        link.dataset.modalText = `${repo.language || 'Unknown stack'} repository`;
+                        nameWrap.appendChild(link);
+
+                        const subline = document.createElement('span');
+                        subline.className = 'repo-subline';
+                        subline.textContent = repo.forks_count > 0
+                            ? `${repo.forks_count} forks`
+                            : 'Repository';
+                        nameWrap.appendChild(subline);
+
+                        const language = document.createElement('span');
+                        language.className = 'repo-lang';
+                        language.textContent = repo.language || 'n/a';
+
+                        const stars = document.createElement('span');
+                        stars.className = 'repo-stars';
+                        stars.textContent = String(repo.stargazers_count || 0);
+
+                        li.appendChild(rank);
+                        li.appendChild(nameWrap);
+                        li.appendChild(language);
+                        li.appendChild(stars);
+
                         repoList.appendChild(li);
                     });
                 }
@@ -141,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error fetching GitHub data:', err);
                 if (releaseLink) releaseLink.textContent = 'Error loading';
                 if (repoList) {
-                    repoList.innerHTML = '<li><a href="https://github.com/harpertoken">harpertoken</a> <span class="repo-meta">(Data unavailable)</span></li>';
+                    repoList.innerHTML = '<li><span class="repo-rank">1</span><div class="repo-name-wrap"><a href="https://github.com/harpertoken" class="repo-name">harpertoken</a><span class="repo-subline">Data unavailable</span></div><span class="repo-lang">n/a</span><span class="repo-stars">0</span></li>';
                     repoList.classList.add('repo-list-loaded');
                 }
             });
@@ -206,80 +220,6 @@ document.addEventListener('DOMContentLoaded', function() {
         header?.classList.toggle('scrolled', window.scrollY > 10);
         footer.classList.toggle('scrolled', window.scrollY > 10);
     });
-
-    // Slow/smooth wheel scrolling (desktop only). Keeps touch scrolling native.
-    // This is intentionally disabled when the user prefers reduced motion.
-    const allowSlowWheelScroll =
-        !prefersReducedMotion &&
-        window.matchMedia?.('(pointer: fine)')?.matches &&
-        window.matchMedia?.('(hover: hover)')?.matches;
-
-    if (allowSlowWheelScroll) {
-        let isAnimating = false;
-        let currentY = window.scrollY;
-        let targetY = currentY;
-
-        function clampTarget() {
-            const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-            if (targetY < 0) targetY = 0;
-            if (targetY > maxY) targetY = maxY;
-        }
-
-        function animate() {
-            const diff = targetY - currentY;
-            currentY += diff * 0.12;
-            if (Math.abs(diff) < 0.5) {
-                currentY = targetY;
-                window.scrollTo(0, Math.round(currentY));
-                isAnimating = false;
-                return;
-            }
-            window.scrollTo(0, Math.round(currentY));
-            requestAnimationFrame(animate);
-        }
-
-        function isScrollable(el) {
-            if (!el || el === document.body || el === document.documentElement) return false;
-            const style = window.getComputedStyle(el);
-            const overflowY = style.overflowY;
-            if (overflowY === 'hidden' || overflowY === 'visible') return false;
-            return el.scrollHeight > el.clientHeight + 1;
-        }
-
-        window.addEventListener(
-            'wheel',
-            (e) => {
-                if (e.defaultPrevented) return;
-                if (e.ctrlKey || e.metaKey) return; // zoom / gestures
-                if (modal && modal.style.display === 'block' && e.target.closest?.('.modal-content')) {
-                    return; // allow native scrolling inside modal content
-                }
-
-                // If the wheel event occurred inside any scrollable container, don't hijack it.
-                for (let node = e.target; node && node !== document.body; node = node.parentElement) {
-                    if (isScrollable(node)) return;
-                }
-
-                e.preventDefault();
-
-                // Sync to actual scroll position to avoid jumps after non-wheel scrolling.
-                const actualY = window.scrollY;
-                if (!isAnimating || Math.abs(targetY - actualY) > 2) {
-                    currentY = actualY;
-                    targetY = actualY;
-                }
-
-                targetY += e.deltaY;
-                clampTarget();
-
-                if (!isAnimating) {
-                    isAnimating = true;
-                    requestAnimationFrame(animate);
-                }
-            },
-            { passive: false }
-        );
-    }
 
     window.addEventListener('click', function(event) {
         if (event.target == modal) {

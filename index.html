@@ -17,7 +17,6 @@
      <header id="main-header">
          <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar">
          <h1>harper <span class="site-subtitle">dashboard</span></h1>
-          <button id="legal-btn">Legal</button>
      </header>
 
      <aside class="hero-panel">
@@ -30,53 +29,51 @@
     <!-- Main content grid with cards -->
     <div class="app-grid">
         <div class="card">
-            <h3>About</h3>
-            <p>An assemblage of open-source utilities meticulously crafted for macOS and Apple platform ecosystems.</p>
-        </div>
-        <div class="card">
             <h3>Team</h3>
             <div>
                 <a class="team-member" data-modal-text="Orchestrates the development endeavors of the Harper toolkit." href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Lead Developer"></a>
                 <a class="team-member" data-modal-text="Administers the processing of bug reports." href="https://github.com/harper-dev-hq"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&amp;v=4" alt="Bug Reporter"></a>
                  <a class="team-member" data-modal-text="Oversees the dissemination of software releases." href="https://github.com/harper-rel-hq"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&amp;v=4" alt="Release Manager"></a>
             </div>
+            <button id="legal-btn" class="section-link-button">Legal</button>
         </div>
-
-          <!-- Packages card -->
-          <div class="card">
-              <h3>Packages</h3>
-                <ul>
-                     <li><a class="kernel-link" data-modal-text="Reinforcement learning toolkit for macOS and Apple platforms." href="https://github.com/harpertoken/rl/pkgs/container/rl">rl</a></li>
-                     <li><a class="kernel-link" data-modal-text="Bare-metal firmware for IoT coffee makers." href="https://github.com/harpertoken/brew/pkgs/container/brew">brew</a></li>
-                </ul>
-           </div>
-           <div class="card">
+           <div class="card repo-card">
                <h3>GitHub Repos</h3>
-                <ul id="repo-list">
-                    <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                    <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                    <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                </ul>
+                <div class="repo-board" aria-label="GitHub repositories">
+                    <div class="repo-board-head" aria-hidden="true">
+                        <span class="repo-col-rank">#</span>
+                        <span class="repo-col-name">Repository</span>
+                        <span class="repo-col-lang">Lang</span>
+                        <span class="repo-col-stars">Stars</span>
+                    </div>
+                    <div class="repo-board-scroll">
+                        <ul id="repo-list" class="repo-board-list">
+                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
+                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
+                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
            </div>
         <!-- Contact card -->
-        <div class="card">
+        <div class="card plain-section plain-contact">
             <h3>Contact</h3>
             <p><a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a></p>
          </div>
-          <div class="card">
+          <div class="card plain-section plain-registries">
               <h3>Registries</h3>
               <ul>
                   <li><a class="kernel-link" data-modal-text="Container registry hosting Docker images for Harper tools." href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
                   <li><a class="kernel-link" data-modal-text="AI model hub for sharing and accessing trained models." href="https://huggingface.co/harpertoken">Hugging Face</a></li>
               </ul>
          </div>
-          <div class="card">
+          <div class="card plain-section plain-release">
               <h3>Latest Release</h3>
               <ul>
                    <li><a id="latest-release-link" data-modal-text="Latest stable Harper toolkit release." href="#">Loading...</a></li>
               </ul>
           </div>
-          <div class="card">
+          <div class="card plain-section plain-welcome">
               <h3>Welcome</h3>
               <p><a class="kernel-link" data-modal-text="Start a welcome issue and introduce yourself." href="welcome.html">Open welcome issue</a></p>
           </div>
