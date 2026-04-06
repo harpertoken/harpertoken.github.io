@@ -2,7 +2,6 @@
 
 ## [1.24.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.23.0...v1.24.0) (2026-04-06)
 
-
 ### Features
 
 * refine dashboard ui ([c4fbc5c](https://github.com/harpertoken/harpertoken.github.io/commit/c4fbc5c8405dc56b89f4346f86889001d6e89553))
@@ -13,7 +12,6 @@
 * restore welcome link ([b7ba0eb](https://github.com/harpertoken/harpertoken.github.io/commit/b7ba0eb9a8183486096a93e5242728d2866360e3))
 
 ## [1.23.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.22.1...v1.23.0) (2026-03-28)
-
 ### Features
 
 * include homepage hero image ([2cd4ca6](https://github.com/harpertoken/harpertoken.github.io/commit/2cd4ca67244c7fbc381f32b34f997c7065f7cbab))
