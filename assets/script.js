@@ -9,7 +9,7 @@ const GITHUB_DATA_URL = 'assets/github-data.json';
 // Validate URL to prevent XSS (only allow https: scheme)
 function safeUrl(url) {
     try {
-        const parsed = new URL(url);
+        const parsed = new URL(url, window.location.href);
         return parsed.protocol === 'https:' ? url : null;
     } catch {
         return null;
@@ -173,10 +173,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('click', function(event) {
         if (event.target.classList.contains('kernel-link')) {
+            const href = event.target.href;
+            const safeHref = safeUrl(href);
+            const isExternal = safeHref && new URL(href, window.location.href).origin !== window.location.origin;
+
+            if (!isExternal) {
+                return;
+            }
+
             event.preventDefault();
-            const href = safeUrl(event.target.href) || '#';
             modalText.textContent = event.target.dataset.modalText || '';
-            buildModalLink(modalText, href);
+            buildModalLink(modalText, safeHref);
             modal.style.display = 'block';
         }
     });
