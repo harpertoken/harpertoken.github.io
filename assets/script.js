@@ -254,11 +254,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         }
 
+        // Fetch Hugging Face spaces
+        const hfSpaces = document.getElementById('hf-spaces');
+        if (hfSpaces) {
+            fetch('https://huggingface.co/api/spaces?author=harpertoken')
+                .then(res => res.json())
+                .then(spaces => {
+                    if (Array.isArray(spaces) && spaces.length > 0) {
+                        spaces.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                        hfSpaces.innerHTML = spaces.slice(0, 8).map(space => {
+                            const url = `https://huggingface.co/spaces/${space.id}`;
+                            const name = space.id.split('/')[1];
+                            const sdk = space.sdk || 'unknown';
+                            const timeAgo = formatTimeAgo(space.createdAt);
+                            return `<div><a href="${url}" target="_blank">${name}</a> - ${sdk} - ${timeAgo}</div>`;
+                        }).join('');
+                    } else {
+                        hfSpaces.textContent = 'No spaces';
+                    }
+                })
+                .catch(err => {
+                    console.error('HF spaces error:', err);
+                    hfSpaces.textContent = 'Error';
+                });
+        }
+
         // Fetch Docker images
         const dockerImages = document.getElementById('docker-images');
         if (dockerImages) {
             const dockerUrl = 'https://hub.docker.com/v2/repositories/harpertoken/?page_size=10';
-            fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(dockerUrl))
+            fetch('https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(dockerUrl))
                 .then(res => res.json())
                 .then(data => {
                     if (data.results && Array.isArray(data.results) && data.results.length > 0) {
