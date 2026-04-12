@@ -24,6 +24,10 @@ function toggleTheme() {
     }
 }
 
+function convertLinks(text) {
+    return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+}
+
 // Keyboard shortcut
 document.addEventListener('keydown', function(e) {
     if (e.key === 'c' || e.key === 'C') {
@@ -56,6 +60,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load GitHub data
     const mainRelease = document.getElementById('latest-release');
     const sidebarRepos = document.getElementById('sidebar-repos');
+    const activityList = document.getElementById('activity-list');
+
+    // Load activity from .github profile
+    if (activityList) {
+        fetch('https://raw.githubusercontent.com/harpertoken/.github/main/profile/readme.md')
+            .then(res => res.text())
+            .then(text => {
+                const match = text.match(/<!-- ORG_ACTIVITY:START -->([\s\S]*?)<!-- ORG_ACTIVITY:END -->/);
+                if (match) {
+                    const lines = match[1].trim().split('\n').slice(0, 8);
+                    activityList.innerHTML = lines.map(l => l.trim() ? `<div>${convertLinks(l)}</div>` : '').join('');
+                } else {
+                    activityList.textContent = 'No activity';
+                }
+            })
+            .catch(() => {
+                activityList.textContent = 'Error';
+            });
+    }
 
     if (mainRelease || sidebarRepos) {
         fetch(GITHUB_DATA_URL)
