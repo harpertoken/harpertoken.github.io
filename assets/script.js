@@ -71,6 +71,13 @@ function toggleTheme() {
     }
 }
 
+function showInfo() {
+    const modal = document.getElementById('modal');
+    const modalText = document.getElementById('modal-text');
+    modalText.innerHTML = 'Special thanks to the models and tools that helped build this site:<br>- Models<br>- Grok<br>- GPT 5.2<br>- Big Pickle';
+    modal.style.display = 'block';
+}
+
 function convertLinks(text) {
     return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 }
