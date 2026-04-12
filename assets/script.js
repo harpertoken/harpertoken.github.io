@@ -1,7 +1,6 @@
-// Theme toggle
-if (localStorage.getItem('theme') === 'dark-grey') {
-    document.body.classList.add('dark-grey-theme');
-}
+// Theme setup
+const theme = localStorage.getItem('theme') || 'light';
+document.body.classList.add(`${theme}-theme`);
 
 // GitHub data
 const GITHUB_DATA_URL = 'assets/github-data.json';
@@ -51,11 +50,24 @@ function formatTimeAgo(dateString) {
 }
 
 function toggleTheme() {
-    document.body.classList.toggle('dark-grey-theme');
-    if (document.body.classList.contains('dark-grey-theme')) {
-        localStorage.setItem('theme', 'dark-grey');
-    } else {
-        localStorage.removeItem('theme');
+    const themes = ['light', 'dark-grey', 'black'];
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentIndex = themes.indexOf(currentTheme);
+    const nextIndex = (currentIndex + 1) % themes.length;
+    const nextTheme = themes[nextIndex];
+
+    // Remove current theme class
+    document.body.classList.remove(`${currentTheme}-theme`);
+    // Add next theme class
+    document.body.classList.add(`${nextTheme}-theme`);
+    // Save to localStorage
+    localStorage.setItem('theme', nextTheme);
+
+    // Update button text
+    const button = document.getElementById('theme-toggle');
+    if (button) {
+        const labels = { light: 'Light', 'dark-grey': 'Dark Grey', black: 'Black' };
+        button.textContent = `Theme: ${labels[nextTheme]}`;
     }
 }
 
@@ -86,9 +98,6 @@ function renderViz(text) {
 
 // Keyboard shortcut
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'c' || e.key === 'C') {
-        toggleTheme();
-    }
     if (e.key === 'Escape') {
         const modal = document.getElementById('modal');
         if (modal) modal.style.display = 'none';
@@ -112,6 +121,16 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'none';
         }
     });
+
+    // Theme toggle button
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+        // Set initial button text
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        const labels = { light: 'Light', 'dark-grey': 'Dark Grey', black: 'Black' };
+        themeToggle.textContent = `Theme: ${labels[currentTheme]}`;
+    }
 
     // Load GitHub data
     const mainRelease = document.getElementById('latest-release');
