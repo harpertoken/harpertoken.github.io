@@ -1,7 +1,13 @@
 # Changelog
 
-## [1.24.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.23.0...v1.24.0) (2026-04-06)
+## [1.25.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.24.0...v1.25.0) (2026-04-12)
 
+### Features
+
+* include activity card ([3c19146](https://github.com/harpertoken/harpertoken.github.io/commit/3c19146295b31ccbf56350b407ef6034119113f0))
+* include graph viz ([1a04ffb](https://github.com/harpertoken/harpertoken.github.io/commit/1a04ffbfffbd26bc9ef0dce77f4c7bc9a88e7f4d))
+
+## [1.24.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.23.0...v1.24.0) (2026-04-06)
 ### Features
 
 * refine dashboard ui ([c4fbc5c](https://github.com/harpertoken/harpertoken.github.io/commit/c4fbc5c8405dc56b89f4346f86889001d6e89553))
