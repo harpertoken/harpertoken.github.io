@@ -1,0 +1,8 @@
+name = "harpertoken-github-status"
+main = "src/index.js"
+compatibility_date = "2026-04-12"
+
+[vars]
+ORG = "harpertoken"
+RELEASE_REPO = "harpertoken/harper"
+

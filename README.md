@@ -63,3 +63,17 @@ git push --force origin main
 ---
 
  <sup>GitHub repos and latest release are auto-fetched hourly via GitHub Action.</sup>
+
+## Real-time GitHub status (optional)
+
+If you want the homepage **Open PRs** / **Open Issues** to be **real-time** (and avoid browser rate limits), deploy the Cloudflare Worker in `cf-worker/` and point the site at it.
+
+1. Deploy the worker (from `cf-worker/`):
+   - Install Wrangler and log in (Cloudflare).
+   - Set secret: `wrangler secret put GITHUB_TOKEN` (a GitHub token with access to public org data is enough).
+   - Deploy: `wrangler deploy`
+2. Copy the deployed URL (ends with `.workers.dev/status`).
+3. Set it in `index.html` via the meta tag:
+   - `index.html`: `<meta name="gh-proxy-url" content="https://YOUR-WORKER.workers.dev/status">`
+
+The frontend will prefer the proxy if configured and will fall back to `assets/github-data.json` if the proxy is unavailable.

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>harper</title>
-    <link rel="stylesheet" href="assets/styles.css?v=2">
+    <link rel="stylesheet" href="assets/styles.css?v=4">
+    <meta name="gh-proxy-url" content="https://harpertoken-github-status.harpertoken-welcome.workers.dev/status">
     <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -71,7 +72,7 @@
             </div>
 
             <div class="content-card">
-                <h2>Release</h2>
+                <h2>Release <span id="fetch-time" class="muted"></span></h2>
                 <p id="latest-release">Loading...</p>
             </div>
 
@@ -95,6 +96,23 @@
         </div>
     </main>
 
-    <script src="assets/script.js"></script>
+    <!-- Right Sidebar -->
+    <aside class="rightbar" aria-label="GitHub status">
+        <div class="rightbar-grid">
+            <div class="content-card">
+                <h2>Open PRs</h2>
+                <div id="open-prs">Loading...</div>
+                <p class="muted-link"><a href="https://github.com/pulls?q=is%3Aopen+org%3Aharpertoken" target="_blank" rel="noopener noreferrer">View all</a></p>
+            </div>
+
+            <div class="content-card">
+                <h2>Open Issues</h2>
+                <div id="open-issues">Loading...</div>
+                <p class="muted-link"><a href="https://github.com/issues?q=is%3Aopen+org%3Aharpertoken+is%3Aissue" target="_blank" rel="noopener noreferrer">View all</a></p>
+            </div>
+        </div>
+    </aside>
+
+    <script src="assets/script.js?v=4"></script>
 </body>
 </html>
