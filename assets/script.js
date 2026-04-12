@@ -207,6 +207,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (fetchTimeEl && cached.fetched_at) {
             fetchTimeEl.textContent = formatTimeAgo(cached.fetched_at) || '';
         }
+
+        const siteVersion = document.getElementById('site-version');
+        if (siteVersion) {
+            fetch('https://api.github.com/repos/harpertoken/harpertoken.github.io/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+                .then(r => r.ok ? r.json() : Promise.reject())
+                .then(data => {
+                    const tag = data.tag_name?.replace('v', '') || '';
+                    siteVersion.innerHTML = tag ? `<a href="${data.html_url}">${tag}</a>` : 'None';
+                })
+                .catch(() => { siteVersion.textContent = 'None'; });
+        }
     };
 
     const handleError = () => {
