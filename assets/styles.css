@@ -197,3 +197,36 @@ a:hover { text-decoration: underline; }
 @media (max-width: 1100px) {
     .rightbar { display: none; }
 }
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    color: var(--text-color);
+}
+
+.info-icon {
+    cursor: pointer;
+    opacity: 0.8;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.info-icon::before {
+    content: "i";
+    color: currentColor;
+}
+
+.info-icon:hover {
+    opacity: 1;
+}
