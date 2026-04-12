@@ -28,6 +28,27 @@ function convertLinks(text) {
     return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 }
 
+function renderViz(text) {
+    const viz = document.getElementById('activity-viz');
+    if (!viz) return;
+    const lines = text.split('\n').slice(0, 21);
+    let html = '<div class="viz-grid">';
+    for (let i = 0; i < 21; i++) {
+        const line = lines[i] || '';
+        const hasLine = line.includes('—');
+        let title = '';
+        if (hasLine) {
+            const date = line.match(/(\d{4}-\d{2}-\d{2})/)?.[1] || '';
+            const user = line.match(/@(\w+)/)?.[1] || '';
+            title = `1 commit by @${user} on ${date}`;
+        }
+        const level = hasLine ? (i % 4 === 0 ? 'l4' : i % 3 === 0 ? 'l3' : i % 2 === 0 ? 'l2' : 'l1') : '';
+        html += `<div class="viz-cell ${level}" data-title="${title}"></div>`;
+    }
+    html += '</div>';
+    viz.innerHTML = html;
+}
+
 // Keyboard shortcut
 document.addEventListener('keydown', function(e) {
     if (e.key === 'c' || e.key === 'C') {
@@ -69,8 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(text => {
                 const match = text.match(/<!-- ORG_ACTIVITY:START -->([\s\S]*?)<!-- ORG_ACTIVITY:END -->/);
                 if (match) {
-                    const lines = match[1].trim().split('\n').slice(0, 8);
+                    const text = match[1];
+                    const lines = text.split('\n').slice(0, 8);
                     activityList.innerHTML = lines.map(l => l.trim() ? `<div>${convertLinks(l)}</div>` : '').join('');
+                    renderViz(text);
                 } else {
                     activityList.textContent = 'No activity';
                 }
