@@ -89,9 +89,9 @@ a:hover { text-decoration: underline; }
 .tagline { color: var(--text-color); opacity: 0.5; margin-top: 3px; }
 
 /* Rightbar */
-.rightbar { width: 360px; flex-shrink: 0; padding: 20px 24px 20px 0; }
-.rightbar-grid { display: grid; gap: 12px; position: sticky; top: 0; }
-.muted-link { margin-top: 10px; font-size: 0.75rem; opacity: 0.6; }
+.rightbar { width: 280px; flex-shrink: 0; padding: 16px 20px 16px 0; }
+.rightbar-grid { display: grid; gap: 10px; position: sticky; top: 0; }
+.muted-link { margin-top: 8px; font-size: 0.7rem; opacity: 0.6; }
 .muted-link a { color: var(--text-color); }
 
 /* Grid */
@@ -107,11 +107,11 @@ a:hover { text-decoration: underline; }
 #activity-list a { color: var(--accent-color); }
 
 /* Issues / PRs */
-.issue-list { display: flex; flex-direction: column; gap: 6px; max-height: 420px; overflow-y: auto; }
-.issue-item { display: flex; flex-direction: column; gap: 2px; padding: 6px 0; border-bottom: 1px solid var(--border-color); }
+.issue-list { display: flex; flex-direction: column; gap: 4px; max-height: 300px; overflow-y: auto; }
+.issue-item { display: flex; flex-direction: column; gap: 1px; padding: 3px 0; border-bottom: 1px solid var(--border-color); }
 .issue-item:last-child { border-bottom: none; }
-.issue-title { font-size: 0.85rem; line-height: 1.35; }
-.issue-meta { font-size: 0.72rem; opacity: 0.55; display: flex; gap: 8px; flex-wrap: wrap; }
+.issue-title { font-size: 0.75rem; line-height: 1.3; }
+.issue-meta { font-size: 0.65rem; opacity: 0.5; display: flex; gap: 6px; flex-wrap: wrap; }
 .issue-repo { opacity: 0.75; }
 
 /* Forms */
