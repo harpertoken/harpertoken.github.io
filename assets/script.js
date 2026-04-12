@@ -228,6 +228,104 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const siteVersion = document.getElementById('site-version');
+
+        // Fetch Hugging Face models
+        const hfModels = document.getElementById('hf-models');
+        if (hfModels) {
+            fetch('https://huggingface.co/api/models?author=harpertoken')
+                .then(res => res.json())
+                .then(models => {
+                    if (Array.isArray(models) && models.length > 0) {
+                        models.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                        hfModels.innerHTML = models.slice(0, 8).map(model => {
+                            const url = `https://huggingface.co/${model.id}`;
+                            const name = model.id.split('/')[1];
+                            const pipeline = model.pipeline_tag || 'unknown';
+                            const timeAgo = formatTimeAgo(model.createdAt);
+                            return `<div><a href="${url}" target="_blank">${name}</a> - ${pipeline} - ${timeAgo}</div>`;
+                        }).join('');
+                    } else {
+                        hfModels.textContent = 'No models';
+                    }
+                })
+                .catch(err => {
+                    console.error('HF models error:', err);
+                    hfModels.textContent = 'Error';
+                });
+        }
+
+        // Fetch Docker images
+        const dockerImages = document.getElementById('docker-images');
+        if (dockerImages) {
+            const dockerUrl = 'https://hub.docker.com/v2/repositories/harpertoken/?page_size=10';
+            fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(dockerUrl))
+                .then(res => res.json())
+                .then(data => {
+                    if (data.results && Array.isArray(data.results) && data.results.length > 0) {
+                        data.results.sort((a, b) => new Date(b.last_updated) - new Date(a.last_updated));
+                        dockerImages.innerHTML = data.results.slice(0, 8).map(image => {
+                            const url = `https://hub.docker.com/r/harpertoken/${image.name}`;
+                            const pulls = image.pull_count.toLocaleString();
+                            const timeAgo = formatTimeAgo(image.last_updated);
+                            return `<div><a href="${url}" target="_blank">${image.name}</a> - ${pulls} pulls - ${timeAgo}</div>`;
+                        }).join('');
+                    } else {
+                        dockerImages.textContent = 'No images';
+                    }
+                })
+                .catch(err => {
+                    console.error('Docker error:', err);
+                    dockerImages.textContent = 'Error';
+                });
+        }
+
+        // Fetch GitLab projects
+        const gitlabProjects = document.getElementById('gitlab-projects');
+        if (gitlabProjects) {
+            fetch('https://gitlab.com/api/v4/users/harpertoken/projects?per_page=10')
+                .then(res => res.json())
+                .then(projects => {
+                    if (Array.isArray(projects) && projects.length > 0) {
+                        projects.sort((a, b) => new Date(b.last_activity_at) - new Date(a.last_activity_at));
+                        gitlabProjects.innerHTML = projects.slice(0, 8).map(project => {
+                            const url = project.web_url;
+                            const stars = project.star_count;
+                            const timeAgo = formatTimeAgo(project.last_activity_at);
+                            return `<div><a href="${url}" target="_blank">${project.name}</a> - ${stars} stars - ${timeAgo}</div>`;
+                        }).join('');
+                    } else {
+                        gitlabProjects.textContent = 'No projects';
+                    }
+                })
+                .catch(err => {
+                    console.error('GitLab error:', err);
+                    gitlabProjects.textContent = 'Error';
+                });
+        }
+
+        // Fetch npm packages
+        const npmPackages = document.getElementById('npm-packages');
+        if (npmPackages) {
+            fetch('https://registry.npmjs.org/-/v1/search?text=maintainer:harpertoken&size=10')
+                .then(res => res.json())
+                .then(data => {
+                    if (data.objects && Array.isArray(data.objects) && data.objects.length > 0) {
+                        data.objects.sort((a, b) => new Date(b.package.date) - new Date(a.package.date));
+                        npmPackages.innerHTML = data.objects.slice(0, 8).map(pkg => {
+                            const url = pkg.package.links.npm;
+                            const downloads = pkg.downloads.monthly.toLocaleString();
+                            const timeAgo = formatTimeAgo(pkg.package.date);
+                            return `<div><a href="${url}" target="_blank">${pkg.package.name}</a> - ${downloads} downloads - ${timeAgo}</div>`;
+                        }).join('');
+                    } else {
+                        npmPackages.textContent = 'No packages';
+                    }
+                })
+                .catch(err => {
+                    console.error('npm error:', err);
+                    npmPackages.textContent = 'Error';
+                });
+        }
         if (siteVersion && data.site_release) {
             const tag = data.site_release.tag_name?.replace('v', '') || '';
             siteVersion.innerHTML = tag ? `<a href="${data.site_release.html_url}">${tag}</a>` : 'None';
