@@ -129,6 +129,10 @@ a:hover { text-decoration: underline; }
 #hf-models > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
 #hf-models > div:last-child { border-bottom: none; }
 #hf-models a { color: var(--accent-color); }
+#hf-spaces { max-height: 180px; overflow-y: auto; }
+#hf-spaces > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#hf-spaces > div:last-child { border-bottom: none; }
+#hf-spaces a { color: var(--accent-color); }
 #docker-images { max-height: 180px; overflow-y: auto; }
 #docker-images > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
 #docker-images > div:last-child { border-bottom: none; }
