@@ -3,68 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Harper</title>
+    <title>Welcome - harper</title>
     <link rel="stylesheet" href="assets/styles.css?v=2">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <header id="main-header">
-        <a href="index.html"><img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar"></a>
-        <h1>Welcome</h1>
-        <button id="legal-btn">Legal</button>
-    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html"><img src="https://avatars.githubusercontent.com/u/203538727?s=400&v=4" alt="Harper"></a>
+            <a href="index.html" style="text-decoration:none"><span>harper</span></a>
+        </div>
 
-    <div class="app-grid">
-        <div class="card">
-            <h3>Introduce Yourself</h3>
-            <p>Submit this form to open a welcome issue. The bot will post a message and start the conversation.</p>
+        <div class="sidebar-section">
+            <h3>Navigate</h3>
+            <nav class="sidebar-nav">
+                <a href="index.html">Home</a>
+                <a href="welcome.html">Welcome</a>
+                <a href="legal.html">Legal</a>
+                <a href="cla.html">CLA</a>
+            </nav>
         </div>
-        <div class="card">
-            <h3>Welcome Form</h3>
-            <form id="welcome-form" data-endpoint="https://harpertoken-welcome-bot.harpertoken-welcome.workers.dev">
-                <label class="form-field">
-                    GitHub username
-                    <input type="text" name="github" autocomplete="username" required>
-                </label>
-                <label class="form-field">
-                    Your name
-                    <input type="text" name="name" autocomplete="name" required>
-                </label>
-                <label class="form-field">
-                    What brings you here?
-                    <textarea name="note" rows="4" placeholder="Short intro (optional)"></textarea>
-                </label>
-                <label class="form-field">
-                    Website or profile (optional)
-                    <input type="url" name="link" placeholder="https://">
-                </label>
-                <label class="form-field trap-field">
-                    Company (leave blank)
-                    <input type="text" name="company" autocomplete="off" tabindex="-1">
-                </label>
-                <button class="primary-button" type="submit">Open welcome issue</button>
-                <p id="form-status" class="status" role="status" aria-live="polite"></p>
-            </form>
-        </div>
-    </div>
 
-    <div id="legal-content" style="display: none;">
-        <div class="legal-grid">
-            <div class="legal-item">🔒 <a href="legal.html#privacy">Privacy</a></div>
-            <div class="legal-item">⚖️ <a href="legal.html#terms">Terms</a></div>
-            <div class="legal-item">🎨 <button id="modal-contrast-btn">Theme</button></div>
-            <div class="legal-item">⚡ <button id="grid-toggle-btn">Grid</button></div>
-            <div class="legal-item">👁️ <button id="headings-toggle-btn">Headings</button></div>
-            <div class="legal-item">📜 <a href="cla.html">CLA</a></div>
-            <div class="legal-item">🐱 <a href="https://github.com/harpertoken" class="kernel-link" data-modal-text="Harper's GitHub repositories.">GitHub</a></div>
+        <div class="sidebar-section">
+            <h3>Team</h3>
+            <div class="sidebar-team">
+                <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&v=4" alt="Lead"></a>
+                <a href="https://github.com/harper-dev-hq"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&v=4" alt="Bug"></a>
+                <a href="https://github.com/harper-rel-hq"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&v=4" alt="Release"></a>
+            </div>
         </div>
-    </div>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modal-text"></p>
+        <div class="sidebar-section">
+            <h3>Links</h3>
+            <nav class="sidebar-nav">
+                <a href="https://github.com/harpertoken">GitHub</a>
+                <a href="https://hub.docker.com/u/harpertoken">Docker</a>
+                <a href="https://huggingface.co/harpertoken">HuggingFace</a>
+            </nav>
         </div>
-    </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>Welcome</h1>
+            <p class="tagline">Introduce yourself to the community</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="content-card" style="grid-column: span 2;">
+                <h2>Open a Welcome Issue</h2>
+                <p>Submit this form to open a welcome issue. The bot will post a message and start the conversation.</p>
+            </div>
+
+            <div class="content-card" style="grid-column: span 2;">
+                <form id="welcome-form" data-endpoint="https://harpertoken-welcome-bot.harpertoken-welcome.workers.dev">
+                    <label class="form-field">
+                        GitHub username
+                        <input type="text" name="github" autocomplete="username" required>
+                    </label>
+                    <label class="form-field">
+                        Your name
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label class="form-field">
+                        What brings you here?
+                        <textarea name="note" rows="3" placeholder="Short intro (optional)"></textarea>
+                    </label>
+                    <label class="form-field">
+                        Website or profile (optional)
+                        <input type="url" name="link" placeholder="https://">
+                    </label>
+                    <label class="form-field trap-field">
+                        Company (leave blank)
+                        <input type="text" name="company" autocomplete="off" tabindex="-1">
+                    </label>
+                    <button class="primary-button" type="submit">Open welcome issue</button>
+                    <p id="form-status" class="status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </main>
 
     <script src="assets/script.js"></script>
     <script src="assets/welcome.js"></script>

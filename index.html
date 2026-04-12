@@ -3,117 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>harper's profile</title>
-     <link rel="stylesheet" href="assets/styles.css?v=2">
-     <script>
-        document.documentElement.classList.add('js');
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.add('hero-animate');
-        });
-     </script>
+    <title>harper</title>
+    <link rel="stylesheet" href="assets/styles.css?v=2">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="home">
-    <!-- Header section with avatar and title -->
-     <header id="main-header">
-         <img src="https://avatars.githubusercontent.com/u/203538727?s=400&amp;u=03d5f82ddba3ed9bbd6b8ec6817bad7e532a44e8&amp;v=4" alt="Harper's avatar">
-         <h1>harper <span class="site-subtitle">dashboard</span></h1>
-     </header>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="https://avatars.githubusercontent.com/u/203538727?s=400&v=4" alt="Harper">
+            <span>harper</span>
+        </div>
 
-     <aside class="hero-panel">
-        <figure class="hero-figure">
-            <img src="assets/harper-hero.png" alt="Jésus versant l'intelligence divine" loading="lazy" decoding="async">
-            <figcaption class="hero-caption">Jésus versant l'intelligence divine</figcaption>
-        </figure>
-     </aside>
+        <div class="sidebar-section">
+            <nav class="sidebar-nav">
+                <a href="index.html">Home</a>
+                <a href="welcome.html">Welcome</a>
+                <a href="legal.html">Legal</a>
+                <a href="cla.html">CLA</a>
+            </nav>
+        </div>
 
-    <!-- Main content grid with cards -->
-    <div class="app-grid">
-        <div class="card">
+        <div class="sidebar-section">
             <h3>Team</h3>
-            <div>
-                <a class="team-member" data-modal-text="Orchestrates the development endeavors of the Harper toolkit." href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&amp;u=c9689feb3e1fea49b01a34f9c0f4168668110c57&amp;v=4" alt="Lead Developer"></a>
-                <a class="team-member" data-modal-text="Administers the processing of bug reports." href="https://github.com/harper-dev-hq"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&amp;v=4" alt="Bug Reporter"></a>
-                 <a class="team-member" data-modal-text="Oversees the dissemination of software releases." href="https://github.com/harper-rel-hq"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&amp;v=4" alt="Release Manager"></a>
+            <div class="sidebar-team">
+                <a href="https://github.com/bniladridas"><img src="https://avatars.githubusercontent.com/u/125604915?s=400&v=4" alt="Lead"></a>
+                <a href="https://github.com/harper-dev-hq"><img src="https://avatars.githubusercontent.com/u/236089746?s=400&v=4" alt="Bug"></a>
+                <a href="https://github.com/harper-rel-hq"><img src="https://avatars.githubusercontent.com/u/237646224?s=400&v=4" alt="Release"></a>
             </div>
-            <button id="legal-btn" class="section-link-button">Legal</button>
-        </div>
-           <div class="card repo-card">
-               <h3>GitHub Repos</h3>
-                <div class="repo-board" aria-label="GitHub repositories">
-                    <div class="repo-board-head" aria-hidden="true">
-                        <span class="repo-col-rank">#</span>
-                        <span class="repo-col-name">Repository</span>
-                        <span class="repo-col-lang">Lang</span>
-                        <span class="repo-col-stars">Stars</span>
-                    </div>
-                    <div class="repo-board-scroll">
-                        <ul id="repo-list" class="repo-board-list">
-                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                            <li class="repo-skeleton" aria-hidden="true"><span></span></li>
-                        </ul>
-                    </div>
-                </div>
-           </div>
-        <!-- Contact card -->
-        <div class="card plain-section plain-contact">
-            <h3>Contact</h3>
-            <p><a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a></p>
-         </div>
-          <div class="card plain-section plain-registries">
-              <h3>Registries</h3>
-              <ul>
-                  <li><a class="kernel-link" data-modal-text="Container registry hosting Docker images for Harper tools." href="https://hub.docker.com/u/harpertoken">Docker Hub</a></li>
-                  <li><a class="kernel-link" data-modal-text="AI model hub for sharing and accessing trained models." href="https://huggingface.co/harpertoken">Hugging Face</a></li>
-              </ul>
-         </div>
-          <div class="card plain-section plain-release">
-              <h3>Latest Release</h3>
-              <ul>
-                   <li><a id="latest-release-link" data-modal-text="Latest stable Harper toolkit release." href="#">Loading...</a></li>
-              </ul>
-          </div>
-          <div class="card plain-section plain-welcome">
-              <h3>Welcome</h3>
-              <p><a class="kernel-link" data-modal-text="Start a welcome issue and introduce yourself." href="welcome.html">Open welcome issue</a></p>
-          </div>
-
         </div>
 
-     <!-- Hidden legal content -->
-     <div id="legal-content" style="display: none;">
-         <div class="legal-grid">
-             <div class="legal-item">🔒 <a href="legal.html#privacy">Privacy</a></div>
-             <div class="legal-item">⚖️ <a href="legal.html#terms">Terms</a></div>
-             <div class="legal-item">🎨 <button id="modal-contrast-btn">Theme</button></div>
-             <div class="legal-item">⚡ <button id="grid-toggle-btn">Grid</button></div>
-             <div class="legal-item">👁️ <button id="headings-toggle-btn">Headings</button></div>
-              <div class="legal-item">📜 <a href="cla.html">CLA</a></div>
-               <div class="legal-item">📁 <a href="https://github.com/dotfiles-mac/dotfiles" class="kernel-link" data-modal-text="Dotfiles configuration for macOS.">Dotfiles</a></div>
-              <div class="legal-item">🦊 <a href="https://gitlab.com/harpertoken" class="kernel-link" data-modal-text="Harper's GitLab repositories.">GitLab</a></div>
-              <div class="legal-item">📦 <a href="https://www.npmjs.com/package/@harpertoken/testapp-sdk" class="kernel-link" data-modal-text="Harper's npm SDK package.">npm</a></div>
-              <div class="legal-item">💙 <a href="https://bsky.app/profile/did:plc:53qhmv6evtipsiefjgwjst2l" class="kernel-link" data-modal-text="Harper on Bluesky.">Bluesky</a></div>
-              <div class="legal-item">❤️ <a href="https://www.patreon.com/cw/harpertoken" class="kernel-link" data-modal-text="Support Harper on Patreon.">Patreon</a></div>
-              <div class="legal-item">🐱 <a href="https://github.com/harpertoken" class="kernel-link" data-modal-text="Harper's GitHub repositories.">GitHub</a></div>
-         </div>
-     </div>
-
-     <!-- Modal for team details -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modal-text"></p>
+        <div class="sidebar-section">
+            <h3>Repos</h3>
+            <div class="sidebar-repos" id="sidebar-repos">
+                <a href="https://github.com/harpertoken">Loading...</a>
+            </div>
         </div>
-     </div>
 
-     <div class="view-source-container">
-         <a class="kernel-link" data-modal-text="Access the source code repository for this website." href="https://github.com/harpertoken/harpertoken.github.io">View source</a>
-     </div>
+        <div class="sidebar-section">
+            <nav class="sidebar-nav">
+                <a href="https://github.com/harpertoken">GitHub</a>
+                <a href="https://hub.docker.com/u/harpertoken">Docker</a>
+                <a href="https://huggingface.co/harpertoken">HuggingFace</a>
+            </nav>
+        </div>
+    </aside>
 
-      <script src="assets/script.js"></script>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-image">
+            <img src="assets/harper-hero.png" alt="Harper" loading="eager">
+        </div>
 
-       <footer>
-       </footer>
+        <header>
+            <p class="tagline">Software tooling for developers</p>
+        </header>
 
+        <div class="content-grid">
+            <div class="content-card">
+                <h2>Latest Release</h2>
+                <p id="latest-release">Loading...</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Contact</h2>
+                <p><a href="mailto:harpertoken@icloud.com">harpertoken@icloud.com</a></p>
+            </div>
+
+            <div class="content-card">
+                <h2>Social</h2>
+                <p><a href="https://bsky.app/profile/did:plc:53qhmv6evtipsiefjgwjst2l">Bluesky</a></p>
+                <p><a href="https://www.patreon.com/cw/harpertoken">Patreon</a></p>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
