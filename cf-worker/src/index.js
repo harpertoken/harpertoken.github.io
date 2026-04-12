@@ -68,6 +68,7 @@ export default {
 
     const org = env.ORG || 'harpertoken';
     const releaseRepo = env.RELEASE_REPO || `${org}/harper`;
+    const siteRepo = env.SITE_REPO || `${org}/harpertoken.github.io`;
 
     const cacheKey = new Request(url.toString(), request);
     const cache = caches.default;
@@ -75,9 +76,10 @@ export default {
     if (cached) return cached;
 
     try {
-      const [repos, release, openPrs, openIssues] = await Promise.all([
+      const [repos, release, siteRelease, openPrs, openIssues] = await Promise.all([
         ghJson(`https://api.github.com/orgs/${org}/repos?sort=pushed&per_page=20`, token),
         ghJson(`https://api.github.com/repos/${releaseRepo}/releases/latest`, token),
+        ghJson(`https://api.github.com/repos/${siteRepo}/releases/latest`, token).catch(() => null),
         ghJson(
           `https://api.github.com/search/issues?q=org:${org}+is:pr+is:open&sort=updated&order=desc&per_page=10`,
           token,
@@ -101,6 +103,10 @@ export default {
           tag_name: release.tag_name,
           html_url: release.html_url,
         },
+        site_release: siteRelease ? {
+          tag_name: siteRelease.tag_name,
+          html_url: siteRelease.html_url,
+        } : null,
         open_prs: {
           total_count: openPrs.total_count ?? 0,
           items: Array.isArray(openPrs.items) ? openPrs.items.map(pickIssueItem) : [],
