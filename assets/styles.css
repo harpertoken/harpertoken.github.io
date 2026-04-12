@@ -80,7 +80,7 @@ a:hover { text-decoration: underline; }
 .sidebar-repos a:hover { opacity: 1; background: var(--border-color); }
 
 /* Main */
-.main-content { flex: 1; padding: 20px 24px; max-width: 680px; }
+.main-content { flex: 1; padding: 20px 24px; max-width: 720px; width: 100%; }
 .main-content header { margin-bottom: 16px; }
 
 .hero-image { margin-bottom: 16px; border-radius: 8px; overflow: hidden; }
@@ -91,8 +91,13 @@ a:hover { text-decoration: underline; }
 /* Grid */
 .content-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
 .content-card { padding: 16px; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color); }
+.content-card.full-width { grid-column: span 2; }
 .content-card h2 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.4; margin: 0 0 6px; font-weight: 500; }
 .content-card p { font-size: 0.9rem; margin: 0; }
+#activity-list { max-height: 180px; overflow-y: auto; }
+#activity-list > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#activity-list > div:last-child { border-bottom: none; }
+#activity-list a { color: var(--accent-color); }
 
 /* Forms */
 .form-field { display: block; margin-bottom: 12px; font-size: 0.85rem; }
@@ -118,4 +123,5 @@ a:hover { text-decoration: underline; }
     .sidebar { display: none; }
     .main-content { max-width: none; padding: 16px; }
     .content-grid { grid-template-columns: 1fr; }
+    .content-card.full-width { grid-column: span 1; }
 }
