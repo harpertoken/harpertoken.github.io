@@ -125,6 +125,22 @@ a:hover { text-decoration: underline; }
 .content-card p { font-size: 0.9rem; margin: 0; }
 .muted { font-weight: 400; opacity: 0.5; font-size: 0.65rem; }
 #activity-list { max-height: 180px; overflow-y: auto; }
+#hf-models { max-height: 180px; overflow-y: auto; }
+#hf-models > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#hf-models > div:last-child { border-bottom: none; }
+#hf-models a { color: var(--accent-color); }
+#docker-images { max-height: 180px; overflow-y: auto; }
+#docker-images > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#docker-images > div:last-child { border-bottom: none; }
+#docker-images a { color: var(--accent-color); }
+#gitlab-projects { max-height: 180px; overflow-y: auto; }
+#gitlab-projects > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#gitlab-projects > div:last-child { border-bottom: none; }
+#gitlab-projects a { color: var(--accent-color); }
+#npm-packages { max-height: 180px; overflow-y: auto; }
+#npm-packages > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
+#npm-packages > div:last-child { border-bottom: none; }
+#npm-packages a { color: var(--accent-color); }
 #activity-list > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
 #activity-list > div:last-child { border-bottom: none; }
 #activity-list a { color: var(--accent-color); }
