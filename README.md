@@ -1,79 +1,59 @@
 # harpertoken.github.io
 
-![Contributor License Agreement](./assets/CLA.png)
+GitHub Pages site for the [harpertoken](https://github.com/harpertoken) organization.
 
-This is the GitHub Pages site for [harpertoken](https://github.com/harpertoken), featuring a profile page for Harper with information on open source tools, kernel development, and CI/CD pipelines.
+## Site
 
-## View the Site
+- Live: https://harpertoken.github.io
+- Pages: `index.html`, `welcome.html`, `legal.html`, `cla.html`
+- Assets: `assets/` (CSS, JS, images, generated GitHub data)
 
-Visit the live site at: https://harpertoken.github.io
+## How GitHub Data Works
+
+The homepage shows org activity and a small “status” view (repos, latest release, open PRs, open issues).
+
+There are two supported sources for that data:
+
+- **Scheduled snapshot (default):** `.github/workflows/fetch-github-data.yml` updates `assets/github-data.json` (runs hourly).
+- **Real-time proxy (optional):** `cf-worker/` (Cloudflare Worker) calls the GitHub API with a token and returns the same JSON schema. The frontend will prefer the proxy when configured and fall back to `assets/github-data.json` if the proxy is unavailable.
 
 ## Local Development
 
-To run locally:
-1. Clone the repository.
-2. Open `index.html` in your web browser or run a local server:
-   ```bash
-   python3 -m http.server 8000
-   ```
-   Then visit http://localhost:8000
+No build step is required (static HTML). For local testing:
 
-No build process is required as it's a static HTML site.
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000
+
+## Real-time Proxy (Cloudflare Worker)
+
+1. From `cf-worker/`, deploy with Wrangler:
+   - `wrangler secret put GITHUB_TOKEN`
+   - `wrangler deploy`
+2. Point the site at your Worker:
+   - `index.html`: `<meta name="gh-proxy-url" content="https://YOUR-WORKER.workers.dev/status">`
 
 ## Contributing
 
-This project uses conventional commit standards.
+We keep changes small, readable, and easy to maintain.
 
-## GitHub Discussions
+Commit messages follow conventional commits:
 
-When creating a GitHub Discussion, choose a category that best matches the topic. For discussions about documentation tone, style, and guidance, we recommend one of the following categories:
-- **Ideas**: For exploratory or design-focused topics. This is often the best fit.
-- **Documentation**: For topics specific to this repository's documentation (use if this category exists).
-- **General**: As a catch-all if no other category is a good fit.
+- Start with a conventional type: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+- Be lowercase
+- First line ≤60 characters
 
-## Setup
-
-To enable the commit-msg hook, copy it to your .git/hooks/ directory:
+Optional: enable the commit-msg hook locally:
 
 ```bash
 cp scripts/commit-msg .git/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ```
 
-## Usage
+## Support / Contact
 
-Commit messages must:
-- Start with a conventional type: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
-- Be lowercase
-- First line ≤60 characters
-
-## Rewriting History
-
-To clean up existing commit messages, run:
-
-```bash
-./scripts/rewrite_msg.sh
-```
-
-Then force-push:
-
-```bash
-git push --force origin main
-```
----
-
- <sup>GitHub repos and latest release are auto-fetched hourly via GitHub Action.</sup>
-
-## Real-time GitHub status (optional)
-
-If you want the homepage **Open PRs** / **Open Issues** to be **real-time** (and avoid browser rate limits), deploy the Cloudflare Worker in `cf-worker/` and point the site at it.
-
-1. Deploy the worker (from `cf-worker/`):
-   - Install Wrangler and log in (Cloudflare).
-   - Set secret: `wrangler secret put GITHUB_TOKEN` (a GitHub token with access to public org data is enough).
-   - Deploy: `wrangler deploy`
-2. Copy the deployed URL (ends with `.workers.dev/status`).
-3. Set it in `index.html` via the meta tag:
-   - `index.html`: `<meta name="gh-proxy-url" content="https://YOUR-WORKER.workers.dev/status">`
-
-The frontend will prefer the proxy if configured and will fall back to `assets/github-data.json` if the proxy is unavailable.
+- Org: https://github.com/harpertoken
+- Email: `harpertoken@icloud.com`
+- Social: Bluesky + Patreon links are on the homepage
