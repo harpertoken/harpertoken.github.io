@@ -209,14 +209,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const siteVersion = document.getElementById('site-version');
-        if (siteVersion) {
-            fetch('https://api.github.com/repos/harpertoken/harpertoken.github.io/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => {
-                    const tag = data.tag_name?.replace('v', '') || '';
-                    siteVersion.innerHTML = tag ? `<a href="${data.html_url}">${tag}</a>` : 'None';
-                })
-                .catch(() => { siteVersion.textContent = 'None'; });
+        if (siteVersion && data.site_release) {
+            const tag = data.site_release.tag_name?.replace('v', '') || '';
+            siteVersion.innerHTML = tag ? `<a href="${data.site_release.html_url}">${tag}</a>` : 'None';
+        } else if (siteVersion) {
+            siteVersion.textContent = 'None';
         }
     };
 
