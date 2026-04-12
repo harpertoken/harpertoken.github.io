@@ -89,8 +89,8 @@ a:hover { text-decoration: underline; }
 .tagline { color: var(--text-color); opacity: 0.5; margin-top: 3px; }
 
 /* Rightbar */
-.rightbar { width: 280px; flex-shrink: 0; padding: 16px 20px 16px 0; }
-.rightbar-grid { display: grid; gap: 10px; position: sticky; top: 0; }
+.rightbar { width: 300px; flex-shrink: 0; padding: 16px 20px 16px 0; }
+.rightbar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; position: sticky; top: 0; }
 .muted-link { margin-top: 8px; font-size: 0.7rem; opacity: 0.6; }
 .muted-link a { color: var(--text-color); }
 
