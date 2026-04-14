@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -25,13 +32,6 @@
     "html_url": "https://github.com/harpertoken/benchmark",
     "language": "Python",
     "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -143,8 +143,17 @@
   "tag_name": "harper-ui-0.7.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.0"
 }, "open_prs": {
-  "total_count": 43,
+  "total_count": 44,
   "items": [
+    {
+      "repo": "harper",
+      "number": 224,
+      "title": "[deps] bump rand from 0.10.0 to 0.10.1 in the cargo group across 1 directory",
+      "html_url": "https://github.com/harpertoken/harper/pull/224",
+      "updated_at": "2026-04-14T01:06:09Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "ml-api",
       "number": 58,
@@ -223,15 +232,6 @@
       "title": "[deps] bump hashbrown from 0.16.1 to 0.17.0",
       "html_url": "https://github.com/harpertoken/harper/pull/222",
       "updated_at": "2026-04-10T05:56:08Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 221,
-      "title": "[deps] bump tokio from 1.51.0 to 1.51.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/221",
-      "updated_at": "2026-04-09T05:56:05Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
