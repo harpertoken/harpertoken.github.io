@@ -237,17 +237,8 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 132,
+  "total_count": 131,
   "items": [
-    {
-      "repo": ".github",
-      "number": 51,
-      "title": "Tracking Reopened Dependabot PRs",
-      "html_url": "https://github.com/harpertoken/.github/issues/51",
-      "updated_at": "2026-04-01T05:49:25Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
     {
       "repo": "harper",
       "number": 189,
@@ -326,6 +317,15 @@
       "title": "Auto Improvement Report - 2025-12-15",
       "html_url": "https://github.com/harpertoken/hub/issues/132",
       "updated_at": "2025-12-15T03:23:35Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "hub",
+      "number": 131,
+      "title": "Auto Improvement Report - 2025-12-14",
+      "html_url": "https://github.com/harpertoken/hub/issues/131",
+      "updated_at": "2025-12-14T03:22:24Z",
       "user": "github-actions[bot]",
       "comments": 0
     }
