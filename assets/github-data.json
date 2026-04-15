@@ -1,9 +1,9 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
     "forks_count": 0
   },
   {
@@ -14,10 +14,10 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -143,7 +143,7 @@
   "tag_name": "harper-ui-0.7.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.1"
 }, "open_prs": {
-  "total_count": 45,
+  "total_count": 44,
   "items": [
     {
       "repo": "harper",
