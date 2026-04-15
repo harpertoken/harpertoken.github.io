@@ -8,14 +8,32 @@ GitHub Pages site for the [harpertoken](https://github.com/harpertoken) organiza
 - Pages: `index.html`, `welcome.html`, `legal.html`, `cla.html`
 - Assets: `assets/` (CSS, JS, images, generated GitHub data)
 
+### Homepage Features
+
+- **Sidebar**: Team avatars with status dots, repos list, navigation
+- **Main area**:
+  - Hero image and tagline
+  - Activity feed with recent org commits
+  - Graph visualization (21 cells showing recent activity)
+  - Library (harper release) + Site (site version) cards
+  - Contact and Social links
+- **Right sidebar**: Open PRs and issues cards (real-time when Worker enabled)
+- **Theme**: Light/dark mode (press `C` to toggle)
+
 ## How GitHub Data Works
 
-The homepage shows org activity and a small “status” view (repos, latest release, open PRs, open issues).
+The homepage displays org activity fetched from GitHub. Data sources:
 
-There are two supported sources for that data:
+- **Scheduled snapshot (default):** `.github/workflows/fetch-github-data.yml` updates `assets/github-data.json` hourly.
+- **Real-time proxy (optional):** `cf-worker/` (Cloudflare Worker) calls the GitHub API directly for live data.
 
-- **Scheduled snapshot (default):** `.github/workflows/fetch-github-data.yml` updates `assets/github-data.json` (runs hourly).
-- **Real-time proxy (optional):** `cf-worker/` (Cloudflare Worker) calls the GitHub API with a token and returns the same JSON schema. The frontend will prefer the proxy when configured and fall back to `assets/github-data.json` if the proxy is unavailable.
+### Real-time Features
+
+When the Worker is enabled:
+- **Team status dots**: Green = active <1h, yellow = active <24h, gray = older. Hover for exact time.
+- **Open PRs/Issues**: Live counts and recent items in the right sidebar.
+- **Library + Site releases**: Latest versions in the main area cards.
+- **Last updated**: Timestamp showing when data was fetched.
 
 ## Local Development
 
@@ -28,6 +46,11 @@ python3 -m http.server 8000
 Then open http://localhost:8000
 
 ## Real-time Proxy (Cloudflare Worker)
+
+The Worker fetches:
+- Org repos
+- Open PRs and issues
+- Team member activity for status dots
 
 1. From `cf-worker/`, deploy with Wrangler:
    - `wrangler secret put GITHUB_TOKEN`
