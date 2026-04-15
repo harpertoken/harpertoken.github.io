@@ -32,8 +32,8 @@ The homepage displays org activity fetched from GitHub. Data sources:
 When the Worker is enabled:
 - **Team status dots**: Green = active <1h, yellow = active <24h, gray = older. Hover for exact time.
 - **Open PRs/Issues**: Live counts and recent items in the right sidebar.
+- **Discussions**: Recent discussions from a configurable repo.
 - **Library + Site releases**: Latest versions in the main area cards.
-- **Last updated**: Timestamp showing when data was fetched.
 
 ## Local Development
 
@@ -50,7 +50,13 @@ Then open http://localhost:8000
 The Worker fetches:
 - Org repos
 - Open PRs and issues
+- Discussions from a configurable repo
 - Team member activity for status dots
+
+Configurable in `wrangler.toml`:
+- `RELEASE_REPO` - library release repo
+- `SITE_REPO` - site version repo
+- `DISCUSSION_REPO` - discussions repo
 
 1. From `cf-worker/`, deploy with Wrangler:
    - `wrangler secret put GITHUB_TOKEN`
