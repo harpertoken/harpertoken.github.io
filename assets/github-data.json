@@ -140,44 +140,17 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-ui-0.7.0",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.0"
+  "tag_name": "harper-ui-0.7.1",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.1"
 }, "open_prs": {
-  "total_count": 44,
+  "total_count": 45,
   "items": [
     {
       "repo": "harper",
       "number": 223,
       "title": "[deps] bump aes from 0.8.4 to 0.9.0",
       "html_url": "https://github.com/harpertoken/harper/pull/223",
-      "updated_at": "2026-04-14T23:33:47Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 192,
-      "title": "chore(deps): update Rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/192",
-      "updated_at": "2026-04-14T23:33:47Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 224,
-      "title": "[deps] bump rand from 0.10.0 to 0.10.1 in the cargo group across 1 directory",
-      "html_url": "https://github.com/harpertoken/harper/pull/224",
-      "updated_at": "2026-04-14T23:33:47Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 221,
-      "title": "[deps] bump tokio from 1.51.0 to 1.51.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/221",
-      "updated_at": "2026-04-14T23:33:47Z",
+      "updated_at": "2026-04-15T01:52:40Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -186,8 +159,44 @@
       "number": 220,
       "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.31",
       "html_url": "https://github.com/harpertoken/harper/pull/220",
-      "updated_at": "2026-04-14T23:33:47Z",
+      "updated_at": "2026-04-15T01:51:07Z",
       "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 222,
+      "title": "[deps] bump hashbrown from 0.16.1 to 0.17.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/222",
+      "updated_at": "2026-04-15T01:47:40Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 224,
+      "title": "[deps] bump rand from 0.10.0 to 0.10.1 in the cargo group across 1 directory",
+      "html_url": "https://github.com/harpertoken/harper/pull/224",
+      "updated_at": "2026-04-15T01:47:31Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 221,
+      "title": "[deps] bump tokio from 1.51.0 to 1.51.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/221",
+      "updated_at": "2026-04-15T01:42:25Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 229,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/229",
+      "updated_at": "2026-04-15T01:40:59Z",
+      "user": "harper-rel-hq",
       "comments": 0
     },
     {
@@ -195,17 +204,17 @@
       "number": 195,
       "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
       "html_url": "https://github.com/harpertoken/harper/pull/195",
-      "updated_at": "2026-04-14T23:33:47Z",
+      "updated_at": "2026-04-15T00:12:55Z",
       "user": "dependabot[bot]",
       "comments": 12
     },
     {
       "repo": "harper",
-      "number": 222,
-      "title": "[deps] bump hashbrown from 0.16.1 to 0.17.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/222",
-      "updated_at": "2026-04-14T23:33:47Z",
-      "user": "dependabot[bot]",
+      "number": 192,
+      "title": "chore(deps): update Rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/192",
+      "updated_at": "2026-04-15T00:12:55Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump the audio group with 2 updates",
       "html_url": "https://github.com/harpertoken/benchmark/pull/78",
       "updated_at": "2026-04-13T09:33:14Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-04-13T09:33:03Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
