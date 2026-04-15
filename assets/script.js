@@ -420,10 +420,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleDotsBtn = document.getElementById('toggle-dots');
     const dots = document.querySelectorAll('.status-dot');
     if (toggleDotsBtn) {
+        const hidden = localStorage.getItem('dotsHidden') === 'true';
+        dots.forEach(d => d.style.display = hidden ? 'none' : '');
+        toggleDotsBtn.textContent = hidden ? 'Show' : 'Hide';
         toggleDotsBtn.addEventListener('click', function() {
-            const hidden = dots[0]?.style.display === 'none';
-            dots.forEach(d => d.style.display = hidden ? '' : 'none');
-            this.textContent = hidden ? 'Hide' : 'Show';
+            const isHidden = dots[0]?.style.display === 'none';
+            dots.forEach(d => d.style.display = isHidden ? '' : 'none');
+            this.textContent = isHidden ? 'Hide' : 'Show';
+            localStorage.setItem('dotsHidden', !isHidden);
         });
     }
 });
