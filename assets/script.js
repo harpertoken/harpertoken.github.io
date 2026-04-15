@@ -416,4 +416,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 handleError();
             });
     }
+
+    const toggleDotsBtn = document.getElementById('toggle-dots');
+    const dots = document.querySelectorAll('.status-dot');
+    if (toggleDotsBtn) {
+        toggleDotsBtn.addEventListener('click', function() {
+            const hidden = dots[0]?.style.display === 'none';
+            dots.forEach(d => d.style.display = hidden ? '' : 'none');
+            this.textContent = hidden ? 'Hide' : 'Show';
+        });
+    }
 });
