@@ -2,7 +2,6 @@
 
 ## [1.26.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.25.0...v1.26.0) (2026-04-15)
 
-
 ### Features
 
 * create docker, gitlab, npm cards ([c79ef50](https://github.com/harpertoken/harpertoken.github.io/commit/c79ef5061dcbb44943172b177c5120ff6f8b5bed))
@@ -26,7 +25,6 @@
 * update docker proxy for cors ([96ac695](https://github.com/harpertoken/harpertoken.github.io/commit/96ac695eafdc57a3141294c9e223e7e156596725))
 
 ## [1.25.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.24.0...v1.25.0) (2026-04-12)
-
 ### Features
 
 * include activity card ([3c19146](https://github.com/harpertoken/harpertoken.github.io/commit/3c19146295b31ccbf56350b407ef6034119113f0))
