@@ -105,6 +105,9 @@ function renderViz(text) {
 
 // Keyboard shortcut
 document.addEventListener('keydown', function(e) {
+    if (e.key === 'c' || e.key === 'C') {
+        toggleTheme();
+    }
     if (e.key === 'Escape') {
         const modal = document.getElementById('modal');
         if (modal) modal.style.display = 'none';
