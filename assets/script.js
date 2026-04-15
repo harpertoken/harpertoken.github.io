@@ -206,6 +206,18 @@ document.addEventListener('DOMContentLoaded', function() {
         cached.open_prs = data.open_prs;
         cached.open_issues = data.open_issues;
 
+        if (data.team_members) {
+            Object.entries(data.team_members).forEach(([user, lastEvent]) => {
+                const dot = document.querySelector(`.status-dot[data-user="${user}"]`);
+                if (dot && lastEvent) {
+                    const hours = (Date.now() - new Date(lastEvent).getTime()) / (1000 * 60 * 60);
+                    const ago = hours < 1 ? 'just now' : hours < 24 ? `${Math.floor(hours)}h ago` : `${Math.floor(hours/24)}d ago`;
+                    dot.className = 'status-dot ' + (hours < 1 ? 'active' : hours < 24 ? 'idle' : '');
+                    dot.setAttribute('data-info', ago);
+                }
+            });
+        }
+
         if (mainRelease && data.latest_release) {
             const url = safeUrl(data.latest_release.html_url);
             if (url) {

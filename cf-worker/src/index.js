@@ -69,6 +69,7 @@ export default {
     const org = env.ORG || 'harpertoken';
     const releaseRepo = env.RELEASE_REPO || `${org}/harper`;
     const siteRepo = env.SITE_REPO || `${org}/harpertoken.github.io`;
+    const teamMembers = ['bniladridas', 'harper-dev-hq', 'harper-rel-hq'];
 
     const cacheKey = new Request(url.toString(), request);
     const cache = caches.default;
@@ -76,6 +77,14 @@ export default {
     if (cached) return cached;
 
     try {
+      const memberEvents = await Promise.all(
+        teamMembers.map(user =>
+          ghJson(`https://api.github.com/users/${user}/events?per_page=1`, token)
+            .then(events => ({ user, lastEvent: events[0]?.created_at || null }))
+            .catch(() => ({ user, lastEvent: null }))
+        )
+      );
+
       const [repos, release, siteRelease, openPrs, openIssues] = await Promise.all([
         ghJson(`https://api.github.com/orgs/${org}/repos?sort=pushed&per_page=20`, token),
         ghJson(`https://api.github.com/repos/${releaseRepo}/releases/latest`, token),
@@ -115,6 +124,7 @@ export default {
           total_count: openIssues.total_count ?? 0,
           items: Array.isArray(openIssues.items) ? openIssues.items.map(pickIssueItem) : [],
         },
+        team_members: memberEvents.reduce((acc, m) => { acc[m.user] = m.lastEvent; return acc; }, {}),
       };
 
       const response = jsonResponse(payload);
