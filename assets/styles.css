@@ -73,7 +73,9 @@ a:hover { text-decoration: underline; }
 .sidebar-logo span { font-size: 0.95rem; font-weight: 600; color: var(--header-color); display: block; margin-top: 6px; }
 
 .sidebar-section { margin-bottom: 20px; }
-.sidebar-section h3 { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.4; margin: 0 0 8px; }
+.sidebar-section h3 { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.4; margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+.toggle-dots-btn { font-size: 0.55rem; padding: 2px 6px; border: 1px solid var(--border-color); border-radius: 3px; background: transparent; color: var(--text-color); cursor: pointer; opacity: 0.6; }
+.toggle-dots-btn:hover { opacity: 1; }
 
 .sidebar-nav { display: flex; flex-direction: column; gap: 1px; }
 .sidebar-nav a { padding: 6px 8px; border-radius: 4px; color: var(--text-color); font-size: 0.85rem; }
