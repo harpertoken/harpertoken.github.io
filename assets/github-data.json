@@ -192,21 +192,21 @@
     },
     {
       "repo": "harper",
-      "number": 195,
-      "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/195",
-      "updated_at": "2026-04-15T00:12:55Z",
-      "user": "dependabot[bot]",
-      "comments": 12
-    },
-    {
-      "repo": "harper",
       "number": 192,
       "title": "chore(deps): update Rust lockfiles",
       "html_url": "https://github.com/harpertoken/harper/pull/192",
       "updated_at": "2026-04-15T00:12:55Z",
       "user": "github-actions[bot]",
       "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 195,
+      "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/195",
+      "updated_at": "2026-04-15T00:12:55Z",
+      "user": "dependabot[bot]",
+      "comments": 12
     },
     {
       "repo": "ml-api",
