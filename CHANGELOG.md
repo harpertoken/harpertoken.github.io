@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.26.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.25.0...v1.26.0) (2026-04-15)
+
+
+### Features
+
+* create docker, gitlab, npm cards ([c79ef50](https://github.com/harpertoken/harpertoken.github.io/commit/c79ef5061dcbb44943172b177c5120ff6f8b5bed))
+* implement 3-theme toggle ([859f85a](https://github.com/harpertoken/harpertoken.github.io/commit/859f85a72c8f09b8d4f515f58086bfc2c9e25e35))
+* include discussions card ([9e54f7b](https://github.com/harpertoken/harpertoken.github.io/commit/9e54f7b138a58f19bc42a1a33122e563896a43e5))
+* include hide/show toggle for dots ([9672329](https://github.com/harpertoken/harpertoken.github.io/commit/967232964464eae39cd6d9bd9a8d116837fa3b7e))
+* include site release in worker ([185a2f5](https://github.com/harpertoken/harpertoken.github.io/commit/185a2f569da7bf1d2a8e630bda41483b5fe03a48))
+* include site version card ([9f5c36c](https://github.com/harpertoken/harpertoken.github.io/commit/9f5c36c2cd790dcbc528f7db8822d5ac8ef17bb9))
+* include team status dots ([c5f83cb](https://github.com/harpertoken/harpertoken.github.io/commit/c5f83cbd5549928a3ea7708f5d6fe61029dee05f))
+* replace emoji with css info icon ([6e343b4](https://github.com/harpertoken/harpertoken.github.io/commit/6e343b429727c5ffaa3e50a85848364b259d90c6))
+* wire realtime github status ([bc98cb3](https://github.com/harpertoken/harpertoken.github.io/commit/bc98cb31702182452ff96abd4f3b4d539c91d3f0))
+
+
+### Bug Fixes
+
+* bump script version ([a81d8c7](https://github.com/harpertoken/harpertoken.github.io/commit/a81d8c7410d01479abca638e1e1015d1f4fb35f0))
+* enable theme toggle shortcut ([2ce6c0e](https://github.com/harpertoken/harpertoken.github.io/commit/2ce6c0ece8445465581768827155b73ee4dfe4d3))
+* make rightbar cards fit ([1f27195](https://github.com/harpertoken/harpertoken.github.io/commit/1f271953848256afc0a7c3adecd2bd75ab8eed77))
+* persist dots visibility ([b6d9906](https://github.com/harpertoken/harpertoken.github.io/commit/b6d990628ecd468cff68617c87bb25f78714a059))
+* rename release to library ([0d7065f](https://github.com/harpertoken/harpertoken.github.io/commit/0d7065fc82623e729d1917374f4b0bb6ed73a956))
+* update docker proxy for cors ([96ac695](https://github.com/harpertoken/harpertoken.github.io/commit/96ac695eafdc57a3141294c9e223e7e156596725))
+
 ## [1.25.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.24.0...v1.25.0) (2026-04-12)
 
 ### Features
