@@ -69,6 +69,7 @@ export default {
     const org = env.ORG || 'harpertoken';
     const releaseRepo = env.RELEASE_REPO || `${org}/harper`;
     const siteRepo = env.SITE_REPO || `${org}/harpertoken.github.io`;
+    const discussionRepo = env.DISCUSSION_REPO || releaseRepo;
     const teamMembers = ['bniladridas', 'harper-dev-hq', 'harper-rel-hq'];
 
     const cacheKey = new Request(url.toString(), request);
@@ -85,7 +86,7 @@ export default {
         )
       );
 
-      const [repos, release, siteRelease, openPrs, openIssues] = await Promise.all([
+      const [repos, release, siteRelease, openPrs, openIssues, discussions] = await Promise.all([
         ghJson(`https://api.github.com/orgs/${org}/repos?sort=pushed&per_page=20`, token),
         ghJson(`https://api.github.com/repos/${releaseRepo}/releases/latest`, token),
         ghJson(`https://api.github.com/repos/${siteRepo}/releases/latest`, token).catch(() => null),
@@ -97,6 +98,7 @@ export default {
           `https://api.github.com/search/issues?q=org:${org}+is:issue+is:open&sort=updated&order=desc&per_page=10`,
           token,
         ),
+        ghJson(`https://api.github.com/repos/${discussionRepo}/discussions?per_page=10`, token).catch(() => []),
       ]);
 
       const payload = {
@@ -123,6 +125,18 @@ export default {
         open_issues: {
           total_count: openIssues.total_count ?? 0,
           items: Array.isArray(openIssues.items) ? openIssues.items.map(pickIssueItem) : [],
+        },
+        open_discussions: {
+          total_count: Array.isArray(discussions) ? discussions.length : 0,
+          items: Array.isArray(discussions) ? discussions.slice(0, 10).map(d => ({
+            number: d.number,
+            title: d.title,
+            html_url: d.html_url,
+            updated_at: d.updated_at,
+            user: d.user?.login ?? null,
+            comments: d.comments ?? 0,
+            category: d.category?.name ?? null,
+          })) : [],
         },
         team_members: memberEvents.reduce((acc, m) => { acc[m.user] = m.lastEvent; return acc; }, {}),
       };

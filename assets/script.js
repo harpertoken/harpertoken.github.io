@@ -244,6 +244,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (openIssues && data.open_issues) {
             renderOpenItems(openIssues, data.open_issues, 'Open Issues');
         }
+        const openDiscussions = document.getElementById('open-discussions');
+        if (openDiscussions && data.open_discussions) {
+            renderOpenItems(openDiscussions, data.open_discussions, 'Discussions');
+        }
 
         if (fetchTimeEl && cached.fetched_at) {
             fetchTimeEl.textContent = formatTimeAgo(cached.fetched_at) || '';
