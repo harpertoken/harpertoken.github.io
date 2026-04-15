@@ -46,4 +46,5 @@ Thumbs.db
 opencodetmp/
 
 # Cache
-.cache/
+.cache/.wrangler/
+.wrangler/
