@@ -147,28 +147,19 @@
   "items": [
     {
       "repo": "harper",
-      "number": 223,
-      "title": "[deps] bump aes from 0.8.4 to 0.9.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/223",
-      "updated_at": "2026-04-16T17:47:01Z",
-      "user": "dependabot[bot]",
-      "comments": 1
+      "number": 192,
+      "title": "chore(deps): update Rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/192",
+      "updated_at": "2026-04-16T19:47:30Z",
+      "user": "github-actions[bot]",
+      "comments": 0
     },
     {
       "repo": "harper",
       "number": 222,
       "title": "[deps] bump hashbrown from 0.16.1 to 0.17.0",
       "html_url": "https://github.com/harpertoken/harper/pull/222",
-      "updated_at": "2026-04-16T17:45:47Z",
-      "user": "dependabot[bot]",
-      "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 220,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.31",
-      "html_url": "https://github.com/harpertoken/harper/pull/220",
-      "updated_at": "2026-04-16T17:43:50Z",
+      "updated_at": "2026-04-16T19:47:30Z",
       "user": "dependabot[bot]",
       "comments": 1
     },
@@ -177,36 +168,45 @@
       "number": 231,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/231",
-      "updated_at": "2026-04-16T17:35:56Z",
+      "updated_at": "2026-04-16T19:47:30Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 229,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/229",
-      "updated_at": "2026-04-16T15:10:45Z",
-      "user": "harper-rel-hq",
-      "comments": 0
+      "number": 223,
+      "title": "[deps] bump aes from 0.8.4 to 0.9.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/223",
+      "updated_at": "2026-04-16T19:47:30Z",
+      "user": "dependabot[bot]",
+      "comments": 1
     },
     {
       "repo": "harper",
-      "number": 192,
-      "title": "chore(deps): update Rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/192",
-      "updated_at": "2026-04-16T15:10:45Z",
-      "user": "github-actions[bot]",
-      "comments": 0
+      "number": 220,
+      "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.31",
+      "html_url": "https://github.com/harpertoken/harper/pull/220",
+      "updated_at": "2026-04-16T19:47:30Z",
+      "user": "dependabot[bot]",
+      "comments": 1
     },
     {
       "repo": "harper",
       "number": 195,
       "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
       "html_url": "https://github.com/harpertoken/harper/pull/195",
-      "updated_at": "2026-04-16T15:10:45Z",
+      "updated_at": "2026-04-16T19:47:30Z",
       "user": "dependabot[bot]",
       "comments": 12
+    },
+    {
+      "repo": "harper",
+      "number": 229,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/229",
+      "updated_at": "2026-04-16T19:47:30Z",
+      "user": "harper-rel-hq",
+      "comments": 0
     },
     {
       "repo": "ml-api",
