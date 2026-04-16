@@ -148,11 +148,11 @@
     {
       "repo": "harper",
       "number": 230,
-      "title": "[ci] test",
+      "title": "[fix] collapse if blocks into match guards",
       "html_url": "https://github.com/harpertoken/harper/pull/230",
-      "updated_at": "2026-04-16T15:21:55Z",
+      "updated_at": "2026-04-16T17:09:20Z",
       "user": "bniladridas",
-      "comments": 15
+      "comments": 20
     },
     {
       "repo": "harper",
