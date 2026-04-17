@@ -143,8 +143,17 @@
   "tag_name": "harper-ui-0.7.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.1"
 }, "open_prs": {
-  "total_count": 44,
+  "total_count": 45,
   "items": [
+    {
+      "repo": "harper",
+      "number": 244,
+      "title": "[ci] add macos job to bazel build workflow",
+      "html_url": "https://github.com/harpertoken/harper/pull/244",
+      "updated_at": "2026-04-17T18:53:28Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 223,
@@ -192,12 +201,12 @@
     },
     {
       "repo": "harper",
-      "number": 231,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/231",
+      "number": 195,
+      "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/195",
       "updated_at": "2026-04-16T19:47:30Z",
-      "user": "harper-rel-hq",
-      "comments": 0
+      "user": "dependabot[bot]",
+      "comments": 12
     },
     {
       "repo": "harper",
@@ -210,12 +219,12 @@
     },
     {
       "repo": "harper",
-      "number": 195,
-      "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/195",
+      "number": 231,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/231",
       "updated_at": "2026-04-16T19:47:30Z",
-      "user": "dependabot[bot]",
-      "comments": 12
+      "user": "harper-rel-hq",
+      "comments": 0
     },
     {
       "repo": "ml-api",
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
       "html_url": "https://github.com/harpertoken/ml-api/pull/58",
       "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-13T09:33:14Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
