@@ -146,6 +146,33 @@
   "total_count": 43,
   "items": [
     {
+      "repo": "benchmark",
+      "number": 71,
+      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
+      "updated_at": "2026-04-20T10:02:44Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 72,
+      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
+      "updated_at": "2026-04-20T10:02:35Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 78,
+      "title": "deps(deps): bump the audio group with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
+      "updated_at": "2026-04-20T10:02:37Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
       "repo": "harper",
       "number": 223,
       "title": "[deps] bump aes from 0.8.4 to 0.9.0",
@@ -206,33 +233,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/231",
       "updated_at": "2026-04-16T19:47:30Z",
       "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 58,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
-      "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-13T09:33:14Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-04-13T09:33:03Z",
-      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
