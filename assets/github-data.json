@@ -140,82 +140,19 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-ui-0.7.1",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.7.1"
+  "tag_name": "harper-ui-0.8.0",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.8.0"
 }, "open_prs": {
-  "total_count": 44,
+  "total_count": 37,
   "items": [
     {
       "repo": "harper",
-      "number": 231,
+      "number": 251,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/231",
-      "updated_at": "2026-04-20T17:04:02Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/251",
+      "updated_at": "2026-04-20T18:46:16Z",
       "user": "harper-rel-hq",
       "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 222,
-      "title": "[deps] bump hashbrown from 0.16.1 to 0.17.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/222",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "dependabot[bot]",
-      "comments": 6
-    },
-    {
-      "repo": "harper",
-      "number": 229,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/229",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 220,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.31",
-      "html_url": "https://github.com/harpertoken/harper/pull/220",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "dependabot[bot]",
-      "comments": 6
-    },
-    {
-      "repo": "harper",
-      "number": 223,
-      "title": "[deps] bump aes from 0.8.4 to 0.9.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/223",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "dependabot[bot]",
-      "comments": 6
-    },
-    {
-      "repo": "harper",
-      "number": 235,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/235",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 250,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/250",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 195,
-      "title": "[deps] bump rustyline from 17.0.2 to 18.0.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/195",
-      "updated_at": "2026-04-20T17:04:02Z",
-      "user": "dependabot[bot]",
-      "comments": 12
     },
     {
       "repo": "benchmark",
@@ -232,6 +169,69 @@
       "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
       "html_url": "https://github.com/harpertoken/benchmark/pull/72",
       "updated_at": "2026-04-20T10:02:35Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 78,
+      "title": "deps(deps): bump the audio group with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
+      "updated_at": "2026-04-20T10:02:37Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 58,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
+      "updated_at": "2026-04-13T11:31:29Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 90,
+      "title": "ci(deps): bump actions/github-script from 8 to 9",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/90",
+      "updated_at": "2026-04-13T09:32:43Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "ml-api",
+      "number": 57,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
+      "updated_at": "2026-04-08T06:26:20Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 56,
+      "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/56",
+      "updated_at": "2026-04-06T10:54:25Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 54,
+      "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/54",
+      "updated_at": "2026-04-06T10:54:09Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 89,
+      "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/89",
+      "updated_at": "2026-04-01T21:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
