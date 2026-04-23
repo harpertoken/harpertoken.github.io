@@ -147,19 +147,19 @@
   "items": [
     {
       "repo": "harper",
-      "number": 261,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.34",
-      "html_url": "https://github.com/harpertoken/harper/pull/261",
-      "updated_at": "2026-04-23T19:04:45Z",
-      "user": "dependabot[bot]",
-      "comments": 5
+      "number": 268,
+      "title": "[fix] use result type in tests instead of unwrap/expect",
+      "html_url": "https://github.com/harpertoken/harper/pull/268",
+      "updated_at": "2026-04-23T20:52:43Z",
+      "user": "bniladridas",
+      "comments": 0
     },
     {
       "repo": "harper",
       "number": 259,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/259",
-      "updated_at": "2026-04-23T17:39:03Z",
+      "updated_at": "2026-04-23T20:31:06Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
