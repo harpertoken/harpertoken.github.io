@@ -147,10 +147,10 @@
   "items": [
     {
       "repo": "harper",
-      "number": 268,
-      "title": "[fix] use result type in tests instead of unwrap/expect",
-      "html_url": "https://github.com/harpertoken/harper/pull/268",
-      "updated_at": "2026-04-23T20:52:43Z",
+      "number": 271,
+      "title": "[test] include unit tests for harper-firmware types and configs",
+      "html_url": "https://github.com/harpertoken/harper/pull/271",
+      "updated_at": "2026-04-23T21:44:33Z",
       "user": "bniladridas",
       "comments": 0
     },
@@ -159,7 +159,7 @@
       "number": 259,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/259",
-      "updated_at": "2026-04-23T20:31:06Z",
+      "updated_at": "2026-04-23T21:38:59Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
