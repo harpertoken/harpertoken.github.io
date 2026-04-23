@@ -1,16 +1,16 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 0
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -143,23 +143,14 @@
   "tag_name": "harper-ui-0.8.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.8.0"
 }, "open_prs": {
-  "total_count": 38,
+  "total_count": 37,
   "items": [
-    {
-      "repo": "harper",
-      "number": 271,
-      "title": "[test] include unit tests for harper-firmware types and configs",
-      "html_url": "https://github.com/harpertoken/harper/pull/271",
-      "updated_at": "2026-04-23T21:44:33Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
     {
       "repo": "harper",
       "number": 259,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/259",
-      "updated_at": "2026-04-23T21:38:59Z",
+      "updated_at": "2026-04-23T22:07:31Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
@@ -232,6 +223,15 @@
       "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
       "html_url": "https://github.com/harpertoken/ml-api/pull/54",
       "updated_at": "2026-04-06T10:54:09Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 89,
+      "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/89",
+      "updated_at": "2026-04-01T21:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
