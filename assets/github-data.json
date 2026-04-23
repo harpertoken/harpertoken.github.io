@@ -7,17 +7,17 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
+    "forks_count": 0
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
     "forks_count": 0
   },
   {
@@ -147,28 +147,10 @@
   "items": [
     {
       "repo": "harper",
-      "number": 257,
-      "title": "[deps] bump turul-mcp-client from 0.3.32 to 0.3.34",
-      "html_url": "https://github.com/harpertoken/harper/pull/257",
-      "updated_at": "2026-04-22T05:56:04Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
       "number": 255,
       "title": "[deps] bump turul-mcp-json-rpc-server from 0.2.1 to 0.3.32",
       "html_url": "https://github.com/harpertoken/harper/pull/255",
-      "updated_at": "2026-04-21T06:03:11Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 254,
-      "title": "[deps] bump cbc from 0.1.2 to 0.2.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/254",
-      "updated_at": "2026-04-21T05:58:06Z",
+      "updated_at": "2026-04-23T11:31:57Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -177,8 +159,26 @@
       "number": 253,
       "title": "[deps] bump ctr from 0.9.2 to 0.10.0",
       "html_url": "https://github.com/harpertoken/harper/pull/253",
-      "updated_at": "2026-04-21T05:55:59Z",
+      "updated_at": "2026-04-23T11:25:51Z",
       "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 254,
+      "title": "[deps] bump cbc from 0.1.2 to 0.2.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/254",
+      "updated_at": "2026-04-23T11:25:32Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 259,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/259",
+      "updated_at": "2026-04-23T11:20:52Z",
+      "user": "harper-rel-hq",
       "comments": 0
     },
     {
