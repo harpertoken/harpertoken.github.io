@@ -7,17 +7,17 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
+    "forks_count": 0
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
     "forks_count": 0
   },
   {
@@ -140,11 +140,20 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-sandbox-0.1.0",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-sandbox-0.1.0"
+  "tag_name": "harper-sandbox-0.1.1",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-sandbox-0.1.1"
 }, "open_prs": {
-  "total_count": 36,
+  "total_count": 37,
   "items": [
+    {
+      "repo": "harper",
+      "number": 284,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/284",
+      "updated_at": "2026-04-24T14:32:53Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
     {
       "repo": "benchmark",
       "number": 71,
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
       "html_url": "https://github.com/harpertoken/benchmark/pull/89",
       "updated_at": "2026-04-01T21:54:25Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 53,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.8.4",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/53",
-      "updated_at": "2026-03-30T11:25:10Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
