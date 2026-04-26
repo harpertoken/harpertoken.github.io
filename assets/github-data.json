@@ -143,23 +143,14 @@
   "tag_name": "harper-ui-0.11.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.11.0"
 }, "open_prs": {
-  "total_count": 38,
+  "total_count": 37,
   "items": [
     {
       "repo": "harper",
-      "number": 310,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/310",
-      "updated_at": "2026-04-26T20:34:15Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 309,
+      "number": 314,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/309",
-      "updated_at": "2026-04-26T20:28:18Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/314",
+      "updated_at": "2026-04-26T21:18:06Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
@@ -232,6 +223,15 @@
       "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
       "html_url": "https://github.com/harpertoken/ml-api/pull/54",
       "updated_at": "2026-04-06T10:54:09Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 89,
+      "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/89",
+      "updated_at": "2026-04-01T21:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
