@@ -143,8 +143,17 @@
   "tag_name": "harper-sandbox-0.1.3",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-sandbox-0.1.3"
 }, "open_prs": {
-  "total_count": 36,
+  "total_count": 37,
   "items": [
+    {
+      "repo": "harper",
+      "number": 307,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/307",
+      "updated_at": "2026-04-26T15:51:41Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
     {
       "repo": "benchmark",
       "number": 71,
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
       "html_url": "https://github.com/harpertoken/benchmark/pull/89",
       "updated_at": "2026-04-01T21:54:25Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 53,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.8.4",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/53",
-      "updated_at": "2026-03-30T11:25:10Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
