@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
+  },
+  {
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "harpertoken.github.io",
@@ -143,100 +143,100 @@
   "tag_name": "harper-ui-0.11.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.11.0"
 }, "open_prs": {
-  "total_count": 38,
+  "total_count": 0,
+  "items": []
+}, "open_issues": {
+  "total_count": 131,
   "items": [
     {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-27T10:18:20Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-04-27T10:18:18Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 71,
-      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
-      "updated_at": "2026-04-27T10:18:28Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
       "repo": "harper",
-      "number": 315,
-      "title": "[deps] bump keyring from 2.3.3 to 4.0.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/315",
-      "updated_at": "2026-04-27T06:14:54Z",
-      "user": "dependabot[bot]",
+      "number": 189,
+      "title": "Roadmap",
+      "html_url": "https://github.com/harpertoken/harper/issues/189",
+      "updated_at": "2026-03-27T14:27:13Z",
+      "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 314,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/314",
-      "updated_at": "2026-04-26T21:18:06Z",
-      "user": "harper-rel-hq",
-      "comments": 0
+      "repo": "llamaware",
+      "number": 113,
+      "title": "Tracking Issue",
+      "html_url": "https://github.com/harpertoken/llamaware/issues/113",
+      "updated_at": "2026-03-24T18:02:09Z",
+      "user": "bniladridas",
+      "comments": 43
     },
     {
-      "repo": "ml-api",
-      "number": 58,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
-      "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 90,
-      "title": "ci(deps): bump actions/github-script from 8 to 9",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/90",
-      "updated_at": "2026-04-13T09:32:43Z",
-      "user": "dependabot[bot]",
+      "repo": "welcome-issues",
+      "number": 2,
+      "title": "Welcome: Niladri Das (@bniladridas)",
+      "html_url": "https://github.com/harpertoken/welcome-issues/issues/2",
+      "updated_at": "2026-03-10T10:36:59Z",
+      "user": "harper-welcome-bot[bot]",
       "comments": 1
     },
     {
-      "repo": "ml-api",
-      "number": 57,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
-      "updated_at": "2026-04-08T06:26:20Z",
-      "user": "dependabot[bot]",
+      "repo": "welcome-issues",
+      "number": 1,
+      "title": "Welcome: Niladri Das (@bniladridas)",
+      "html_url": "https://github.com/harpertoken/welcome-issues/issues/1",
+      "updated_at": "2026-03-10T10:36:29Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "manager",
+      "number": 22,
+      "title": "Track: xAI API Migration & Repository Improvements",
+      "html_url": "https://github.com/harpertoken/manager/issues/22",
+      "updated_at": "2026-01-30T14:26:01Z",
+      "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "ml-api",
-      "number": 56,
-      "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/56",
-      "updated_at": "2026-04-06T10:54:25Z",
-      "user": "dependabot[bot]",
+      "repo": "hub",
+      "number": 135,
+      "title": "Auto Improvement Report - 2025-12-18",
+      "html_url": "https://github.com/harpertoken/hub/issues/135",
+      "updated_at": "2025-12-18T03:15:22Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
-      "repo": "ml-api",
-      "number": 54,
-      "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/54",
-      "updated_at": "2026-04-06T10:54:09Z",
-      "user": "dependabot[bot]",
+      "repo": "hub",
+      "number": 134,
+      "title": "Auto Improvement Report - 2025-12-17",
+      "html_url": "https://github.com/harpertoken/hub/issues/134",
+      "updated_at": "2025-12-17T03:14:39Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "hub",
+      "number": 133,
+      "title": "Auto Improvement Report - 2025-12-16",
+      "html_url": "https://github.com/harpertoken/hub/issues/133",
+      "updated_at": "2025-12-16T03:18:04Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "hub",
+      "number": 132,
+      "title": "Auto Improvement Report - 2025-12-15",
+      "html_url": "https://github.com/harpertoken/hub/issues/132",
+      "updated_at": "2025-12-15T03:23:35Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "hub",
+      "number": 131,
+      "title": "Auto Improvement Report - 2025-12-14",
+      "html_url": "https://github.com/harpertoken/hub/issues/131",
+      "updated_at": "2025-12-14T03:22:24Z",
+      "user": "github-actions[bot]",
       "comments": 0
     }
   ]
-}, "open_issues": {
-  "total_count": 0,
-  "items": []
 }}
