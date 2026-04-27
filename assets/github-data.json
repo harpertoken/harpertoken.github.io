@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "ml-api",
@@ -143,8 +143,17 @@
   "tag_name": "harper-ui-0.11.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.11.0"
 }, "open_prs": {
-  "total_count": 37,
+  "total_count": 38,
   "items": [
+    {
+      "repo": "harper",
+      "number": 315,
+      "title": "[deps] bump keyring from 2.3.3 to 4.0.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/315",
+      "updated_at": "2026-04-27T06:14:54Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 314,
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
       "html_url": "https://github.com/harpertoken/ml-api/pull/54",
       "updated_at": "2026-04-06T10:54:09Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 89,
-      "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.4",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/89",
-      "updated_at": "2026-04-01T21:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
