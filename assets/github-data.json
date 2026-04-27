@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "ml-api",
@@ -146,6 +146,33 @@
   "total_count": 38,
   "items": [
     {
+      "repo": "benchmark",
+      "number": 78,
+      "title": "deps(deps): bump the audio group with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
+      "updated_at": "2026-04-27T10:18:20Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 72,
+      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
+      "updated_at": "2026-04-27T10:18:18Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 71,
+      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
+      "updated_at": "2026-04-27T10:18:28Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
       "repo": "harper",
       "number": 315,
       "title": "[deps] bump keyring from 2.3.3 to 4.0.0",
@@ -161,33 +188,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/314",
       "updated_at": "2026-04-26T21:18:06Z",
       "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 71,
-      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
-      "updated_at": "2026-04-20T10:02:44Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-04-20T10:02:35Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-20T10:02:37Z",
-      "user": "dependabot[bot]",
       "comments": 0
     },
     {
