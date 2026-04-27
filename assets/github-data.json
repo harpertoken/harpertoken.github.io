@@ -140,17 +140,17 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-ui-0.11.0",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.11.0"
+  "tag_name": "harper-ui-0.12.0",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-ui-0.12.0"
 }, "open_prs": {
   "total_count": 37,
   "items": [
     {
       "repo": "harper",
-      "number": 317,
+      "number": 318,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/317",
-      "updated_at": "2026-04-27T21:27:26Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/318",
+      "updated_at": "2026-04-27T22:15:04Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
