@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "ml-api",
@@ -140,17 +140,17 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-core-0.14.1",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-core-0.14.1"
+  "tag_name": "harper-sandbox-0.2.0",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-sandbox-0.2.0"
 }, "open_prs": {
   "total_count": 38,
   "items": [
     {
       "repo": "harper",
-      "number": 331,
+      "number": 332,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/331",
-      "updated_at": "2026-04-28T06:59:03Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/332",
+      "updated_at": "2026-04-28T15:08:40Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
