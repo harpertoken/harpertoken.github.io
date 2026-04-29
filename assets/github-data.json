@@ -150,7 +150,7 @@
       "number": 344,
       "title": "[fix] stabilize windows bazel smoke for harper-ui",
       "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-04-29T12:07:25Z",
+      "updated_at": "2026-04-29T15:08:17Z",
       "user": "bniladridas",
       "comments": 0
     },
@@ -241,10 +241,10 @@
   "items": [
     {
       "repo": "harper",
-      "number": 189,
-      "title": "Roadmap",
-      "html_url": "https://github.com/harpertoken/harper/issues/189",
-      "updated_at": "2026-03-27T14:27:13Z",
+      "number": 345,
+      "title": "Roadmap (2026 refresh)",
+      "html_url": "https://github.com/harpertoken/harper/issues/345",
+      "updated_at": "2026-04-29T14:04:38Z",
       "user": "bniladridas",
       "comments": 0
     },
