@@ -148,9 +148,9 @@
     {
       "repo": "harper",
       "number": 344,
-      "title": "[fix] scope bazel deps to harper-ui",
+      "title": "[fix] stabilize windows bazel smoke for harper-ui",
       "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-04-29T10:52:11Z",
+      "updated_at": "2026-04-29T12:07:25Z",
       "user": "bniladridas",
       "comments": 0
     },
