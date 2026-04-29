@@ -94,7 +94,7 @@
     "name": "xgboost-api",
     "html_url": "https://github.com/harpertoken/xgboost-api",
     "language": "Python",
-    "stargazers_count": 0,
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -150,7 +150,7 @@
       "number": 332,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/332",
-      "updated_at": "2026-04-28T15:08:40Z",
+      "updated_at": "2026-04-29T06:12:17Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
