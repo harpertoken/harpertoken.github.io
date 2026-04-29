@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -150,7 +150,7 @@
       "number": 344,
       "title": "[fix] stabilize windows bazel smoke for harper-ui",
       "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-04-29T15:08:17Z",
+      "updated_at": "2026-04-29T16:01:09Z",
       "user": "bniladridas",
       "comments": 0
     },
@@ -237,8 +237,17 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 131,
+  "total_count": 132,
   "items": [
+    {
+      "repo": "harper",
+      "number": 347,
+      "title": "Track Windows Bazel rustc E0463 investigation",
+      "html_url": "https://github.com/harpertoken/harper/issues/347",
+      "updated_at": "2026-04-29T16:13:40Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
     {
       "repo": "harper",
       "number": 345,
@@ -317,15 +326,6 @@
       "title": "Auto Improvement Report - 2025-12-15",
       "html_url": "https://github.com/harpertoken/hub/issues/132",
       "updated_at": "2025-12-15T03:23:35Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "hub",
-      "number": 131,
-      "title": "Auto Improvement Report - 2025-12-14",
-      "html_url": "https://github.com/harpertoken/hub/issues/131",
-      "updated_at": "2025-12-14T03:22:24Z",
       "user": "github-actions[bot]",
       "comments": 0
     }
