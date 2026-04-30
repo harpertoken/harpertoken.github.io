@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "ml-api",
@@ -150,7 +150,7 @@
       "number": 332,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/332",
-      "updated_at": "2026-04-30T00:00:15Z",
+      "updated_at": "2026-04-30T16:30:15Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
