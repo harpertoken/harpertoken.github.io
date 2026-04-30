@@ -174,19 +174,19 @@
     },
     {
       "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-27T10:18:20Z",
+      "number": 71,
+      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
+      "updated_at": "2026-04-27T10:18:28Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
     {
       "repo": "benchmark",
-      "number": 71,
-      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
-      "updated_at": "2026-04-27T10:18:28Z",
+      "number": 78,
+      "title": "deps(deps): bump the audio group with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
+      "updated_at": "2026-04-27T10:18:20Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
