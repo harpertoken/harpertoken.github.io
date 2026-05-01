@@ -140,8 +140,8 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-core-0.17.1",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-core-0.17.1"
+  "tag_name": "harper-0.17.1",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.1"
 }, "open_prs": {
   "total_count": 41,
   "items": [
