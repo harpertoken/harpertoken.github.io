@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -143,8 +143,17 @@
   "tag_name": "harper-core-0.17.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-core-0.17.1"
 }, "open_prs": {
-  "total_count": 40,
+  "total_count": 41,
   "items": [
+    {
+      "repo": "harper",
+      "number": 368,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/368",
+      "updated_at": "2026-05-01T16:04:14Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 362,
@@ -225,15 +234,6 @@
       "updated_at": "2026-04-13T09:32:43Z",
       "user": "dependabot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "ml-api",
-      "number": 57,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
-      "updated_at": "2026-04-08T06:26:20Z",
-      "user": "dependabot[bot]",
-      "comments": 0
     }
   ]
 }, "open_issues": {
