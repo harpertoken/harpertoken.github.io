@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -140,26 +140,17 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-workspace-0.17.1",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-workspace-0.17.1"
+  "tag_name": "harper-0.17.2",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.2"
 }, "open_prs": {
-  "total_count": 39,
+  "total_count": 38,
   "items": [
     {
       "repo": "harper",
-      "number": 374,
+      "number": 376,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/374",
-      "updated_at": "2026-05-01T20:48:12Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 368,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/368",
-      "updated_at": "2026-05-01T20:26:42Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/376",
+      "updated_at": "2026-05-02T01:45:33Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
@@ -168,7 +159,7 @@
       "number": 344,
       "title": "[fix] stabilize windows bazel smoke for harper-ui",
       "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-01T03:50:52Z",
+      "updated_at": "2026-05-02T00:54:33Z",
       "user": "bniladridas",
       "comments": 0
     },
@@ -232,6 +223,15 @@
       "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
       "html_url": "https://github.com/harpertoken/ml-api/pull/56",
       "updated_at": "2026-04-06T10:54:25Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 54,
+      "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/54",
+      "updated_at": "2026-04-06T10:54:09Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
