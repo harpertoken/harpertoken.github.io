@@ -7,11 +7,11 @@
     "forks_count": 0
   },
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
+    "name": "autofix",
+    "html_url": "https://github.com/harpertoken/autofix",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "harpertoken.github.io",
@@ -19,6 +19,13 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -38,13 +45,6 @@
     "name": "benchmark",
     "html_url": "https://github.com/harpertoken/benchmark",
     "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "autofix",
-    "html_url": "https://github.com/harpertoken/autofix",
-    "language": "TypeScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -143,8 +143,17 @@
   "tag_name": "harper-0.17.2",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.2"
 }, "open_prs": {
-  "total_count": 38,
+  "total_count": 39,
   "items": [
+    {
+      "repo": "autofix",
+      "number": 46,
+      "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 13 updates",
+      "html_url": "https://github.com/harpertoken/autofix/pull/46",
+      "updated_at": "2026-05-03T05:31:35Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
     {
       "repo": "harper",
       "number": 376,
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
       "html_url": "https://github.com/harpertoken/ml-api/pull/56",
       "updated_at": "2026-04-06T10:54:25Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 54,
-      "title": "deps(deps): bump uvicorn from 0.40.0 to 0.44.0",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/54",
-      "updated_at": "2026-04-06T10:54:09Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
