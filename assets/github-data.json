@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "autofix",
@@ -146,6 +146,33 @@
   "total_count": 41,
   "items": [
     {
+      "repo": "benchmark",
+      "number": 78,
+      "title": "deps(deps): bump the audio group with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
+      "updated_at": "2026-05-04T10:35:04Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 71,
+      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
+      "updated_at": "2026-05-04T10:35:17Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 72,
+      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
+      "updated_at": "2026-05-04T10:34:58Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
       "repo": "harper",
       "number": 380,
       "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.37 to 0.3.38",
@@ -188,33 +215,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/344",
       "updated_at": "2026-05-02T00:54:33Z",
       "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 71,
-      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
-      "updated_at": "2026-04-27T10:18:28Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-04-27T10:18:20Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-04-27T10:18:18Z",
-      "user": "dependabot[bot]",
       "comments": 0
     },
     {
