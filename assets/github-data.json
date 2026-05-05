@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "autofix",
@@ -143,23 +143,50 @@
   "tag_name": "harper-0.17.2",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.2"
 }, "open_prs": {
-  "total_count": 43,
+  "total_count": 44,
   "items": [
-    {
-      "repo": "harper",
-      "number": 382,
-      "title": "[deps] bump tokio from 1.52.1 to 1.52.2",
-      "html_url": "https://github.com/harpertoken/harper/pull/382",
-      "updated_at": "2026-05-05T06:18:56Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
     {
       "repo": "harper",
       "number": 381,
       "title": "[deps] bump h2 from 0.4.13 to 0.4.14",
       "html_url": "https://github.com/harpertoken/harper/pull/381",
-      "updated_at": "2026-05-05T06:15:41Z",
+      "updated_at": "2026-05-05T19:58:22Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 382,
+      "title": "deps: bump tokio from 1.52.1 to 1.52.2",
+      "html_url": "https://github.com/harpertoken/harper/pull/382",
+      "updated_at": "2026-05-05T19:56:11Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 384,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/384",
+      "updated_at": "2026-05-05T19:52:42Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 379,
+      "title": "[deps] bump turul-mcp-client from 0.3.37 to 0.3.38",
+      "html_url": "https://github.com/harpertoken/harper/pull/379",
+      "updated_at": "2026-05-05T19:42:07Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 380,
+      "title": "deps: bump turul-mcp-json-rpc-server from 0.3.37 to 0.3.38",
+      "html_url": "https://github.com/harpertoken/harper/pull/380",
+      "updated_at": "2026-05-05T19:41:19Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -191,24 +218,6 @@
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 380,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.37 to 0.3.38",
-      "html_url": "https://github.com/harpertoken/harper/pull/380",
-      "updated_at": "2026-05-04T06:24:33Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 379,
-      "title": "[deps] bump turul-mcp-client from 0.3.37 to 0.3.38",
-      "html_url": "https://github.com/harpertoken/harper/pull/379",
-      "updated_at": "2026-05-04T06:24:00Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
       "repo": "autofix",
       "number": 46,
       "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 13 updates",
@@ -224,15 +233,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/376",
       "updated_at": "2026-05-02T01:45:33Z",
       "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 344,
-      "title": "[fix] stabilize windows bazel smoke for harper-ui",
-      "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-02T00:54:33Z",
-      "user": "bniladridas",
       "comments": 0
     }
   ]
