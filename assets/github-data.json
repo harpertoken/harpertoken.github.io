@@ -143,23 +143,41 @@
   "tag_name": "harper-0.17.2",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.2"
 }, "open_prs": {
-  "total_count": 44,
+  "total_count": 45,
   "items": [
+    {
+      "repo": "harper",
+      "number": 387,
+      "title": "[deps] refresh runtime and mcp dependencies",
+      "html_url": "https://github.com/harpertoken/harper/pull/387",
+      "updated_at": "2026-05-05T21:56:36Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 382,
+      "title": "[deps] bump tokio from 1.52.1 to 1.52.2",
+      "html_url": "https://github.com/harpertoken/harper/pull/382",
+      "updated_at": "2026-05-05T20:33:38Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 380,
+      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.37 to 0.3.38",
+      "html_url": "https://github.com/harpertoken/harper/pull/380",
+      "updated_at": "2026-05-05T20:09:46Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 381,
       "title": "[deps] bump h2 from 0.4.13 to 0.4.14",
       "html_url": "https://github.com/harpertoken/harper/pull/381",
       "updated_at": "2026-05-05T19:58:22Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 382,
-      "title": "deps: bump tokio from 1.52.1 to 1.52.2",
-      "html_url": "https://github.com/harpertoken/harper/pull/382",
-      "updated_at": "2026-05-05T19:56:11Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -178,15 +196,6 @@
       "title": "[deps] bump turul-mcp-client from 0.3.37 to 0.3.38",
       "html_url": "https://github.com/harpertoken/harper/pull/379",
       "updated_at": "2026-05-05T19:42:07Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 380,
-      "title": "deps: bump turul-mcp-json-rpc-server from 0.3.37 to 0.3.38",
-      "html_url": "https://github.com/harpertoken/harper/pull/380",
-      "updated_at": "2026-05-05T19:41:19Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -225,15 +234,6 @@
       "updated_at": "2026-05-03T05:31:35Z",
       "user": "dependabot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 376,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/376",
-      "updated_at": "2026-05-02T01:45:33Z",
-      "user": "harper-rel-hq",
-      "comments": 0
     }
   ]
 }, "open_issues": {
