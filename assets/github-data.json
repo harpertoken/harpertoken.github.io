@@ -14,16 +14,16 @@
     "forks_count": 1
   },
   {
-    "name": "homebrew-tap",
-    "html_url": "https://github.com/harpertoken/homebrew-tap",
-    "language": "Ruby",
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
+    "name": "homebrew-tap",
+    "html_url": "https://github.com/harpertoken/homebrew-tap",
+    "language": "Ruby",
     "stargazers_count": 0,
     "forks_count": 0
   },
