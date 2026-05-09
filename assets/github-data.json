@@ -237,96 +237,96 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 132,
+  "total_count": 208,
   "items": [
     {
       "repo": "harper",
-      "number": 347,
-      "title": "Track Windows Bazel rustc E0463 investigation",
-      "html_url": "https://github.com/harpertoken/harper/issues/347",
-      "updated_at": "2026-05-01T03:52:15Z",
+      "number": 468,
+      "title": "Backfill feature: deps: bump crossterm from 0.28.1 to 0.29.0",
+      "html_url": "https://github.com/harpertoken/harper/issues/468",
+      "updated_at": "2026-05-09T02:39:57Z",
       "user": "bniladridas",
-      "comments": 1
+      "comments": 0
     },
     {
       "repo": "harper",
-      "number": 345,
-      "title": "Roadmap (2026 refresh)",
-      "html_url": "https://github.com/harpertoken/harper/issues/345",
-      "updated_at": "2026-04-29T14:04:38Z",
+      "number": 467,
+      "title": "Backfill feature: docs: update readme",
+      "html_url": "https://github.com/harpertoken/harper/issues/467",
+      "updated_at": "2026-05-09T02:39:56Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "llamaware",
-      "number": 113,
-      "title": "Tracking Issue",
-      "html_url": "https://github.com/harpertoken/llamaware/issues/113",
-      "updated_at": "2026-03-24T18:02:09Z",
-      "user": "bniladridas",
-      "comments": 43
-    },
-    {
-      "repo": "welcome-issues",
-      "number": 2,
-      "title": "Welcome: Niladri Das (@bniladridas)",
-      "html_url": "https://github.com/harpertoken/welcome-issues/issues/2",
-      "updated_at": "2026-03-10T10:36:59Z",
-      "user": "harper-welcome-bot[bot]",
-      "comments": 1
-    },
-    {
-      "repo": "welcome-issues",
-      "number": 1,
-      "title": "Welcome: Niladri Das (@bniladridas)",
-      "html_url": "https://github.com/harpertoken/welcome-issues/issues/1",
-      "updated_at": "2026-03-10T10:36:29Z",
-      "user": "bniladridas",
-      "comments": 1
-    },
-    {
-      "repo": "manager",
-      "number": 22,
-      "title": "Track: xAI API Migration & Repository Improvements",
-      "html_url": "https://github.com/harpertoken/manager/issues/22",
-      "updated_at": "2026-01-30T14:26:01Z",
+      "repo": "harper",
+      "number": 466,
+      "title": "Backfill feature: Update signed.json",
+      "html_url": "https://github.com/harpertoken/harper/issues/466",
+      "updated_at": "2026-05-09T02:39:54Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "hub",
-      "number": 135,
-      "title": "Auto Improvement Report - 2025-12-18",
-      "html_url": "https://github.com/harpertoken/hub/issues/135",
-      "updated_at": "2025-12-18T03:15:22Z",
-      "user": "github-actions[bot]",
+      "repo": "harper",
+      "number": 465,
+      "title": "Backfill feature: ci: remove pr size check workflow",
+      "html_url": "https://github.com/harpertoken/harper/issues/465",
+      "updated_at": "2026-05-09T02:39:52Z",
+      "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "hub",
-      "number": 134,
-      "title": "Auto Improvement Report - 2025-12-17",
-      "html_url": "https://github.com/harpertoken/hub/issues/134",
-      "updated_at": "2025-12-17T03:14:39Z",
-      "user": "github-actions[bot]",
+      "repo": "harper",
+      "number": 464,
+      "title": "Backfill feature: ci: add pr size check workflow",
+      "html_url": "https://github.com/harpertoken/harper/issues/464",
+      "updated_at": "2026-05-09T02:39:50Z",
+      "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "hub",
-      "number": 133,
-      "title": "Auto Improvement Report - 2025-12-16",
-      "html_url": "https://github.com/harpertoken/hub/issues/133",
-      "updated_at": "2025-12-16T03:18:04Z",
-      "user": "github-actions[bot]",
+      "repo": "harper",
+      "number": 463,
+      "title": "Backfill feature: docs: expand user guide with new pages",
+      "html_url": "https://github.com/harpertoken/harper/issues/463",
+      "updated_at": "2026-05-09T02:39:49Z",
+      "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "hub",
-      "number": 132,
-      "title": "Auto Improvement Report - 2025-12-15",
-      "html_url": "https://github.com/harpertoken/hub/issues/132",
-      "updated_at": "2025-12-15T03:23:35Z",
-      "user": "github-actions[bot]",
+      "repo": "harper",
+      "number": 462,
+      "title": "Backfill bug: fix: some kind of ui changes `wip`",
+      "html_url": "https://github.com/harpertoken/harper/issues/462",
+      "updated_at": "2026-05-09T02:39:47Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 461,
+      "title": "Backfill feature: perf(core): Binary built at target/dist/harper (9.2M). Comparison: dist profile (fat LTO, codegen-units=1, stripped): 9.2M vs release (thin LTO): ~10M - ~8% smaller",
+      "html_url": "https://github.com/harpertoken/harper/issues/461",
+      "updated_at": "2026-05-09T02:39:45Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 460,
+      "title": "Backfill feature: consolidation",
+      "html_url": "https://github.com/harpertoken/harper/issues/460",
+      "updated_at": "2026-05-09T02:39:43Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 459,
+      "title": "Backfill feature: chore: release main",
+      "html_url": "https://github.com/harpertoken/harper/issues/459",
+      "updated_at": "2026-05-09T02:39:42Z",
+      "user": "bniladridas",
       "comments": 0
     }
   ]
