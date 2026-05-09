@@ -140,28 +140,28 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-0.17.2",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.17.2"
+  "tag_name": "harper-0.18.0",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
   "total_count": 40,
   "items": [
     {
       "repo": "harper",
-      "number": 392,
+      "number": 641,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/392",
-      "updated_at": "2026-05-08T23:55:24Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/641",
+      "updated_at": "2026-05-09T03:10:44Z",
       "user": "harper-rel-hq",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 384,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/384",
-      "updated_at": "2026-05-08T14:54:17Z",
-      "user": "harper-rel-hq",
-      "comments": 12
+      "number": 640,
+      "title": "[docs] document pr issue backfill workflow",
+      "html_url": "https://github.com/harpertoken/harper/pull/640",
+      "updated_at": "2026-05-09T02:51:01Z",
+      "user": "bniladridas",
+      "comments": 0
     },
     {
       "repo": "benchmark",
@@ -237,95 +237,95 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 208,
+  "total_count": 379,
   "items": [
     {
       "repo": "harper",
-      "number": 468,
-      "title": "Backfill feature: deps: bump crossterm from 0.28.1 to 0.29.0",
-      "html_url": "https://github.com/harpertoken/harper/issues/468",
-      "updated_at": "2026-05-09T02:39:57Z",
+      "number": 639,
+      "title": "Backfill feature: [feat] introduce native harper commands",
+      "html_url": "https://github.com/harpertoken/harper/issues/639",
+      "updated_at": "2026-05-09T02:45:04Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 467,
-      "title": "Backfill feature: docs: update readme",
-      "html_url": "https://github.com/harpertoken/harper/issues/467",
-      "updated_at": "2026-05-09T02:39:56Z",
+      "number": 638,
+      "title": "Backfill feature: [ci] update both homebrew formula arches",
+      "html_url": "https://github.com/harpertoken/harper/issues/638",
+      "updated_at": "2026-05-09T02:45:03Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 466,
-      "title": "Backfill feature: Update signed.json",
-      "html_url": "https://github.com/harpertoken/harper/issues/466",
-      "updated_at": "2026-05-09T02:39:54Z",
+      "number": 637,
+      "title": "Backfill feature: [deps] bump openssl from 0.10.78 to 0.10.79 in the cargo group across 1 directory",
+      "html_url": "https://github.com/harpertoken/harper/issues/637",
+      "updated_at": "2026-05-09T02:45:01Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 465,
-      "title": "Backfill feature: ci: remove pr size check workflow",
-      "html_url": "https://github.com/harpertoken/harper/issues/465",
-      "updated_at": "2026-05-09T02:39:52Z",
+      "number": 636,
+      "title": "Backfill feature: [ci] authenticate homebrew tap push",
+      "html_url": "https://github.com/harpertoken/harper/issues/636",
+      "updated_at": "2026-05-09T02:44:59Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 464,
-      "title": "Backfill feature: ci: add pr size check workflow",
-      "html_url": "https://github.com/harpertoken/harper/issues/464",
-      "updated_at": "2026-05-09T02:39:50Z",
+      "number": 635,
+      "title": "Backfill feature: [ci] assign pull requests to project",
+      "html_url": "https://github.com/harpertoken/harper/issues/635",
+      "updated_at": "2026-05-09T02:44:57Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 463,
-      "title": "Backfill feature: docs: expand user guide with new pages",
-      "html_url": "https://github.com/harpertoken/harper/issues/463",
-      "updated_at": "2026-05-09T02:39:49Z",
+      "number": 634,
+      "title": "Backfill feature: [ci] set homebrew tap workflow git author",
+      "html_url": "https://github.com/harpertoken/harper/issues/634",
+      "updated_at": "2026-05-09T02:44:56Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 462,
-      "title": "Backfill bug: fix: some kind of ui changes `wip`",
-      "html_url": "https://github.com/harpertoken/harper/issues/462",
-      "updated_at": "2026-05-09T02:39:47Z",
+      "number": 633,
+      "title": "Backfill feature: [feat] integrate azure data explorer adx_query tool with device-code and service-principal auth",
+      "html_url": "https://github.com/harpertoken/harper/issues/633",
+      "updated_at": "2026-05-09T02:44:54Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 461,
-      "title": "Backfill feature: perf(core): Binary built at target/dist/harper (9.2M). Comparison: dist profile (fat LTO, codegen-units=1, stripped): 9.2M vs release (thin LTO): ~10M - ~8% smaller",
-      "html_url": "https://github.com/harpertoken/harper/issues/461",
-      "updated_at": "2026-05-09T02:39:45Z",
+      "number": 632,
+      "title": "Backfill feature: [chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/issues/632",
+      "updated_at": "2026-05-09T02:44:52Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 460,
-      "title": "Backfill feature: consolidation",
-      "html_url": "https://github.com/harpertoken/harper/issues/460",
-      "updated_at": "2026-05-09T02:39:43Z",
+      "number": 631,
+      "title": "Backfill feature: [feat] multiline input, image paste, minimal theme, and tui cleanup",
+      "html_url": "https://github.com/harpertoken/harper/issues/631",
+      "updated_at": "2026-05-09T02:44:50Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 459,
-      "title": "Backfill feature: chore: release main",
-      "html_url": "https://github.com/harpertoken/harper/issues/459",
-      "updated_at": "2026-05-09T02:39:42Z",
+      "number": 630,
+      "title": "Backfill feature: [lib] release",
+      "html_url": "https://github.com/harpertoken/harper/issues/630",
+      "updated_at": "2026-05-09T02:44:48Z",
       "user": "bniladridas",
       "comments": 0
     }
