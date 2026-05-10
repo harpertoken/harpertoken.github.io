@@ -143,8 +143,17 @@
   "tag_name": "harper-0.18.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
-  "total_count": 42,
+  "total_count": 43,
   "items": [
+    {
+      "repo": "harper",
+      "number": 645,
+      "title": "DIFF new file test 20260510165607",
+      "html_url": "https://github.com/harpertoken/harper/pull/645",
+      "updated_at": "2026-05-10T16:56:12Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 644,
@@ -224,15 +233,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/344",
       "updated_at": "2026-05-02T00:54:33Z",
       "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 58,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
-      "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
