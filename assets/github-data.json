@@ -143,8 +143,17 @@
   "tag_name": "harper-0.18.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
-  "total_count": 40,
+  "total_count": 41,
   "items": [
+    {
+      "repo": "harper",
+      "number": 643,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/643",
+      "updated_at": "2026-05-10T02:46:00Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 641,
@@ -225,15 +234,6 @@
       "updated_at": "2026-04-13T09:32:43Z",
       "user": "dependabot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "ml-api",
-      "number": 57,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
-      "updated_at": "2026-04-08T06:26:20Z",
-      "user": "dependabot[bot]",
-      "comments": 0
     }
   ]
 }, "open_issues": {
