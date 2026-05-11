@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -143,8 +143,17 @@
   "tag_name": "harper-0.18.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
-  "total_count": 43,
+  "total_count": 42,
   "items": [
+    {
+      "repo": "harper",
+      "number": 646,
+      "title": "[feat] compact menu and scrollable completion popup for small terminals",
+      "html_url": "https://github.com/harpertoken/harper/pull/646",
+      "updated_at": "2026-05-11T02:47:15Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 645,
@@ -165,29 +174,11 @@
     },
     {
       "repo": "harper",
-      "number": 643,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/643",
-      "updated_at": "2026-05-10T02:46:00Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
       "number": 641,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/641",
       "updated_at": "2026-05-09T03:10:44Z",
       "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 640,
-      "title": "[docs] document pr issue backfill workflow",
-      "html_url": "https://github.com/harpertoken/harper/pull/640",
-      "updated_at": "2026-05-09T02:51:01Z",
-      "user": "bniladridas",
       "comments": 0
     },
     {
@@ -233,6 +224,15 @@
       "html_url": "https://github.com/harpertoken/harper/pull/344",
       "updated_at": "2026-05-02T00:54:33Z",
       "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 58,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
+      "updated_at": "2026-04-13T11:31:29Z",
+      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
