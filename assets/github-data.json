@@ -1,12 +1,5 @@
 {"repos": [
   {
-    "name": "fork-testing",
-    "html_url": "https://github.com/harpertoken/fork-testing",
-    "language": null,
-    "stargazers_count": 0,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -19,6 +12,13 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "fork-testing",
+    "html_url": "https://github.com/harpertoken/fork-testing",
+    "language": null,
+    "stargazers_count": 0,
+    "forks_count": 1
   },
   {
     "name": "harper",
@@ -146,6 +146,15 @@
   "total_count": 46,
   "items": [
     {
+      "repo": "harper",
+      "number": 656,
+      "title": "[deps] bump turul-mcp-client from 0.3.38 to 0.3.40",
+      "html_url": "https://github.com/harpertoken/harper/pull/656",
+      "updated_at": "2026-05-11T19:53:49Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
       "repo": "benchmark",
       "number": 72,
       "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
@@ -169,15 +178,6 @@
       "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
       "html_url": "https://github.com/harpertoken/benchmark/pull/71",
       "updated_at": "2026-05-11T12:29:36Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 656,
-      "title": "[deps] bump turul-mcp-client from 0.3.38 to 0.3.40",
-      "html_url": "https://github.com/harpertoken/harper/pull/656",
-      "updated_at": "2026-05-11T06:57:38Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
