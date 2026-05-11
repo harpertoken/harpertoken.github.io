@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
@@ -7,10 +14,10 @@
     "forks_count": 1
   },
   {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
-    "stargazers_count": 0,
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -46,13 +53,6 @@
     "html_url": "https://github.com/harpertoken/benchmark",
     "language": "Python",
     "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -143,15 +143,24 @@
   "tag_name": "harper-0.18.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
-  "total_count": 42,
+  "total_count": 43,
   "items": [
     {
       "repo": "harper",
-      "number": 646,
-      "title": "[feat] compact menu and scrollable completion popup for small terminals",
-      "html_url": "https://github.com/harpertoken/harper/pull/646",
-      "updated_at": "2026-05-11T02:47:15Z",
-      "user": "bniladridas",
+      "number": 651,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/651",
+      "updated_at": "2026-05-11T04:51:15Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 140,
+      "title": "build(deps): bump ubuntu from 22.04 to 26.04 in /package/docker",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/140",
+      "updated_at": "2026-05-11T03:27:52Z",
+      "user": "dependabot[bot]",
       "comments": 0
     },
     {
@@ -225,20 +234,65 @@
       "updated_at": "2026-05-02T00:54:33Z",
       "user": "bniladridas",
       "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 58,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
-      "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
-      "comments": 0
     }
   ]
 }, "open_issues": {
-  "total_count": 379,
+  "total_count": 384,
   "items": [
+    {
+      "repo": "harper",
+      "number": 653,
+      "title": "Backfill feature: command output browser, compact layout, and multiline paste support",
+      "html_url": "https://github.com/harpertoken/harper/issues/653",
+      "updated_at": "2026-05-11T04:51:34Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 113,
+      "title": "Tracking Issue",
+      "html_url": "https://github.com/harpertoken/llamaware/issues/113",
+      "updated_at": "2026-05-11T03:27:44Z",
+      "user": "bniladridas",
+      "comments": 44
+    },
+    {
+      "repo": "harper",
+      "number": 650,
+      "title": "Backfill feature: [feat] compact menu and scrollable completion popup for small terminals",
+      "html_url": "https://github.com/harpertoken/harper/issues/650",
+      "updated_at": "2026-05-11T03:00:31Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 649,
+      "title": "Backfill feature: [chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/issues/649",
+      "updated_at": "2026-05-11T02:56:01Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 648,
+      "title": "Backfill feature: [docs] document pr issue backfill workflow",
+      "html_url": "https://github.com/harpertoken/harper/issues/648",
+      "updated_at": "2026-05-11T02:56:00Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 647,
+      "title": "Backfill feature: [lib] release",
+      "html_url": "https://github.com/harpertoken/harper/issues/647",
+      "updated_at": "2026-05-11T02:55:58Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 639,
@@ -272,60 +326,6 @@
       "title": "Backfill feature: [ci] authenticate homebrew tap push",
       "html_url": "https://github.com/harpertoken/harper/issues/636",
       "updated_at": "2026-05-09T02:44:59Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 635,
-      "title": "Backfill feature: [ci] assign pull requests to project",
-      "html_url": "https://github.com/harpertoken/harper/issues/635",
-      "updated_at": "2026-05-09T02:44:57Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 634,
-      "title": "Backfill feature: [ci] set homebrew tap workflow git author",
-      "html_url": "https://github.com/harpertoken/harper/issues/634",
-      "updated_at": "2026-05-09T02:44:56Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 633,
-      "title": "Backfill feature: [feat] integrate azure data explorer adx_query tool with device-code and service-principal auth",
-      "html_url": "https://github.com/harpertoken/harper/issues/633",
-      "updated_at": "2026-05-09T02:44:54Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 632,
-      "title": "Backfill feature: [chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/issues/632",
-      "updated_at": "2026-05-09T02:44:52Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 631,
-      "title": "Backfill feature: [feat] multiline input, image paste, minimal theme, and tui cleanup",
-      "html_url": "https://github.com/harpertoken/harper/issues/631",
-      "updated_at": "2026-05-09T02:44:50Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 630,
-      "title": "Backfill feature: [lib] release",
-      "html_url": "https://github.com/harpertoken/harper/issues/630",
-      "updated_at": "2026-05-09T02:44:48Z",
       "user": "bniladridas",
       "comments": 0
     }
