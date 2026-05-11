@@ -14,17 +14,17 @@
     "forks_count": 1
   },
   {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 1,
-    "forks_count": 0
-  },
-  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
     "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 1,
     "forks_count": 0
   },
   {
@@ -143,8 +143,35 @@
   "tag_name": "harper-0.18.0",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
 }, "open_prs": {
-  "total_count": 43,
+  "total_count": 46,
   "items": [
+    {
+      "repo": "harper",
+      "number": 656,
+      "title": "[deps] bump turul-mcp-client from 0.3.38 to 0.3.40",
+      "html_url": "https://github.com/harpertoken/harper/pull/656",
+      "updated_at": "2026-05-11T06:57:38Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 655,
+      "title": "[deps] bump hashbrown from 0.16.1 to 0.17.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/655",
+      "updated_at": "2026-05-11T06:56:53Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 654,
+      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.38 to 0.3.40",
+      "html_url": "https://github.com/harpertoken/harper/pull/654",
+      "updated_at": "2026-05-11T06:48:15Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 651,
@@ -206,33 +233,6 @@
       "html_url": "https://github.com/harpertoken/benchmark/pull/71",
       "updated_at": "2026-05-04T10:35:17Z",
       "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-05-04T10:34:58Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "autofix",
-      "number": 46,
-      "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 13 updates",
-      "html_url": "https://github.com/harpertoken/autofix/pull/46",
-      "updated_at": "2026-05-03T05:31:35Z",
-      "user": "dependabot[bot]",
-      "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 344,
-      "title": "[fix] stabilize windows bazel smoke for harper-ui",
-      "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-02T00:54:33Z",
-      "user": "bniladridas",
       "comments": 0
     }
   ]
