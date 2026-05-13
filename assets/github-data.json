@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -140,26 +140,17 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-0.19.0",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.19.0"
+  "tag_name": "harper-0.20.0",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.0"
 }, "open_prs": {
-  "total_count": 41,
+  "total_count": 40,
   "items": [
     {
       "repo": "harper",
-      "number": 668,
+      "number": 674,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/668",
-      "updated_at": "2026-05-13T09:42:44Z",
-      "user": "harpertoken-engineering[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 670,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/670",
-      "updated_at": "2026-05-13T09:42:37Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/674",
+      "updated_at": "2026-05-13T10:38:09Z",
       "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
@@ -234,10 +225,19 @@
       "updated_at": "2026-04-13T09:32:43Z",
       "user": "dependabot[bot]",
       "comments": 1
+    },
+    {
+      "repo": "ml-api",
+      "number": 57,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
+      "updated_at": "2026-04-08T06:26:20Z",
+      "user": "dependabot[bot]",
+      "comments": 0
     }
   ]
 }, "open_issues": {
-  "total_count": 133,
+  "total_count": 132,
   "items": [
     {
       "repo": "harper",
@@ -256,15 +256,6 @@
       "updated_at": "2026-05-13T10:18:32Z",
       "user": "bniladridas",
       "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 673,
-      "title": "Demo stale issues workflow test",
-      "html_url": "https://github.com/harpertoken/harper/issues/673",
-      "updated_at": "2026-05-13T10:10:12Z",
-      "user": "bniladridas",
-      "comments": 2
     },
     {
       "repo": "llamaware",
@@ -326,6 +317,15 @@
       "title": "Auto Improvement Report - 2025-12-16",
       "html_url": "https://github.com/harpertoken/hub/issues/133",
       "updated_at": "2025-12-16T03:18:04Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "hub",
+      "number": 132,
+      "title": "Auto Improvement Report - 2025-12-15",
+      "html_url": "https://github.com/harpertoken/hub/issues/132",
+      "updated_at": "2025-12-15T03:23:35Z",
       "user": "github-actions[bot]",
       "comments": 0
     }
