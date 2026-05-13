@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -140,47 +140,11 @@
     "forks_count": 0
   }
 ], "latest_release": {
-  "tag_name": "harper-0.18.0",
-  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.0"
+  "tag_name": "harper-0.18.1",
+  "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.18.1"
 }, "open_prs": {
-  "total_count": 45,
+  "total_count": 39,
   "items": [
-    {
-      "repo": "harper",
-      "number": 658,
-      "title": "deps: bump keyring from 2.3.3 to 4.0.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/658",
-      "updated_at": "2026-05-13T00:02:47Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 660,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.38 to 0.3.42",
-      "html_url": "https://github.com/harpertoken/harper/pull/660",
-      "updated_at": "2026-05-13T00:00:47Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 659,
-      "title": "[deps] bump jsonwebtoken from 10.3.0 to 10.4.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/659",
-      "updated_at": "2026-05-13T00:00:23Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 661,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/661",
-      "updated_at": "2026-05-13T00:00:02Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
     {
       "repo": "benchmark",
       "number": 72,
@@ -209,15 +173,6 @@
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 651,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/651",
-      "updated_at": "2026-05-11T04:51:15Z",
-      "user": "harper-rel-hq",
-      "comments": 0
-    },
-    {
       "repo": "llamaware",
       "number": 140,
       "title": "build(deps): bump ubuntu from 22.04 to 26.04 in /package/docker",
@@ -227,27 +182,63 @@
       "comments": 0
     },
     {
+      "repo": "autofix",
+      "number": 46,
+      "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 13 updates",
+      "html_url": "https://github.com/harpertoken/autofix/pull/46",
+      "updated_at": "2026-05-03T05:31:35Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
       "repo": "harper",
-      "number": 641,
-      "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/641",
-      "updated_at": "2026-05-09T03:10:44Z",
-      "user": "harper-rel-hq",
+      "number": 344,
+      "title": "[fix] stabilize windows bazel smoke for harper-ui",
+      "html_url": "https://github.com/harpertoken/harper/pull/344",
+      "updated_at": "2026-05-02T00:54:33Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 58,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
+      "updated_at": "2026-04-13T11:31:29Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 90,
+      "title": "ci(deps): bump actions/github-script from 8 to 9",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/90",
+      "updated_at": "2026-04-13T09:32:43Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "ml-api",
+      "number": 57,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
+      "updated_at": "2026-04-08T06:26:20Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 56,
+      "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/56",
+      "updated_at": "2026-04-06T10:54:25Z",
+      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
 }, "open_issues": {
-  "total_count": 352,
+  "total_count": 132,
   "items": [
-    {
-      "repo": "harper",
-      "number": 653,
-      "title": "Backfill feature: command output browser, compact layout, and multiline paste support",
-      "html_url": "https://github.com/harpertoken/harper/issues/653",
-      "updated_at": "2026-05-11T04:51:34Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
     {
       "repo": "llamaware",
       "number": 113,
@@ -259,74 +250,83 @@
     },
     {
       "repo": "harper",
-      "number": 650,
-      "title": "Backfill feature: [feat] compact menu and scrollable completion popup for small terminals",
-      "html_url": "https://github.com/harpertoken/harper/issues/650",
-      "updated_at": "2026-05-11T03:00:31Z",
+      "number": 347,
+      "title": "Track Windows Bazel rustc E0463 investigation",
+      "html_url": "https://github.com/harpertoken/harper/issues/347",
+      "updated_at": "2026-05-01T03:52:15Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 345,
+      "title": "Roadmap (2026 refresh)",
+      "html_url": "https://github.com/harpertoken/harper/issues/345",
+      "updated_at": "2026-04-29T14:04:38Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 639,
-      "title": "Backfill feature: [feat] introduce native harper commands",
-      "html_url": "https://github.com/harpertoken/harper/issues/639",
-      "updated_at": "2026-05-09T02:45:04Z",
+      "repo": "welcome-issues",
+      "number": 2,
+      "title": "Welcome: Niladri Das (@bniladridas)",
+      "html_url": "https://github.com/harpertoken/welcome-issues/issues/2",
+      "updated_at": "2026-03-10T10:36:59Z",
+      "user": "harper-welcome-bot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "welcome-issues",
+      "number": 1,
+      "title": "Welcome: Niladri Das (@bniladridas)",
+      "html_url": "https://github.com/harpertoken/welcome-issues/issues/1",
+      "updated_at": "2026-03-10T10:36:29Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "manager",
+      "number": 22,
+      "title": "Track: xAI API Migration & Repository Improvements",
+      "html_url": "https://github.com/harpertoken/manager/issues/22",
+      "updated_at": "2026-01-30T14:26:01Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 638,
-      "title": "Backfill feature: [ci] update both homebrew formula arches",
-      "html_url": "https://github.com/harpertoken/harper/issues/638",
-      "updated_at": "2026-05-09T02:45:03Z",
-      "user": "bniladridas",
+      "repo": "hub",
+      "number": 135,
+      "title": "Auto Improvement Report - 2025-12-18",
+      "html_url": "https://github.com/harpertoken/hub/issues/135",
+      "updated_at": "2025-12-18T03:15:22Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 637,
-      "title": "Backfill feature: [deps] bump openssl from 0.10.78 to 0.10.79 in the cargo group across 1 directory",
-      "html_url": "https://github.com/harpertoken/harper/issues/637",
-      "updated_at": "2026-05-09T02:45:01Z",
-      "user": "bniladridas",
+      "repo": "hub",
+      "number": 134,
+      "title": "Auto Improvement Report - 2025-12-17",
+      "html_url": "https://github.com/harpertoken/hub/issues/134",
+      "updated_at": "2025-12-17T03:14:39Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 636,
-      "title": "Backfill feature: [ci] authenticate homebrew tap push",
-      "html_url": "https://github.com/harpertoken/harper/issues/636",
-      "updated_at": "2026-05-09T02:44:59Z",
-      "user": "bniladridas",
+      "repo": "hub",
+      "number": 133,
+      "title": "Auto Improvement Report - 2025-12-16",
+      "html_url": "https://github.com/harpertoken/hub/issues/133",
+      "updated_at": "2025-12-16T03:18:04Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 635,
-      "title": "Backfill feature: [ci] assign pull requests to project",
-      "html_url": "https://github.com/harpertoken/harper/issues/635",
-      "updated_at": "2026-05-09T02:44:57Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 634,
-      "title": "Backfill feature: [ci] set homebrew tap workflow git author",
-      "html_url": "https://github.com/harpertoken/harper/issues/634",
-      "updated_at": "2026-05-09T02:44:56Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 633,
-      "title": "Backfill feature: [feat] integrate azure data explorer adx_query tool with device-code and service-principal auth",
-      "html_url": "https://github.com/harpertoken/harper/issues/633",
-      "updated_at": "2026-05-09T02:44:54Z",
-      "user": "bniladridas",
+      "repo": "hub",
+      "number": 132,
+      "title": "Auto Improvement Report - 2025-12-15",
+      "html_url": "https://github.com/harpertoken/hub/issues/132",
+      "updated_at": "2025-12-15T03:23:35Z",
+      "user": "github-actions[bot]",
       "comments": 0
     }
   ]
