@@ -146,6 +146,15 @@
   "total_count": 39,
   "items": [
     {
+      "repo": "harper",
+      "number": 344,
+      "title": "[fix] stabilize windows bazel smoke for harper-ui",
+      "html_url": "https://github.com/harpertoken/harper/pull/344",
+      "updated_at": "2026-05-13T19:48:30Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
       "repo": "benchmark",
       "number": 72,
       "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
@@ -191,15 +200,6 @@
       "comments": 1
     },
     {
-      "repo": "harper",
-      "number": 344,
-      "title": "[fix] stabilize windows bazel smoke for harper-ui",
-      "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-02T00:54:33Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
       "repo": "ml-api",
       "number": 58,
       "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
@@ -237,16 +237,25 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 132,
+  "total_count": 133,
   "items": [
     {
       "repo": "harper",
       "number": 347,
       "title": "Track Windows Bazel rustc E0463 investigation",
       "html_url": "https://github.com/harpertoken/harper/issues/347",
-      "updated_at": "2026-05-13T10:18:34Z",
+      "updated_at": "2026-05-13T20:28:04Z",
       "user": "bniladridas",
       "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 676,
+      "title": "Goal: app-owned PR checks with Harper backend",
+      "html_url": "https://github.com/harpertoken/harper/issues/676",
+      "updated_at": "2026-05-13T19:34:52Z",
+      "user": "bniladridas",
+      "comments": 0
     },
     {
       "repo": "harper",
@@ -317,15 +326,6 @@
       "title": "Auto Improvement Report - 2025-12-16",
       "html_url": "https://github.com/harpertoken/hub/issues/133",
       "updated_at": "2025-12-16T03:18:04Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "hub",
-      "number": 132,
-      "title": "Auto Improvement Report - 2025-12-15",
-      "html_url": "https://github.com/harpertoken/hub/issues/132",
-      "updated_at": "2025-12-15T03:23:35Z",
       "user": "github-actions[bot]",
       "comments": 0
     }
