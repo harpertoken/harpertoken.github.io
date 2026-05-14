@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "fork-testing",
@@ -150,7 +150,7 @@
       "number": 344,
       "title": "[fix] stabilize windows bazel smoke for harper-ui",
       "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-13T19:48:30Z",
+      "updated_at": "2026-05-14T19:38:05Z",
       "user": "bniladridas",
       "comments": 0
     },
@@ -241,6 +241,15 @@
   "items": [
     {
       "repo": "harper",
+      "number": 347,
+      "title": "Track Windows Bazel rustc E0463 investigation",
+      "html_url": "https://github.com/harpertoken/harper/issues/347",
+      "updated_at": "2026-05-14T19:18:08Z",
+      "user": "bniladridas",
+      "comments": 2
+    },
+    {
+      "repo": "harper",
       "number": 345,
       "title": "Roadmap (2026 refresh)",
       "html_url": "https://github.com/harpertoken/harper/issues/345",
@@ -317,15 +326,6 @@
       "title": "Verify Linux native package install and upgrade flow",
       "html_url": "https://github.com/harpertoken/harper/issues/702",
       "updated_at": "2026-05-14T05:52:46Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 701,
-      "title": "Publish Harper rpm package artifacts",
-      "html_url": "https://github.com/harpertoken/harper/issues/701",
-      "updated_at": "2026-05-14T05:52:44Z",
       "user": "bniladridas",
       "comments": 0
     }
