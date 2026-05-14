@@ -1,17 +1,17 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -147,11 +147,11 @@
   "items": [
     {
       "repo": "harper",
-      "number": 344,
-      "title": "[fix] stabilize windows bazel smoke for harper-ui",
-      "html_url": "https://github.com/harpertoken/harper/pull/344",
-      "updated_at": "2026-05-14T19:38:05Z",
-      "user": "bniladridas",
+      "number": 710,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/710",
+      "updated_at": "2026-05-14T20:17:14Z",
+      "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
     {
