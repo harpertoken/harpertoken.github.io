@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "fork-testing",
@@ -237,8 +237,53 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 133,
+  "total_count": 138,
   "items": [
+    {
+      "repo": "harper",
+      "number": 685,
+      "title": "Goal: Nix and Arch package channels",
+      "html_url": "https://github.com/harpertoken/harper/issues/685",
+      "updated_at": "2026-05-14T02:24:08Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 684,
+      "title": "Goal: GitHub Action channel",
+      "html_url": "https://github.com/harpertoken/harper/issues/684",
+      "updated_at": "2026-05-14T02:24:06Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 683,
+      "title": "Goal: npm binary wrapper",
+      "html_url": "https://github.com/harpertoken/harper/issues/683",
+      "updated_at": "2026-05-14T02:24:03Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 682,
+      "title": "Goal: Linux native packages",
+      "html_url": "https://github.com/harpertoken/harper/issues/682",
+      "updated_at": "2026-05-14T02:24:01Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 681,
+      "title": "Goal: Windows package manager channels",
+      "html_url": "https://github.com/harpertoken/harper/issues/681",
+      "updated_at": "2026-05-14T02:23:59Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 347,
@@ -283,51 +328,6 @@
       "updated_at": "2026-03-10T10:36:59Z",
       "user": "harper-welcome-bot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "welcome-issues",
-      "number": 1,
-      "title": "Welcome: Niladri Das (@bniladridas)",
-      "html_url": "https://github.com/harpertoken/welcome-issues/issues/1",
-      "updated_at": "2026-03-10T10:36:29Z",
-      "user": "bniladridas",
-      "comments": 1
-    },
-    {
-      "repo": "manager",
-      "number": 22,
-      "title": "Track: xAI API Migration & Repository Improvements",
-      "html_url": "https://github.com/harpertoken/manager/issues/22",
-      "updated_at": "2026-01-30T14:26:01Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "hub",
-      "number": 135,
-      "title": "Auto Improvement Report - 2025-12-18",
-      "html_url": "https://github.com/harpertoken/hub/issues/135",
-      "updated_at": "2025-12-18T03:15:22Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "hub",
-      "number": 134,
-      "title": "Auto Improvement Report - 2025-12-17",
-      "html_url": "https://github.com/harpertoken/hub/issues/134",
-      "updated_at": "2025-12-17T03:14:39Z",
-      "user": "github-actions[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "hub",
-      "number": 133,
-      "title": "Auto Improvement Report - 2025-12-16",
-      "html_url": "https://github.com/harpertoken/hub/issues/133",
-      "updated_at": "2025-12-16T03:18:04Z",
-      "user": "github-actions[bot]",
-      "comments": 0
     }
   ]
 }}
