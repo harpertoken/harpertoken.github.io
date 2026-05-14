@@ -237,97 +237,97 @@
     }
   ]
 }, "open_issues": {
-  "total_count": 138,
+  "total_count": 151,
   "items": [
-    {
-      "repo": "harper",
-      "number": 685,
-      "title": "Goal: Nix and Arch package channels",
-      "html_url": "https://github.com/harpertoken/harper/issues/685",
-      "updated_at": "2026-05-14T02:24:08Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 684,
-      "title": "Goal: GitHub Action channel",
-      "html_url": "https://github.com/harpertoken/harper/issues/684",
-      "updated_at": "2026-05-14T02:24:06Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 683,
-      "title": "Goal: npm binary wrapper",
-      "html_url": "https://github.com/harpertoken/harper/issues/683",
-      "updated_at": "2026-05-14T02:24:03Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 682,
-      "title": "Goal: Linux native packages",
-      "html_url": "https://github.com/harpertoken/harper/issues/682",
-      "updated_at": "2026-05-14T02:24:01Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 681,
-      "title": "Goal: Windows package manager channels",
-      "html_url": "https://github.com/harpertoken/harper/issues/681",
-      "updated_at": "2026-05-14T02:23:59Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 347,
-      "title": "Track Windows Bazel rustc E0463 investigation",
-      "html_url": "https://github.com/harpertoken/harper/issues/347",
-      "updated_at": "2026-05-13T20:28:04Z",
-      "user": "bniladridas",
-      "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 676,
-      "title": "Goal: app-owned PR checks with Harper backend",
-      "html_url": "https://github.com/harpertoken/harper/issues/676",
-      "updated_at": "2026-05-13T19:34:52Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
     {
       "repo": "harper",
       "number": 345,
       "title": "Roadmap (2026 refresh)",
       "html_url": "https://github.com/harpertoken/harper/issues/345",
-      "updated_at": "2026-05-13T10:18:32Z",
+      "updated_at": "2026-05-14T05:55:48Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
-      "repo": "llamaware",
-      "number": 113,
-      "title": "Tracking Issue",
-      "html_url": "https://github.com/harpertoken/llamaware/issues/113",
-      "updated_at": "2026-05-11T03:27:44Z",
+      "repo": "harper",
+      "number": 709,
+      "title": "Verify Nix and Arch package update flow",
+      "html_url": "https://github.com/harpertoken/harper/issues/709",
+      "updated_at": "2026-05-14T05:53:00Z",
       "user": "bniladridas",
-      "comments": 44
+      "comments": 0
     },
     {
-      "repo": "welcome-issues",
-      "number": 2,
-      "title": "Welcome: Niladri Das (@bniladridas)",
-      "html_url": "https://github.com/harpertoken/welcome-issues/issues/2",
-      "updated_at": "2026-03-10T10:36:59Z",
-      "user": "harper-welcome-bot[bot]",
-      "comments": 1
+      "repo": "harper",
+      "number": 708,
+      "title": "Publish Harper Arch or AUR install path",
+      "html_url": "https://github.com/harpertoken/harper/issues/708",
+      "updated_at": "2026-05-14T05:52:58Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 707,
+      "title": "Publish Harper Nix install path",
+      "html_url": "https://github.com/harpertoken/harper/issues/707",
+      "updated_at": "2026-05-14T05:52:56Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 706,
+      "title": "Verify Harper GitHub Action in an external workflow",
+      "html_url": "https://github.com/harpertoken/harper/issues/706",
+      "updated_at": "2026-05-14T05:52:54Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 705,
+      "title": "Publish versioned Harper GitHub Action",
+      "html_url": "https://github.com/harpertoken/harper/issues/705",
+      "updated_at": "2026-05-14T05:52:52Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 704,
+      "title": "Verify npm wrapper on supported platforms",
+      "html_url": "https://github.com/harpertoken/harper/issues/704",
+      "updated_at": "2026-05-14T05:52:50Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 703,
+      "title": "Publish Harper npm package",
+      "html_url": "https://github.com/harpertoken/harper/issues/703",
+      "updated_at": "2026-05-14T05:52:48Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 702,
+      "title": "Verify Linux native package install and upgrade flow",
+      "html_url": "https://github.com/harpertoken/harper/issues/702",
+      "updated_at": "2026-05-14T05:52:46Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 701,
+      "title": "Publish Harper rpm package artifacts",
+      "html_url": "https://github.com/harpertoken/harper/issues/701",
+      "updated_at": "2026-05-14T05:52:44Z",
+      "user": "bniladridas",
+      "comments": 0
     }
   ]
 }}
