@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 2,
     "forks_count": 1
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "autofix",
@@ -143,35 +143,8 @@
   "tag_name": "harper-workspace-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-workspace-0.20.1"
 }, "open_prs": {
-  "total_count": 42,
+  "total_count": 39,
   "items": [
-    {
-      "repo": "harper",
-      "number": 713,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.42 to 0.3.44",
-      "html_url": "https://github.com/harpertoken/harper/pull/713",
-      "updated_at": "2026-05-15T16:49:04Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 715,
-      "title": "deps: bump turul-mcp-client from 0.3.42 to 0.3.44",
-      "html_url": "https://github.com/harpertoken/harper/pull/715",
-      "updated_at": "2026-05-15T06:04:31Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 714,
-      "title": "deps: bump config from 0.15.22 to 0.15.23",
-      "html_url": "https://github.com/harpertoken/harper/pull/714",
-      "updated_at": "2026-05-15T05:56:58Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
     {
       "repo": "harper",
       "number": 710,
@@ -232,6 +205,33 @@
       "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
       "html_url": "https://github.com/harpertoken/ml-api/pull/58",
       "updated_at": "2026-04-13T11:31:29Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "benchmark",
+      "number": 90,
+      "title": "ci(deps): bump actions/github-script from 8 to 9",
+      "html_url": "https://github.com/harpertoken/benchmark/pull/90",
+      "updated_at": "2026-04-13T09:32:43Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "ml-api",
+      "number": 57,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/57",
+      "updated_at": "2026-04-08T06:26:20Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 56,
+      "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/56",
+      "updated_at": "2026-04-06T10:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
