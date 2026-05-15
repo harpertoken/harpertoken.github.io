@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "autofix",
@@ -147,6 +147,15 @@
   "items": [
     {
       "repo": "harper",
+      "number": 713,
+      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.42 to 0.3.44",
+      "html_url": "https://github.com/harpertoken/harper/pull/713",
+      "updated_at": "2026-05-15T16:49:04Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
       "number": 715,
       "title": "deps: bump turul-mcp-client from 0.3.42 to 0.3.44",
       "html_url": "https://github.com/harpertoken/harper/pull/715",
@@ -160,15 +169,6 @@
       "title": "deps: bump config from 0.15.22 to 0.15.23",
       "html_url": "https://github.com/harpertoken/harper/pull/714",
       "updated_at": "2026-05-15T05:56:58Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 713,
-      "title": "deps: bump turul-mcp-json-rpc-server from 0.3.42 to 0.3.44",
-      "html_url": "https://github.com/harpertoken/harper/pull/713",
-      "updated_at": "2026-05-15T05:56:28Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
