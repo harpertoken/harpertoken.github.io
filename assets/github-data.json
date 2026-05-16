@@ -143,14 +143,23 @@
   "tag_name": "harper-workspace-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-workspace-0.20.1"
 }, "open_prs": {
-  "total_count": 39,
+  "total_count": 40,
   "items": [
     {
       "repo": "harper",
-      "number": 710,
+      "number": 718,
       "title": "[lib] release",
-      "html_url": "https://github.com/harpertoken/harper/pull/710",
-      "updated_at": "2026-05-14T20:17:14Z",
+      "html_url": "https://github.com/harpertoken/harper/pull/718",
+      "updated_at": "2026-05-15T23:38:36Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 717,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/717",
+      "updated_at": "2026-05-15T23:17:51Z",
       "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
@@ -223,15 +232,6 @@
       "title": "deps(deps): bump transformers from 4.57.3 to 5.0.0rc3 in the pip group across 1 directory",
       "html_url": "https://github.com/harpertoken/ml-api/pull/57",
       "updated_at": "2026-04-08T06:26:20Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "ml-api",
-      "number": 56,
-      "title": "deps(deps): bump fastapi from 0.128.0 to 0.135.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/56",
-      "updated_at": "2026-04-06T10:54:25Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
