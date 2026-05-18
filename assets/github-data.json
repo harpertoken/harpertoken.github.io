@@ -1,12 +1,5 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 2,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -19,6 +12,13 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 2,
+    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -150,7 +150,7 @@
       "number": 725,
       "title": "[lib] release",
       "html_url": "https://github.com/harpertoken/harper/pull/725",
-      "updated_at": "2026-05-17T07:01:19Z",
+      "updated_at": "2026-05-18T03:39:54Z",
       "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
