@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 2,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 2,
-    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -143,8 +143,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 42,
+  "total_count": 43,
   "items": [
+    {
+      "repo": "harper",
+      "number": 729,
+      "title": "[deps] bump tar from 0.4.45 to 0.4.46",
+      "html_url": "https://github.com/harpertoken/harper/pull/729",
+      "updated_at": "2026-05-19T18:33:25Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "benchmark",
       "number": 78,
@@ -225,15 +234,6 @@
       "updated_at": "2026-05-03T05:31:35Z",
       "user": "dependabot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "ml-api",
-      "number": 58,
-      "title": "deps(deps): bump transformers from 4.57.3 to 5.5.3",
-      "html_url": "https://github.com/harpertoken/ml-api/pull/58",
-      "updated_at": "2026-04-13T11:31:29Z",
-      "user": "dependabot[bot]",
-      "comments": 0
     }
   ]
 }, "open_issues": {
