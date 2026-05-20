@@ -1,12 +1,5 @@
 {"repos": [
   {
-    "name": "benchmark",
-    "html_url": "https://github.com/harpertoken/benchmark",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -17,6 +10,13 @@
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "benchmark",
+    "html_url": "https://github.com/harpertoken/benchmark",
+    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
