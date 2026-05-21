@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 2,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -19,13 +26,6 @@
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 2,
-    "forks_count": 1
   },
   {
     "name": "homebrew-tap",
@@ -143,8 +143,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 44,
+  "total_count": 45,
   "items": [
+    {
+      "repo": "harper",
+      "number": 730,
+      "title": "[deps] bump ctr from 0.9.2 to 0.10.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/730",
+      "updated_at": "2026-05-21T05:55:55Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "benchmark",
       "number": 91,
@@ -224,15 +233,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/725",
       "updated_at": "2026-05-18T03:39:54Z",
       "user": "harpertoken-engineering[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "llamaware",
-      "number": 140,
-      "title": "build(deps): bump ubuntu from 22.04 to 26.04 in /package/docker",
-      "html_url": "https://github.com/harpertoken/llamaware/pull/140",
-      "updated_at": "2026-05-11T03:27:52Z",
-      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
