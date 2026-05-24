@@ -1,5 +1,26 @@
 {"repos": [
   {
+    "name": "mcp-org",
+    "html_url": "https://github.com/harpertoken/mcp-org",
+    "language": "Swift",
+    "stargazers_count": 2,
+    "forks_count": 0
+  },
+  {
+    "name": "kernel.metal",
+    "html_url": "https://github.com/harpertoken/kernel.metal",
+    "language": "Swift",
+    "stargazers_count": 3,
+    "forks_count": 0
+  },
+  {
+    "name": "path",
+    "html_url": "https://github.com/harpertoken/path",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -7,16 +28,9 @@
     "forks_count": 0
   },
   {
-    "name": "autofix",
-    "html_url": "https://github.com/harpertoken/autofix",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
+    "name": "manager",
+    "html_url": "https://github.com/harpertoken/manager",
+    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -28,16 +42,9 @@
     "forks_count": 1
   },
   {
-    "name": "benchmark",
-    "html_url": "https://github.com/harpertoken/benchmark",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "homebrew-tap",
-    "html_url": "https://github.com/harpertoken/homebrew-tap",
-    "language": "Ruby",
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -49,30 +56,9 @@
     "forks_count": 0
   },
   {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "ml-api",
-    "html_url": "https://github.com/harpertoken/ml-api",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "hwh-core",
     "html_url": "https://github.com/harpertoken/hwh-core",
     "language": "Lean",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "welcome-bot",
-    "html_url": "https://github.com/harpertoken/welcome-bot",
-    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -84,30 +70,9 @@
     "forks_count": 0
   },
   {
-    "name": "kernel.metal",
-    "html_url": "https://github.com/harpertoken/kernel.metal",
-    "language": "Swift",
-    "stargazers_count": 3,
-    "forks_count": 0
-  },
-  {
-    "name": "cross-platform-path-utils",
-    "html_url": "https://github.com/harpertoken/cross-platform-path-utils",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "xgboost-api",
-    "html_url": "https://github.com/harpertoken/xgboost-api",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "stremiodiag",
-    "html_url": "https://github.com/harpertoken/stremiodiag",
-    "language": "Shell",
+    "name": "welcome-bot",
+    "html_url": "https://github.com/harpertoken/welcome-bot",
+    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -126,206 +91,241 @@
     "forks_count": 0
   },
   {
-    "name": "browser",
-    "html_url": "https://github.com/harpertoken/browser",
-    "language": "Dart",
+    "name": "metal-kernels",
+    "html_url": "https://github.com/harpertoken/metal-kernels",
+    "language": "Swift",
+    "stargazers_count": 3,
+    "forks_count": 0
+  },
+  {
+    "name": "harperbot",
+    "html_url": "https://github.com/harpertoken/harperbot",
+    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
   {
-    "name": "stillness",
-    "html_url": "https://github.com/harpertoken/stillness",
-    "language": "HTML",
+    "name": "memoraxx",
+    "html_url": "https://github.com/harpertoken/memoraxx",
+    "language": "C++",
     "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "homebrew-tap",
+    "html_url": "https://github.com/harpertoken/homebrew-tap",
+    "language": "Ruby",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "course",
+    "html_url": "https://github.com/harpertoken/course",
+    "language": "Swift",
+    "stargazers_count": 2,
+    "forks_count": 0
+  },
+  {
+    "name": "autofix",
+    "html_url": "https://github.com/harpertoken/autofix",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "kernel-swift",
+    "html_url": "https://github.com/harpertoken/kernel-swift",
+    "language": "Swift",
+    "stargazers_count": 3,
     "forks_count": 0
   }
 ], "latest_release": {
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 46,
+  "total_count": 11,
   "items": [
     {
-      "repo": "autofix",
-      "number": 47,
-      "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 16 updates",
-      "html_url": "https://github.com/harpertoken/autofix/pull/47",
-      "updated_at": "2026-05-24T08:19:38Z",
-      "user": "dependabot[bot]",
-      "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 732,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/732",
-      "updated_at": "2026-05-24T03:01:12Z",
-      "user": "harpertoken-engineering[bot]",
+      "repo": "manager",
+      "number": 29,
+      "title": "release manager 0.4.0",
+      "html_url": "https://github.com/harpertoken/manager/pull/29",
+      "updated_at": "2026-05-24T10:51:09Z",
+      "user": "github-actions[bot]",
       "comments": 0
     },
     {
-      "repo": "harper",
-      "number": 730,
-      "title": "[deps] bump ctr from 0.9.2 to 0.10.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/730",
-      "updated_at": "2026-05-21T05:55:55Z",
+      "repo": "llamaware",
+      "number": 140,
+      "title": "bump ubuntu to 26.04",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/140",
+      "updated_at": "2026-05-24T10:51:07Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
     {
       "repo": "benchmark",
       "number": 91,
-      "title": "deps(deps): bump idna from 3.11 to 3.15",
+      "title": "bump idna to 3.15",
       "html_url": "https://github.com/harpertoken/benchmark/pull/91",
-      "updated_at": "2026-05-19T21:27:05Z",
+      "updated_at": "2026-05-24T10:51:04Z",
       "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "autofix",
+      "number": 47,
+      "title": "bump npm and yarn deps",
+      "html_url": "https://github.com/harpertoken/autofix/pull/47",
+      "updated_at": "2026-05-24T10:51:02Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 725,
+      "title": "release",
+      "html_url": "https://github.com/harpertoken/harper/pull/725",
+      "updated_at": "2026-05-24T10:51:00Z",
+      "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 729,
-      "title": "[deps] bump tar from 0.4.45 to 0.4.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/729",
-      "updated_at": "2026-05-19T18:33:25Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 78,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/78",
-      "updated_at": "2026-05-18T16:18:37Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 71,
-      "title": "deps(deps): bump the transformers group across 1 directory with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/71",
-      "updated_at": "2026-05-18T16:18:44Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 72,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/72",
-      "updated_at": "2026-05-18T16:18:22Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 728,
-      "title": "[deps] bump turul-mcp-json-rpc-server from 0.3.45 to 0.3.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/728",
-      "updated_at": "2026-05-18T08:27:10Z",
+      "number": 726,
+      "title": "bump turul-mcp-client to 0.3.46",
+      "html_url": "https://github.com/harpertoken/harper/pull/726",
+      "updated_at": "2026-05-24T10:50:58Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
     {
       "repo": "harper",
       "number": 727,
-      "title": "[deps] bump dashmap from 6.1.0 to 6.2.1",
+      "title": "bump dashmap to 6.2.1",
       "html_url": "https://github.com/harpertoken/harper/pull/727",
-      "updated_at": "2026-05-18T08:16:26Z",
+      "updated_at": "2026-05-24T10:50:56Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 728,
+      "title": "bump turul-mcp-json-rpc-server to 0.3.46",
+      "html_url": "https://github.com/harpertoken/harper/pull/728",
+      "updated_at": "2026-05-24T10:50:54Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 729,
+      "title": "bump tar to 0.4.46",
+      "html_url": "https://github.com/harpertoken/harper/pull/729",
+      "updated_at": "2026-05-24T10:50:52Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 730,
+      "title": "bump ctr to 0.10.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/730",
+      "updated_at": "2026-05-24T10:50:50Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
   ]
 }, "open_issues": {
-  "total_count": 151,
+  "total_count": 21,
   "items": [
     {
       "repo": "harper",
+      "number": 345,
+      "title": "roadmap",
+      "html_url": "https://github.com/harpertoken/harper/issues/345",
+      "updated_at": "2026-05-24T10:50:46Z",
+      "user": "bniladridas",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
       "number": 347,
-      "title": "Track Windows Bazel rustc E0463 investigation",
+      "title": "windows bazel rustc e0463",
       "html_url": "https://github.com/harpertoken/harper/issues/347",
-      "updated_at": "2026-05-14T19:18:08Z",
+      "updated_at": "2026-05-24T10:50:45Z",
       "user": "bniladridas",
       "comments": 2
     },
     {
       "repo": "harper",
-      "number": 345,
-      "title": "Roadmap (2026 refresh)",
-      "html_url": "https://github.com/harpertoken/harper/issues/345",
-      "updated_at": "2026-05-14T05:55:48Z",
+      "number": 676,
+      "title": "app-owned pr checks",
+      "html_url": "https://github.com/harpertoken/harper/issues/676",
+      "updated_at": "2026-05-24T10:50:43Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 709,
-      "title": "Verify Nix and Arch package update flow",
-      "html_url": "https://github.com/harpertoken/harper/issues/709",
-      "updated_at": "2026-05-14T05:53:00Z",
+      "number": 681,
+      "title": "windows package channels",
+      "html_url": "https://github.com/harpertoken/harper/issues/681",
+      "updated_at": "2026-05-24T10:50:42Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 682,
+      "title": "linux native packages",
+      "html_url": "https://github.com/harpertoken/harper/issues/682",
+      "updated_at": "2026-05-24T10:50:40Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 683,
+      "title": "npm binary wrapper",
+      "html_url": "https://github.com/harpertoken/harper/issues/683",
+      "updated_at": "2026-05-24T10:50:39Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 684,
+      "title": "github action channel",
+      "html_url": "https://github.com/harpertoken/harper/issues/684",
+      "updated_at": "2026-05-24T10:50:37Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 685,
+      "title": "nix and arch channels",
+      "html_url": "https://github.com/harpertoken/harper/issues/685",
+      "updated_at": "2026-05-24T10:50:36Z",
+      "user": "bniladridas",
+      "comments": 1
+    },
+    {
+      "repo": "harper",
+      "number": 697,
+      "title": "submit to winget",
+      "html_url": "https://github.com/harpertoken/harper/issues/697",
+      "updated_at": "2026-05-24T10:50:35Z",
       "user": "bniladridas",
       "comments": 0
     },
     {
       "repo": "harper",
-      "number": 708,
-      "title": "Publish Harper Arch or AUR install path",
-      "html_url": "https://github.com/harpertoken/harper/issues/708",
-      "updated_at": "2026-05-14T05:52:58Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 707,
-      "title": "Publish Harper Nix install path",
-      "html_url": "https://github.com/harpertoken/harper/issues/707",
-      "updated_at": "2026-05-14T05:52:56Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 706,
-      "title": "Verify Harper GitHub Action in an external workflow",
-      "html_url": "https://github.com/harpertoken/harper/issues/706",
-      "updated_at": "2026-05-14T05:52:54Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 705,
-      "title": "Publish versioned Harper GitHub Action",
-      "html_url": "https://github.com/harpertoken/harper/issues/705",
-      "updated_at": "2026-05-14T05:52:52Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 704,
-      "title": "Verify npm wrapper on supported platforms",
-      "html_url": "https://github.com/harpertoken/harper/issues/704",
-      "updated_at": "2026-05-14T05:52:50Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 703,
-      "title": "Publish Harper npm package",
-      "html_url": "https://github.com/harpertoken/harper/issues/703",
-      "updated_at": "2026-05-14T05:52:48Z",
-      "user": "bniladridas",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 702,
-      "title": "Verify Linux native package install and upgrade flow",
-      "html_url": "https://github.com/harpertoken/harper/issues/702",
-      "updated_at": "2026-05-14T05:52:46Z",
+      "number": 698,
+      "title": "submit to scoop",
+      "html_url": "https://github.com/harpertoken/harper/issues/698",
+      "updated_at": "2026-05-24T10:50:33Z",
       "user": "bniladridas",
       "comments": 0
     }
