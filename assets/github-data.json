@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "autofix",
+    "html_url": "https://github.com/harpertoken/autofix",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -31,13 +38,6 @@
     "name": "homebrew-tap",
     "html_url": "https://github.com/harpertoken/homebrew-tap",
     "language": "Ruby",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "autofix",
-    "html_url": "https://github.com/harpertoken/autofix",
-    "language": "TypeScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -146,6 +146,15 @@
   "total_count": 46,
   "items": [
     {
+      "repo": "autofix",
+      "number": 47,
+      "title": "chore(deps): bump the npm_and_yarn group across 1 directory with 16 updates",
+      "html_url": "https://github.com/harpertoken/autofix/pull/47",
+      "updated_at": "2026-05-24T08:19:38Z",
+      "user": "dependabot[bot]",
+      "comments": 1
+    },
+    {
       "repo": "harper",
       "number": 732,
       "title": "[chore] update rust lockfiles",
@@ -223,15 +232,6 @@
       "title": "[deps] bump dashmap from 6.1.0 to 6.2.1",
       "html_url": "https://github.com/harpertoken/harper/pull/727",
       "updated_at": "2026-05-18T08:16:26Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 726,
-      "title": "[deps] bump turul-mcp-client from 0.3.45 to 0.3.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/726",
-      "updated_at": "2026-05-18T08:16:04Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
