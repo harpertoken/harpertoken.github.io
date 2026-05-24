@@ -1,5 +1,19 @@
 {"repos": [
   {
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "mcp-org",
     "html_url": "https://github.com/harpertoken/mcp-org",
     "language": "Swift",
@@ -21,13 +35,6 @@
     "forks_count": 0
   },
   {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "manager",
     "html_url": "https://github.com/harpertoken/manager",
     "language": "Python",
@@ -40,13 +47,6 @@
     "language": "Rust",
     "stargazers_count": 2,
     "forks_count": 1
-  },
-  {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
   },
   {
     "name": "fork-testing",
