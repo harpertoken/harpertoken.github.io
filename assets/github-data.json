@@ -1,10 +1,24 @@
 {"repos": [
   {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 2,
+    "forks_count": 1
   },
   {
     "name": "harpertoken.github.io",
@@ -40,13 +54,6 @@
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 2,
-    "forks_count": 1
   },
   {
     "name": "fork-testing",
@@ -131,20 +138,58 @@
     "language": "TypeScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "kernel-swift",
-    "html_url": "https://github.com/harpertoken/kernel-swift",
-    "language": "Swift",
-    "stargazers_count": 3,
-    "forks_count": 0
   }
 ], "latest_release": {
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 11,
+  "total_count": 16,
   "items": [
+    {
+      "repo": "llamaware",
+      "number": 145,
+      "title": "build(deps): bump softprops/action-gh-release from 2 to 3",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/145",
+      "updated_at": "2026-05-25T03:52:51Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 144,
+      "title": "build(deps): bump docker/build-push-action from 5 to 7",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/144",
+      "updated_at": "2026-05-25T03:51:52Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 143,
+      "title": "build(deps): bump aquasecurity/trivy-action from 0.34.0 to 0.36.0",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/143",
+      "updated_at": "2026-05-25T03:51:32Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 142,
+      "title": "build(deps): bump actions/github-script from 8 to 9",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/142",
+      "updated_at": "2026-05-25T03:48:39Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 141,
+      "title": "build(deps): bump docker/setup-buildx-action from 3 to 4",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/141",
+      "updated_at": "2026-05-25T03:48:38Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "manager",
       "number": 29,
@@ -188,51 +233,6 @@
       "html_url": "https://github.com/harpertoken/harper/pull/725",
       "updated_at": "2026-05-24T10:51:00Z",
       "user": "harpertoken-engineering[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 726,
-      "title": "bump turul-mcp-client to 0.3.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/726",
-      "updated_at": "2026-05-24T10:50:58Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 727,
-      "title": "bump dashmap to 6.2.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/727",
-      "updated_at": "2026-05-24T10:50:56Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 728,
-      "title": "bump turul-mcp-json-rpc-server to 0.3.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/728",
-      "updated_at": "2026-05-24T10:50:54Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 729,
-      "title": "bump tar to 0.4.46",
-      "html_url": "https://github.com/harpertoken/harper/pull/729",
-      "updated_at": "2026-05-24T10:50:52Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 730,
-      "title": "bump ctr to 0.10.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/730",
-      "updated_at": "2026-05-24T10:50:50Z",
-      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
