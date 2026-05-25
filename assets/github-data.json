@@ -1,47 +1,5 @@
 {"repos": [
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 2,
-    "forks_count": 1
-  },
-  {
-    "name": "mcp-org",
-    "html_url": "https://github.com/harpertoken/mcp-org",
-    "language": "Swift",
-    "stargazers_count": 2,
-    "forks_count": 0
-  },
-  {
-    "name": "kernel.metal",
-    "html_url": "https://github.com/harpertoken/kernel.metal",
-    "language": "Swift",
-    "stargazers_count": 3,
-    "forks_count": 0
-  },
-  {
     "name": "path",
     "html_url": "https://github.com/harpertoken/path",
     "language": "HTML",
@@ -53,6 +11,48 @@
     "html_url": "https://github.com/harpertoken/manager",
     "language": "Python",
     "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "mcp-org",
+    "html_url": "https://github.com/harpertoken/mcp-org",
+    "language": "Swift",
+    "stargazers_count": 2,
+    "forks_count": 0
+  },
+  {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 2,
+    "forks_count": 1
+  },
+  {
+    "name": "kernel.metal",
+    "html_url": "https://github.com/harpertoken/kernel.metal",
+    "language": "Swift",
+    "stargazers_count": 3,
     "forks_count": 0
   },
   {
@@ -143,8 +143,35 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 17,
+  "total_count": 18,
   "items": [
+    {
+      "repo": "manager",
+      "number": 29,
+      "title": "chore(main): release manager 0.4.0",
+      "html_url": "https://github.com/harpertoken/manager/pull/29",
+      "updated_at": "2026-05-25T07:54:07Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "mcp-org",
+      "number": 6,
+      "title": "chore(main): release mcp-github-org-mapper 1.1.0",
+      "html_url": "https://github.com/harpertoken/mcp-org/pull/6",
+      "updated_at": "2026-05-25T07:32:14Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "llamaware",
+      "number": 146,
+      "title": "chore: bump version to 0.1.6",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/146",
+      "updated_at": "2026-05-25T07:17:16Z",
+      "user": "github-actions[bot]",
+      "comments": 0
+    },
     {
       "repo": "harpertoken.github.io",
       "number": 54,
@@ -174,15 +201,6 @@
     },
     {
       "repo": "llamaware",
-      "number": 143,
-      "title": "build(deps): bump aquasecurity/trivy-action from 0.34.0 to 0.36.0",
-      "html_url": "https://github.com/harpertoken/llamaware/pull/143",
-      "updated_at": "2026-05-25T03:51:32Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "llamaware",
       "number": 142,
       "title": "build(deps): bump actions/github-script from 8 to 9",
       "html_url": "https://github.com/harpertoken/llamaware/pull/142",
@@ -197,15 +215,6 @@
       "html_url": "https://github.com/harpertoken/llamaware/pull/141",
       "updated_at": "2026-05-25T03:48:38Z",
       "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "manager",
-      "number": 29,
-      "title": "release manager 0.4.0",
-      "html_url": "https://github.com/harpertoken/manager/pull/29",
-      "updated_at": "2026-05-24T10:51:09Z",
-      "user": "github-actions[bot]",
       "comments": 0
     },
     {
@@ -225,15 +234,6 @@
       "updated_at": "2026-05-24T10:51:04Z",
       "user": "dependabot[bot]",
       "comments": 0
-    },
-    {
-      "repo": "autofix",
-      "number": 47,
-      "title": "bump npm and yarn deps",
-      "html_url": "https://github.com/harpertoken/autofix/pull/47",
-      "updated_at": "2026-05-24T10:51:02Z",
-      "user": "dependabot[bot]",
-      "comments": 1
     }
   ]
 }, "open_issues": {
