@@ -78,26 +78,66 @@ function showInfo() {
     modal.style.display = 'block';
 }
 
+function escapeHtml(text) {
+    return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 function convertLinks(text) {
-    return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+    const escaped = escapeHtml(text);
+    return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, label, url) => {
+        const safe = safeUrl(url);
+        return safe ? `<a href="${safe}" target="_blank" rel="noopener noreferrer">${label}</a>` : label;
+    });
+}
+
+function parseMarkdownTable(markdown) {
+    return markdown
+        .split('\n')
+        .map(line => line.trim())
+        .filter(line => line.startsWith('|') && line.endsWith('|'))
+        .filter(line => !/^\|\s*-/.test(line))
+        .map(line => line.slice(1, -1).split('|').map(cell => cell.trim()))
+        .filter(cells => cells.length >= 4 && cells[0] !== 'Date');
+}
+
+function renderActivityTable(markdown) {
+    const rows = parseMarkdownTable(markdown).slice(0, 8);
+    if (!rows.length) return 'No activity';
+    const body = rows.map(([date, actor, activity, repo]) => `
+        <tr>
+            <td>${convertLinks(date)}</td>
+            <td>${convertLinks(actor)}</td>
+            <td>${convertLinks(activity)}</td>
+            <td>${convertLinks(repo)}</td>
+        </tr>
+    `).join('');
+    return `
+        <table class="activity-table">
+            <tbody>${body}</tbody>
+        </table>
+    `;
 }
 
 function renderViz(text) {
     const viz = document.getElementById('activity-viz');
     if (!viz) return;
-    const lines = text.split('\n').slice(0, 21);
+    const rows = parseMarkdownTable(text).slice(0, 21);
     let html = '<div class="viz-grid">';
     for (let i = 0; i < 21; i++) {
-        const line = lines[i] || '';
-        const hasLine = line.includes('—');
+        const row = rows[i];
+        const hasLine = Boolean(row);
         let title = '';
         if (hasLine) {
-            const date = line.match(/(\d{4}-\d{2}-\d{2})/)?.[1] || '';
-            const user = line.match(/@(\w+)/)?.[1] || '';
-            title = `1 commit by @${user} on ${date}`;
+            const [date, actor, activity, repo] = row;
+            title = `${activity.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')} by ${actor} on ${date} in ${repo.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}`;
         }
         const level = hasLine ? (i % 4 === 0 ? 'l4' : i % 3 === 0 ? 'l3' : i % 2 === 0 ? 'l2' : 'l1') : '';
-        html += `<div class="viz-cell ${level}" data-title="${title}"></div>`;
+        html += `<div class="viz-cell ${level}" data-title="${escapeHtml(title)}"></div>`;
     }
     html += '</div>';
     viz.innerHTML = html;
@@ -154,10 +194,9 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(text => {
                 const match = text.match(/<!-- ORG_ACTIVITY:START -->([\s\S]*?)<!-- ORG_ACTIVITY:END -->/);
                 if (match) {
-                    const text = match[1];
-                    const lines = text.split('\n').slice(0, 8);
-                    activityList.innerHTML = lines.map(l => l.trim() ? `<div>${convertLinks(l)}</div>` : '').join('');
-                    renderViz(text);
+                    const activityMarkdown = match[1];
+                    activityList.innerHTML = renderActivityTable(activityMarkdown);
+                    renderViz(activityMarkdown);
                 } else {
                     activityList.textContent = 'No activity';
                 }
