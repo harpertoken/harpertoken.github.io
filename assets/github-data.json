@@ -1,8 +1,8 @@
 {"repos": [
   {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -14,18 +14,18 @@
     "forks_count": 0
   },
   {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 2,
     "forks_count": 1
-  },
-  {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
   },
   {
     "name": "mcp-org",
@@ -143,8 +143,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 16,
+  "total_count": 17,
   "items": [
+    {
+      "repo": "harpertoken.github.io",
+      "number": 54,
+      "title": "chore(main): release 1.26.1",
+      "html_url": "https://github.com/harpertoken/harpertoken.github.io/pull/54",
+      "updated_at": "2026-05-25T07:05:36Z",
+      "user": "harper-rel-hq",
+      "comments": 0
+    },
     {
       "repo": "llamaware",
       "number": 145,
@@ -225,15 +234,6 @@
       "updated_at": "2026-05-24T10:51:02Z",
       "user": "dependabot[bot]",
       "comments": 1
-    },
-    {
-      "repo": "harper",
-      "number": 725,
-      "title": "release",
-      "html_url": "https://github.com/harpertoken/harper/pull/725",
-      "updated_at": "2026-05-24T10:51:00Z",
-      "user": "harpertoken-engineering[bot]",
-      "comments": 0
     }
   ]
 }, "open_issues": {
