@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.26.1](https://github.com/harpertoken/harpertoken.github.io/compare/v1.26.0...v1.26.1) (2026-05-25)
+
+
+### Bug Fixes
+
+* render activity table ([13da8d7](https://github.com/harpertoken/harpertoken.github.io/commit/13da8d70a7d4169db613c6d94612352b4c3b610e))
+
 ## [1.26.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.25.0...v1.26.0) (2026-04-15)
 
 ### Features
