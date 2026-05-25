@@ -157,9 +157,13 @@ a:hover { text-decoration: underline; }
 #npm-packages > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
 #npm-packages > div:last-child { border-bottom: none; }
 #npm-packages a { color: var(--accent-color); }
-#activity-list > div { font-size: 0.75rem; padding: 4px 0; border-bottom: 1px solid var(--border-color); line-height: 1.4; }
-#activity-list > div:last-child { border-bottom: none; }
 #activity-list a { color: var(--accent-color); }
+.activity-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; line-height: 1.4; }
+.activity-table td { padding: 4px 8px 4px 0; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+.activity-table tr:last-child td { border-bottom: none; }
+.activity-table td:first-child { white-space: nowrap; opacity: 0.65; }
+.activity-table td:nth-child(2) { white-space: nowrap; opacity: 0.75; }
+.activity-table td:last-child { padding-right: 0; }
 
 /* Issues / PRs */
 .issue-list { display: flex; flex-direction: column; gap: 6px; max-height: min(560px, calc(100vh - 220px)); overflow-y: auto; }
