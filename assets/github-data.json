@@ -7,8 +7,8 @@
     "forks_count": 0
   },
   {
-    "name": "benchmark",
-    "html_url": "https://github.com/harpertoken/benchmark",
+    "name": "ml-api",
+    "html_url": "https://github.com/harpertoken/ml-api",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
@@ -17,6 +17,13 @@
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "benchmark",
+    "html_url": "https://github.com/harpertoken/benchmark",
+    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -112,13 +119,6 @@
     "forks_count": 0
   },
   {
-    "name": "ml-api",
-    "html_url": "https://github.com/harpertoken/ml-api",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "cross-platform-path-utils",
     "html_url": "https://github.com/harpertoken/cross-platform-path-utils",
     "language": "TypeScript",
@@ -129,8 +129,62 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 10,
+  "total_count": 16,
   "items": [
+    {
+      "repo": "ml-api",
+      "number": 64,
+      "title": "deps(deps): bump datasets from 4.4.2 to 4.8.5",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/64",
+      "updated_at": "2026-05-25T16:28:39Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 63,
+      "title": "deps(deps): bump torch from 2.9.1 to 2.12.0",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/63",
+      "updated_at": "2026-05-25T16:28:34Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 62,
+      "title": "deps(deps): bump fastapi from 0.128.0 to 0.136.3",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/62",
+      "updated_at": "2026-05-25T16:28:27Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 61,
+      "title": "deps(deps): bump transformers from 4.57.3 to 5.9.0",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/61",
+      "updated_at": "2026-05-25T16:28:22Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 60,
+      "title": "deps(deps): update huggingface-hub requirement from >=0.30.0 to >=1.16.1",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/60",
+      "updated_at": "2026-05-25T16:28:14Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "ml-api",
+      "number": 59,
+      "title": "deps(deps): bump uvicorn from 0.40.0 to 0.48.0",
+      "html_url": "https://github.com/harpertoken/ml-api/pull/59",
+      "updated_at": "2026-05-25T16:28:08Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "benchmark",
       "number": 101,
@@ -164,60 +218,6 @@
       "title": "deps(deps): bump lazy-loader from 0.4 to 0.5",
       "html_url": "https://github.com/harpertoken/benchmark/pull/98",
       "updated_at": "2026-05-25T13:32:53Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 97,
-      "title": "deps(deps): bump aiohttp from 3.13.3 to 3.13.5",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/97",
-      "updated_at": "2026-05-25T13:32:49Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 96,
-      "title": "deps(deps): bump tzdata from 2025.3 to 2026.2",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/96",
-      "updated_at": "2026-05-25T13:32:31Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 95,
-      "title": "deps(deps): bump tqdm from 4.67.1 to 4.67.3",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/95",
-      "updated_at": "2026-05-25T13:32:25Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 94,
-      "title": "deps(deps): bump datasets from 4.4.2 to 4.5.0 in the data group",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/94",
-      "updated_at": "2026-05-25T13:32:19Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 93,
-      "title": "deps(deps): bump the audio group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/93",
-      "updated_at": "2026-05-25T13:32:06Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "benchmark",
-      "number": 92,
-      "title": "deps(deps): bump the transformers group with 2 updates",
-      "html_url": "https://github.com/harpertoken/benchmark/pull/92",
-      "updated_at": "2026-05-25T13:31:44Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
