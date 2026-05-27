@@ -117,13 +117,6 @@
     "language": "Swift",
     "stargazers_count": 2,
     "forks_count": 0
-  },
-  {
-    "name": "cross-platform-path-utils",
-    "html_url": "https://github.com/harpertoken/cross-platform-path-utils",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "forks_count": 0
   }
 ], "latest_release": {
   "tag_name": "harper-0.20.1",
