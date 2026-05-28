@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "benchmark",
     "html_url": "https://github.com/harpertoken/benchmark",
     "language": "Python",
@@ -24,15 +31,8 @@
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
-    "stargazers_count": 2,
+    "stargazers_count": 1,
     "forks_count": 1
-  },
-  {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
   },
   {
     "name": "manager",
