@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -26,13 +33,6 @@
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "manager",
@@ -122,8 +122,54 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 0,
-  "items": []
+  "total_count": 5,
+  "items": [
+    {
+      "repo": "harper",
+      "number": 742,
+      "title": "[deps] bump log from 0.4.29 to 0.4.30",
+      "html_url": "https://github.com/harpertoken/harper/pull/742",
+      "updated_at": "2026-05-29T06:16:56Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 741,
+      "title": "[deps] bump hyper from 1.9.0 to 1.10.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/741",
+      "updated_at": "2026-05-29T06:15:43Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 740,
+      "title": "[deps] bump socket2 from 0.6.3 to 0.6.4",
+      "html_url": "https://github.com/harpertoken/harper/pull/740",
+      "updated_at": "2026-05-29T06:13:40Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 739,
+      "title": "[deps] bump turul-mcp-client from 0.3.45 to 0.3.47",
+      "html_url": "https://github.com/harpertoken/harper/pull/739",
+      "updated_at": "2026-05-29T05:56:18Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 738,
+      "title": "[deps] bump aes from 0.8.4 to 0.9.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/738",
+      "updated_at": "2026-05-29T05:55:57Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    }
+  ]
 }, "open_issues": {
   "total_count": 0,
   "items": []
