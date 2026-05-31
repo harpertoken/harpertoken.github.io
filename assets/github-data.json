@@ -1,12 +1,5 @@
 {"repos": [
   {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -21,25 +14,11 @@
     "forks_count": 0
   },
   {
-    "name": "benchmark",
-    "html_url": "https://github.com/harpertoken/benchmark",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "ml-api",
-    "html_url": "https://github.com/harpertoken/ml-api",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "manager",
-    "html_url": "https://github.com/harpertoken/manager",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
   },
   {
     "name": "llamaware",
@@ -49,73 +28,10 @@
     "forks_count": 0
   },
   {
-    "name": "xgboost-api",
-    "html_url": "https://github.com/harpertoken/xgboost-api",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "autofix",
-    "html_url": "https://github.com/harpertoken/autofix",
-    "language": "TypeScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "path",
-    "html_url": "https://github.com/harpertoken/path",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "mcp-org",
-    "html_url": "https://github.com/harpertoken/mcp-org",
-    "language": "Swift",
-    "stargazers_count": 2,
-    "forks_count": 0
-  },
-  {
-    "name": "kernel.metal",
-    "html_url": "https://github.com/harpertoken/kernel.metal",
-    "language": "Swift",
-    "stargazers_count": 3,
-    "forks_count": 0
-  },
-  {
-    "name": "hwh-core",
-    "html_url": "https://github.com/harpertoken/hwh-core",
-    "language": "Lean",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "badge-assets",
-    "html_url": "https://github.com/harpertoken/badge-assets",
-    "language": "Python",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "metal-kernels",
-    "html_url": "https://github.com/harpertoken/metal-kernels",
-    "language": "Swift",
-    "stargazers_count": 3,
-    "forks_count": 0
-  },
-  {
     "name": "homebrew-tap",
     "html_url": "https://github.com/harpertoken/homebrew-tap",
     "language": "Ruby",
     "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "kernel-swift",
-    "html_url": "https://github.com/harpertoken/kernel-swift",
-    "language": "Swift",
-    "stargazers_count": 2,
     "forks_count": 0
   }
 ], "latest_release": {
