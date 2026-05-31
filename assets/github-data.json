@@ -1,15 +1,15 @@
 {"repos": [
   {
-    "name": ".github",
-    "html_url": "https://github.com/harpertoken/.github",
-    "language": "Python",
+    "name": "welcome-bot",
+    "html_url": "https://github.com/harpertoken/welcome-bot",
+    "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
+    "name": ".github",
+    "html_url": "https://github.com/harpertoken/.github",
+    "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -21,9 +21,23 @@
     "forks_count": 1
   },
   {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "llamaware",
     "html_url": "https://github.com/harpertoken/llamaware",
     "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "welcome-issues",
+    "html_url": "https://github.com/harpertoken/welcome-issues",
+    "language": null,
     "stargazers_count": 0,
     "forks_count": 0
   },
@@ -38,69 +52,15 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 7,
+  "total_count": 1,
   "items": [
     {
       "repo": "harper",
-      "number": 744,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/744",
-      "updated_at": "2026-05-31T03:36:06Z",
+      "number": 745,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/745",
+      "updated_at": "2026-05-31T11:49:19Z",
       "user": "harpertoken-engineering[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 743,
-      "title": "[deps] bump tar from 0.4.45 to 0.4.46 in the cargo group across 1 directory",
-      "html_url": "https://github.com/harpertoken/harper/pull/743",
-      "updated_at": "2026-05-29T21:30:36Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 742,
-      "title": "[deps] bump log from 0.4.29 to 0.4.30",
-      "html_url": "https://github.com/harpertoken/harper/pull/742",
-      "updated_at": "2026-05-29T06:16:56Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 741,
-      "title": "[deps] bump hyper from 1.9.0 to 1.10.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/741",
-      "updated_at": "2026-05-29T06:15:43Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 740,
-      "title": "[deps] bump socket2 from 0.6.3 to 0.6.4",
-      "html_url": "https://github.com/harpertoken/harper/pull/740",
-      "updated_at": "2026-05-29T06:13:40Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 739,
-      "title": "[deps] bump turul-mcp-client from 0.3.45 to 0.3.47",
-      "html_url": "https://github.com/harpertoken/harper/pull/739",
-      "updated_at": "2026-05-29T05:56:18Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 738,
-      "title": "[deps] bump aes from 0.8.4 to 0.9.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/738",
-      "updated_at": "2026-05-29T05:55:57Z",
-      "user": "dependabot[bot]",
       "comments": 0
     }
   ]
