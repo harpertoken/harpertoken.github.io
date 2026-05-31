@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "benchmark",
@@ -122,8 +122,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 6,
+  "total_count": 7,
   "items": [
+    {
+      "repo": "harper",
+      "number": 744,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/744",
+      "updated_at": "2026-05-31T03:36:06Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 743,
