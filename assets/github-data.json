@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -19,13 +26,6 @@
     "language": "C++",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "welcome-bot",
@@ -52,8 +52,26 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 2,
+  "total_count": 4,
   "items": [
+    {
+      "repo": "harper",
+      "number": 747,
+      "title": "[deps] bump log from 0.4.30 to 0.4.31",
+      "html_url": "https://github.com/harpertoken/harper/pull/747",
+      "updated_at": "2026-06-03T22:36:37Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 746,
+      "title": "[deps] bump bitflags from 2.11.1 to 2.12.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/746",
+      "updated_at": "2026-06-03T22:36:17Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "llamaware",
       "number": 147,
