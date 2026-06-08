@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -19,13 +26,6 @@
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
   },
   {
     "name": "welcome-bot",
@@ -54,6 +54,15 @@
 }, "open_prs": {
   "total_count": 6,
   "items": [
+    {
+      "repo": "llamaware",
+      "number": 148,
+      "title": "build(deps): bump codecov/codecov-action from 5 to 7",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/148",
+      "updated_at": "2026-06-08T03:14:14Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 750,
@@ -87,15 +96,6 @@
       "title": "[deps] bump bitflags from 2.11.1 to 2.12.1",
       "html_url": "https://github.com/harpertoken/harper/pull/746",
       "updated_at": "2026-06-03T22:36:17Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "llamaware",
-      "number": 147,
-      "title": "build(deps): bump codecov/codecov-action from 5 to 6",
-      "html_url": "https://github.com/harpertoken/llamaware/pull/147",
-      "updated_at": "2026-06-01T05:52:35Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
