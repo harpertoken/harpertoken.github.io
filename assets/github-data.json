@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "llamaware",
@@ -56,6 +56,15 @@
   "items": [
     {
       "repo": "harper",
+      "number": 750,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/750",
+      "updated_at": "2026-06-14T03:46:42Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
       "number": 753,
       "title": "[deps] bump ratatui from 0.30.0 to 0.30.1",
       "html_url": "https://github.com/harpertoken/harper/pull/753",
@@ -88,15 +97,6 @@
       "html_url": "https://github.com/harpertoken/llamaware/pull/148",
       "updated_at": "2026-06-08T03:14:14Z",
       "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 750,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/750",
-      "updated_at": "2026-06-07T03:40:01Z",
-      "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
     {
