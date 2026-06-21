@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,13 +19,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "llamaware",
@@ -59,7 +59,7 @@
       "number": 750,
       "title": "[chore] update rust lockfiles",
       "html_url": "https://github.com/harpertoken/harper/pull/750",
-      "updated_at": "2026-06-14T03:46:42Z",
+      "updated_at": "2026-06-21T03:56:48Z",
       "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
