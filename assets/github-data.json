@@ -1,5 +1,12 @@
 {"repos": [
   {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -19,13 +26,6 @@
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
   },
   {
     "name": "welcome-bot",
@@ -52,8 +52,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 8,
+  "total_count": 9,
   "items": [
+    {
+      "repo": "llamaware",
+      "number": 149,
+      "title": "build(deps): bump actions/checkout from 4 to 7",
+      "html_url": "https://github.com/harpertoken/llamaware/pull/149",
+      "updated_at": "2026-06-22T03:13:27Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "harper",
       "number": 750,
