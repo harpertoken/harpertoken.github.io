@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -19,13 +26,6 @@
     "language": "C++",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "welcome-bot",
@@ -55,21 +55,21 @@
   "total_count": 10,
   "items": [
     {
+      "repo": "harper",
+      "number": 750,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/750",
+      "updated_at": "2026-07-05T02:51:10Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
+    {
       "repo": "llamaware",
       "number": 150,
       "title": "build(deps): bump actions/cache from 5 to 6",
       "html_url": "https://github.com/harpertoken/llamaware/pull/150",
       "updated_at": "2026-06-29T03:13:38Z",
       "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 750,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/750",
-      "updated_at": "2026-06-28T03:34:57Z",
-      "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
     {
