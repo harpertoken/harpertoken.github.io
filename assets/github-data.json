@@ -7,6 +7,13 @@
     "forks_count": 0
   },
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
     "name": "harpertoken.github.io",
     "html_url": "https://github.com/harpertoken/harpertoken.github.io",
     "language": "JavaScript",
@@ -19,13 +26,6 @@
     "language": "C++",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
   },
   {
     "name": "welcome-bot",
@@ -52,8 +52,17 @@
   "tag_name": "harper-0.20.1",
   "html_url": "https://github.com/harpertoken/harper/releases/tag/harper-0.20.1"
 }, "open_prs": {
-  "total_count": 11,
+  "total_count": 12,
   "items": [
+    {
+      "repo": "harper",
+      "number": 754,
+      "title": "[deps] bump quinn-proto from 0.11.14 to 0.11.16 in the cargo group across 1 directory",
+      "html_url": "https://github.com/harpertoken/harper/pull/754",
+      "updated_at": "2026-07-28T07:06:24Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
     {
       "repo": "llamaware",
       "number": 151,
@@ -132,15 +141,6 @@
       "title": "[deps] bump chrono from 0.4.44 to 0.4.45",
       "html_url": "https://github.com/harpertoken/harper/pull/749",
       "updated_at": "2026-06-05T05:54:33Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 748,
-      "title": "[deps] bump log from 0.4.30 to 0.4.32",
-      "html_url": "https://github.com/harpertoken/harper/pull/748",
-      "updated_at": "2026-06-05T05:54:08Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
