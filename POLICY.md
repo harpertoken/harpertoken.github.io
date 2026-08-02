@@ -1,7 +1,7 @@
 # Command Execution Policies
 
 This document defines *how command execution must work* across harpertoken tools
-that can run shell or git commands (for example: `harper`, `llamaware`).
+that can run shell or git commands (for example: `harpertoken`, `llamaware`).
 
 The goal is to be explicit about what is allowed, what is blocked, and what must
 require user approval.
@@ -57,8 +57,8 @@ When tools provide sandboxed execution, defaults should be:
 - **Minimal allowed commands** per sandbox profile
 
 Example implementations in the org (source of truth):
-- `harper`: command tool safety checks + approval + audit logging
-  (`harper/lib/harper-core/src/tools/shell.rs`, `harper/lib/harper-core/src/tools/git.rs`)
+- `harpertoken`: command tool safety checks + approval + audit logging
+  (`harpertoken/lib/harper-core/src/tools/shell.rs`, `harpertoken/lib/harper-core/src/tools/git.rs`)
 - `llamaware`: sandbox configs default to no network + resource limits
   (`llamaware/src/services/sandbox_service.cpp`, `llamaware/include/services/sandbox_service.h`)
 

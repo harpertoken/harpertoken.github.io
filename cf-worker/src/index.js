@@ -67,10 +67,10 @@ export default {
     if (!token) return errorResponse('Missing GITHUB_TOKEN secret', { status: 500 });
 
     const org = env.ORG || 'harpertoken';
-    const releaseRepo = env.RELEASE_REPO || `${org}/harper`;
+    const releaseRepo = env.RELEASE_REPO || `${org}/harpertoken`;
     const siteRepo = env.SITE_REPO || `${org}/harpertoken.github.io`;
     const discussionRepo = env.DISCUSSION_REPO || releaseRepo;
-    const teamMembers = ['bniladridas', 'harper-dev-hq', 'harper-rel-hq'];
+    const teamMembers = ['bniladridas', 'gpucomm-hq'];
 
     const cacheKey = new Request(url.toString(), request);
     const cache = caches.default;
