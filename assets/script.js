@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load activity from .github profile
     if (activityList) {
-        fetch('https://raw.githubusercontent.com/harpertoken/.github/main/profile/readme.md')
+        fetch('https://raw.githubusercontent.com/harpertoken/.github/main/profile/README.md')
             .then(res => res.text())
             .then(text => {
                 const match = text.match(/<!-- ORG_ACTIVITY:START -->([\s\S]*?)<!-- ORG_ACTIVITY:END -->/);
