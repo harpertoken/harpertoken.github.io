@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sidebarRepos.innerHTML = '<a href="https://github.com/harpertoken">harpertoken</a>';
         }
         if (mainRelease) {
-            mainRelease.textContent = 'v0.7.0';
+            mainRelease.textContent = 'v1.27.0';
         }
     };
 
