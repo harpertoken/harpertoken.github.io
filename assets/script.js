@@ -143,6 +143,16 @@ function renderViz(text) {
     viz.innerHTML = html;
 }
 
+function setLoadingState(container, label = 'Loading') {
+    if (!container) return;
+    container.innerHTML = `
+        <div class="loading-state" role="status" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>${escapeHtml(label)}</span>
+        </div>
+    `;
+}
+
 // Keyboard shortcut
 document.addEventListener('keydown', function(e) {
     if (e.key === 'c' || e.key === 'C') {
@@ -186,6 +196,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainRelease = document.getElementById('latest-release');
     const sidebarRepos = document.getElementById('sidebar-repos');
     const activityList = document.getElementById('activity-list');
+
+    const loadingTargets = [
+        { element: mainRelease, label: 'Loading release' },
+        { element: sidebarRepos, label: 'Loading repos' },
+        { element: activityList, label: 'Loading activity' },
+        { element: document.getElementById('activity-viz'), label: 'Loading graph' },
+        { element: document.getElementById('hf-models'), label: 'Loading models' },
+        { element: document.getElementById('hf-spaces'), label: 'Loading spaces' },
+        { element: document.getElementById('docker-images'), label: 'Loading images' },
+        { element: document.getElementById('gitlab-projects'), label: 'Loading projects' },
+        { element: document.getElementById('npm-packages'), label: 'Loading packages' },
+        { element: document.getElementById('site-version'), label: 'Loading version' },
+        { element: document.getElementById('open-prs'), label: 'Loading PRs' },
+        { element: document.getElementById('open-issues'), label: 'Loading issues' },
+        { element: document.getElementById('open-discussions'), label: 'Loading discussions' }
+    ];
+
+    loadingTargets.forEach(({ element, label }) => setLoadingState(element, label));
 
     // Load activity from .github profile
     if (activityList) {
