@@ -7,18 +7,18 @@
     "forks_count": 0
   },
   {
-    "name": "harpertoken.github.io",
-    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
     "name": "harper",
     "html_url": "https://github.com/harpertoken/harper",
     "language": "Rust",
     "stargazers_count": 1,
     "forks_count": 1
+  },
+  {
+    "name": "harpertoken.github.io",
+    "html_url": "https://github.com/harpertoken/harpertoken.github.io",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
   },
   {
     "name": "llamaware",
@@ -56,6 +56,15 @@
   "items": [
     {
       "repo": "harper",
+      "number": 750,
+      "title": "[chore] update rust lockfiles",
+      "html_url": "https://github.com/harpertoken/harper/pull/750",
+      "updated_at": "2026-08-02T02:33:58Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
       "number": 754,
       "title": "[deps] bump quinn-proto from 0.11.14 to 0.11.16 in the cargo group across 1 directory",
       "html_url": "https://github.com/harpertoken/harper/pull/754",
@@ -70,15 +79,6 @@
       "html_url": "https://github.com/harpertoken/llamaware/pull/151",
       "updated_at": "2026-07-27T03:13:35Z",
       "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 750,
-      "title": "[chore] update rust lockfiles",
-      "html_url": "https://github.com/harpertoken/harper/pull/750",
-      "updated_at": "2026-07-26T02:33:10Z",
-      "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
     {
