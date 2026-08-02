@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.27.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.26.0...main) (2026-08-02)
+
+### Features
+
+* refresh the public README with current project details and local preview instructions
+* update the site branding and page copy to consistently use harpertoken
+* replace the hero banner asset with the new banner image
+
+### Bug Fixes
+
+* clean up stale references in policy, worker, and signed metadata files
+* fix favicon URL escaping so the HTML linter passes cleanly
+
 ## [1.26.0](https://github.com/harpertoken/harpertoken.github.io/compare/v1.25.0...v1.26.0) (2026-04-15)
 
 ### Features
