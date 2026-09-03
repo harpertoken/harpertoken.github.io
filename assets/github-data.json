@@ -1,5 +1,40 @@
 {"repos": [
   {
+    "name": "harper",
+    "html_url": "https://github.com/harpertoken/harper",
+    "language": "Rust",
+    "stargazers_count": 1,
+    "forks_count": 1
+  },
+  {
+    "name": "welcome-issues",
+    "html_url": "https://github.com/harpertoken/welcome-issues",
+    "language": null,
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "welcome-bot",
+    "html_url": "https://github.com/harpertoken/welcome-bot",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "homebrew-tap",
+    "html_url": "https://github.com/harpertoken/homebrew-tap",
+    "language": "Ruby",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
+    "name": "llamaware",
+    "html_url": "https://github.com/harpertoken/llamaware",
+    "language": "C++",
+    "stargazers_count": 0,
+    "forks_count": 0
+  },
+  {
     "name": ".github",
     "html_url": "https://github.com/harpertoken/.github",
     "language": "Python",
@@ -12,41 +47,6 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "forks_count": 0
-  },
-  {
-    "name": "harper",
-    "html_url": "https://github.com/harpertoken/harper",
-    "language": "Rust",
-    "stargazers_count": 1,
-    "forks_count": 1
-  },
-  {
-    "name": "llamaware",
-    "html_url": "https://github.com/harpertoken/llamaware",
-    "language": "C++",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "welcome-bot",
-    "html_url": "https://github.com/harpertoken/welcome-bot",
-    "language": "JavaScript",
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "welcome-issues",
-    "html_url": "https://github.com/harpertoken/welcome-issues",
-    "language": null,
-    "stargazers_count": 0,
-    "forks_count": 0
-  },
-  {
-    "name": "homebrew-tap",
-    "html_url": "https://github.com/harpertoken/homebrew-tap",
-    "language": "Ruby",
-    "stargazers_count": 0,
-    "forks_count": 0
   }
 ], "latest_release": {
   "tag_name": "harper-0.20.1",
@@ -56,10 +56,46 @@
   "items": [
     {
       "repo": "harper",
+      "number": 753,
+      "title": "[deps] bump ratatui from 0.30.0 to 0.30.1",
+      "html_url": "https://github.com/harpertoken/harper/pull/753",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 748,
+      "title": "[deps] bump log from 0.4.30 to 0.4.32",
+      "html_url": "https://github.com/harpertoken/harper/pull/748",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 749,
+      "title": "[deps] bump chrono from 0.4.44 to 0.4.45",
+      "html_url": "https://github.com/harpertoken/harper/pull/749",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
       "number": 750,
       "title": "[chore] update rust lockfiles",
       "html_url": "https://github.com/harpertoken/harper/pull/750",
-      "updated_at": "2026-08-30T03:31:46Z",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "harpertoken-engineering[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 745,
+      "title": "[lib] release",
+      "html_url": "https://github.com/harpertoken/harper/pull/745",
+      "updated_at": "2026-09-03T00:57:30Z",
       "user": "harpertoken-engineering[bot]",
       "comments": 0
     },
@@ -68,7 +104,25 @@
       "number": 754,
       "title": "[deps] bump quinn-proto from 0.11.14 to 0.11.16 in the cargo group across 1 directory",
       "html_url": "https://github.com/harpertoken/harper/pull/754",
-      "updated_at": "2026-07-28T07:06:24Z",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 752,
+      "title": "[deps] bump bitflags from 2.11.1 to 2.13.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/752",
+      "updated_at": "2026-09-03T00:57:30Z",
+      "user": "dependabot[bot]",
+      "comments": 0
+    },
+    {
+      "repo": "harper",
+      "number": 751,
+      "title": "[deps] bump hashlink from 0.11.0 to 0.12.0",
+      "html_url": "https://github.com/harpertoken/harper/pull/751",
+      "updated_at": "2026-09-03T00:57:30Z",
       "user": "dependabot[bot]",
       "comments": 0
     },
@@ -87,60 +141,6 @@
       "title": "build(deps): bump actions/cache from 5 to 6",
       "html_url": "https://github.com/harpertoken/llamaware/pull/150",
       "updated_at": "2026-06-29T03:13:38Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "llamaware",
-      "number": 149,
-      "title": "build(deps): bump actions/checkout from 4 to 7",
-      "html_url": "https://github.com/harpertoken/llamaware/pull/149",
-      "updated_at": "2026-06-22T03:13:27Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 753,
-      "title": "[deps] bump ratatui from 0.30.0 to 0.30.1",
-      "html_url": "https://github.com/harpertoken/harper/pull/753",
-      "updated_at": "2026-06-08T06:04:58Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 752,
-      "title": "[deps] bump bitflags from 2.11.1 to 2.13.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/752",
-      "updated_at": "2026-06-08T05:57:40Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 751,
-      "title": "[deps] bump hashlink from 0.11.0 to 0.12.0",
-      "html_url": "https://github.com/harpertoken/harper/pull/751",
-      "updated_at": "2026-06-08T05:54:55Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "llamaware",
-      "number": 148,
-      "title": "build(deps): bump codecov/codecov-action from 5 to 7",
-      "html_url": "https://github.com/harpertoken/llamaware/pull/148",
-      "updated_at": "2026-06-08T03:14:14Z",
-      "user": "dependabot[bot]",
-      "comments": 0
-    },
-    {
-      "repo": "harper",
-      "number": 749,
-      "title": "[deps] bump chrono from 0.4.44 to 0.4.45",
-      "html_url": "https://github.com/harpertoken/harper/pull/749",
-      "updated_at": "2026-06-05T05:54:33Z",
       "user": "dependabot[bot]",
       "comments": 0
     }
