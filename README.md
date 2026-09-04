@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/harpertoken/harpertoken.github.io/main/.github/assets/thumbnail.png" alt="harpertokengithubio" width="100%">
+</p>
+
 # harpertoken public site
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Fharpertoken.github.io)](https://harpertoken.github.io)
